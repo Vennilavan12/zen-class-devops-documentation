@@ -257,6 +257,16 @@ Classic Load Balancer creation also same as Application Load Balancer changes ar
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/clb2.png">
 
+## Security in Elastic Load Balancing
+
++ Cloud security at AWS is the highest priority. As an AWS customer, you benefit from a data center and network architecture that are built to meet the requirements of the most security-sensitive organizations.
+
++ Security is a shared responsibility between AWS and you.
+
+**Security of the cloud** – AWS is responsible for protecting the infrastructure that runs AWS services in the AWS Cloud. AWS also provides you with services that you can use securely.
+
+**Security in the cloud** – Your responsibility is determined by the AWS service that you use. You are also responsible for other factors including the sensitivity of your data, your company's requirements, and applicable laws and regulations. 
+
 ## Pricing
 
 ### Application Load Balancer
