@@ -164,12 +164,23 @@ Once target group was created continue with **Step 9** and choose our new target
 
 ## Network Load Balancer
 
-12. 
-13. 
++ Network Load Balancer operates at the connection level (Layer 4), routing connections to targets (Amazon EC2 instances, microservices, and containers) within Amazon VPC, based on IP protocol data.
++ Ideal for load balancing of both TCP and UDP traffic, Network Load Balancer is capable of handling millions of requests per second while maintaining ultra-low latencies.
++ Network Load Balancer is optimized to handle sudden and volatile traffic patterns while using a single static IP address per Availability Zone.
++ It is integrated with other popular AWS services such as Auto Scaling, Amazon EC2 Container Service (ECS), Amazon CloudFormation, and AWS Certificate Manager (ACM).
 
+## Features of Network Load Balancer
+1. Connection-based Layer 4 Load Balancing
+2. Low Latency
+3. Static IP and Elastic IP support
+4. Integration with Amazon Route 53
+5. Integration with AWS Services
 
+## How to create NLB
 
+Network Load Balancer creation also same as Application Load Balancer only changes in **Step 9** Protocols
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/nlb.png">
 
 
 
