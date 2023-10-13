@@ -1,6 +1,6 @@
 # AWS ELB?
 
-<img src="https://github.com/Vennilavan12/test/blob/main/img/elb_instances_1.png">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/elb_instances_1.png">
 
 Elastic Load Balancing automatically distributes your incoming traffic across multiple targets, such as EC2 instances, containers, and IP addresses, in one or more Availability Zones. 
 
