@@ -257,9 +257,39 @@ Classic Load Balancer creation also same as Application Load Balancer changes ar
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/clb2.png">
 
+## Pricing
 
+### Application Load Balancer
 
+You are charged for each hour or partial hour that an Application Load Balancer is running, and the number of Load Balancer Capacity Units (LCU) used per hour.
 
+### Network Load Balancer
+
+You are charged for each hour or partial hour that a Network Load Balancer is running, and the number of Network Load Balancer Capacity Units (NLCU) used by Network Load Balancer per hour.
+
+### Gateway Load Balancer
+
+You are charged for each hour or partial hour that a Gateway Load Balancer is running, and the number of Gateway Load Balancer Capacity Units (GLCU) used by Gateway Load Balancer per hour.
+
+### Classic Load Balancer
+
+You are charged for each hour or partial hour that a Classic Load Balancer is running and for each GB of data transferred through your load balancer.
+
+### AWS Free Tier
+
+Get started with Elastic Load Balancing for free with the AWS Free Tier. Upon sign-up, new AWS customers receive 750 hours per month shared between Classic and Application load balancers; 15 GB of data processing for Classic load balancers; and 15 LCUs for Application Load Balancers.
+
+### LCU Details
+
+An LCU measures the dimensions on which the Application Load Balancer processes your traffic (averaged over an hour). The four dimensions measured are:
+
++ **New connections**: Number of newly established connections per second. Typically, many requests are sent per connection. 
+
++ **Active connections**: Number of active connections per minute.
+
++ **Processed bytes**: The number of bytes processed by the load balancer in GBs for HTTP(S) requests and responses.
+
++ **Rule evaluations**: The product of the number of rules processed by your load balancer and the request rate. The first 10 processed rules are free (Rule evaluations = Request rate * (Number of rules processed - 10 free rules).
 
 
 
