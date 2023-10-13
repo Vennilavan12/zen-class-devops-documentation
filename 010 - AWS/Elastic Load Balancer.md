@@ -169,7 +169,7 @@ Once target group was created continue with **Step 9** and choose our new target
 + Network Load Balancer is optimized to handle sudden and volatile traffic patterns while using a single static IP address per Availability Zone.
 + It is integrated with other popular AWS services such as Auto Scaling, Amazon EC2 Container Service (ECS), Amazon CloudFormation, and AWS Certificate Manager (ACM).
   
-<img src="">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/nwlbimg.png">
 
 ## Features of Network Load Balancer
 1. Connection-based Layer 4 Load Balancing
@@ -184,7 +184,7 @@ Once target group was created continue with **Step 9** and choose our new target
 3. The listeners in your load balancer receive requests of matching protocol and port, and route these requests based on the default action that you specify. You can use a TLS listener to offload the work of encryption and decryption to your load balancer.
 4. Healthy targets in one or more target groups receive traffic according to the flow hash algorithm
 
-## How to create NLB
+## How to create Network Load Balancer
 
 Network Load Balancer creation also same as Application Load Balancer only changes in **Step 9** Protocols
 
@@ -211,9 +211,14 @@ Gateway Load Balancer helps you easily deploy, scale, and manage your third-part
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/gwlb_sideways_flow.png">
 
+## How to create Gateway Load Balancer
 
+1. Start with ALB creation **Step 6** basic configuration for create GatewayLB.
+2. Next step same as **Step 7** 
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/gwlb1.png">
 
+Complete steps and click create loadbalancer. 
 
 
 
