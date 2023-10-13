@@ -30,6 +30,8 @@ Availability Zones are multiple, isolated locations within each Region.
 + When the load balancer detects an unhealthy target, it stops routing traffic to that target.
 + It then resumes routing traffic to that target when it detects that the target is healthy again.
 
+<img src="">
+
 ## Listeners
 A listener is a process that checks for connection requests. It is configured with a protocol and port number for       connections from clients to the load balancer.You configure your load balancer to accept incoming traffic by specifying one or more listeners.
 
@@ -54,6 +56,7 @@ If cross-zone load balancing is disabled:
    + Each of the eight targets in Availability Zone B receives 6.25% of the traffic.
 cross-zone load balancing is always enabled at the load balancer level. At the target group level, cross-zone load balancing can be disabled.
 
+## Application Load Balancer
 
 
 
