@@ -155,14 +155,14 @@ Adding Health check path to store logs
   
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/TG5.png">
 
-Once target group was created continue with **Step 9**
+Once target group was created continue with **Step 9** and choose our new target group.
 
 11. Review our configuration and create it.
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/Final.png">
 
 
-
+## Network Load Balancer
 
 12. 
 13. 
