@@ -168,6 +168,8 @@ Once target group was created continue with **Step 9** and choose our new target
 + Ideal for load balancing of both TCP and UDP traffic, Network Load Balancer is capable of handling millions of requests per second while maintaining ultra-low latencies.
 + Network Load Balancer is optimized to handle sudden and volatile traffic patterns while using a single static IP address per Availability Zone.
 + It is integrated with other popular AWS services such as Auto Scaling, Amazon EC2 Container Service (ECS), Amazon CloudFormation, and AWS Certificate Manager (ACM).
+  
+<img src="">
 
 ## Features of Network Load Balancer
 1. Connection-based Layer 4 Load Balancing
@@ -176,6 +178,12 @@ Once target group was created continue with **Step 9** and choose our new target
 4. Integration with Amazon Route 53
 5. Integration with AWS Services
 
+## How Network Load Balancer Works 
+1. Clients make requests to your application.
+2. The load balancer receives the request either directly or through an endpoint for private connectivity (via AWS PrivateLink).
+3. The listeners in your load balancer receive requests of matching protocol and port, and route these requests based on the default action that you specify. You can use a TLS listener to offload the work of encryption and decryption to your load balancer.
+4. Healthy targets in one or more target groups receive traffic according to the flow hash algorithm
+
 ## How to create NLB
 
 Network Load Balancer creation also same as Application Load Balancer only changes in **Step 9** Protocols
@@ -183,9 +191,25 @@ Network Load Balancer creation also same as Application Load Balancer only chang
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/nlb.png">
 
 
+## Gateway Load Balancer
+Gateway Load Balancer helps you easily deploy, scale, and manage your third-party virtual appliances. It gives you one gateway for distributing traffic across multiple virtual appliances while scaling them up or down, based on demand. This decreases potential points of failure in your network and increases availability.
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/gwlb.png">
 
+## Benefits
++ Scale your virtual appliance instances automatically.
++ Bring higher availability to your third-party virtual appliances.
++ Monitor continuous health and performance metrics.
 
+## How Gateway Load Balancer Works
+
+1. Clients make requests to your application.
+2. The load balancer receives the request based on the route table configurations that are set within your VPC, Internet Gateway, or Transit Gateway.
+3. The load balancer routes requests to a target group consisting of a scalable fleet of appliances (for example, firewalls, deep packet inspection systems, URL filtering systems etc.) to process traffic flows.
+4. The virtual appliance processes the traffic, and forwards it back to the load balancer, or drops the traffic based on its configuration. This type of load balancer acts as a bump-in-the-wire between the source and destination.
+5. The load balancer forwards the traffic to its destination.
+
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/gwlb_sideways_flow.png">
 
 
 
