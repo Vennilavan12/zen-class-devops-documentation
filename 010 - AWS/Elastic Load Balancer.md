@@ -48,6 +48,7 @@ Every listener has a default action, also known as the default rule. The default
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cross_zone_load_balancing_enabled.png">
 
 If cross-zone load balancing is enabled, each of the 10 targets receives 10% of the traffic. This is because each load balancer node can route its 50% of the client traffic to all 10 targets.
+
 If cross-zone load balancing is disabled:
    + Each of the two targets in Availability Zone A receives 25% of the traffic.
    + Each of the eight targets in Availability Zone B receives 6.25% of the traffic.
