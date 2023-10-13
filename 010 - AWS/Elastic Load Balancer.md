@@ -30,7 +30,7 @@ Availability Zones are multiple, isolated locations within each Region.
 + When the load balancer detects an unhealthy target, it stops routing traffic to that target.
 + It then resumes routing traffic to that target when it detects that the target is healthy again.
 
-<img src="">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/networking-load_balancing.png">
 
 ## Listeners
 A listener is a process that checks for connection requests. It is configured with a protocol and port number for       connections from clients to the load balancer.You configure your load balancer to accept incoming traffic by specifying one or more listeners.
