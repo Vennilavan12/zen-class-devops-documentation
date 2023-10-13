@@ -44,7 +44,9 @@ Every listener has a default action, also known as the default rule. The default
 + The nodes for your load balancer distribute requests from clients to registered targets.
 + When cross-zone load balancing is enabled, each load balancer node distributes traffic across the registered targets in all enabled Availability Zones.
 + When cross-zone load balancing is disabled, each load balancer node distributes traffic only across the registered targets in its Availability Zone.
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/">
+  
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cross_zone_load_balancing_enabled.png">
+
 If cross-zone load balancing is enabled, each of the 10 targets receives 10% of the traffic. This is because each load balancer node can route its 50% of the client traffic to all 10 targets.
 If cross-zone load balancing is disabled:
    + Each of the two targets in Availability Zone A receives 25% of the traffic.
