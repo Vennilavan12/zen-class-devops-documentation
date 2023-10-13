@@ -22,7 +22,7 @@ Region is a separate geographic area.
 
 Availability Zones are multiple, isolated locations within each Region.
 
-<img src="https://github.com/Vennilavan12/test/blob/main/img/reg%26avail.png">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/reg%26avail.png">
 
 ## How ELB Works?
 + A load balancer accepts incoming traffic from clients and routes requests to its registered targets (such as EC2 instances) in one or more Availability Zones.
