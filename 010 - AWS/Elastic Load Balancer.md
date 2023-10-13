@@ -72,6 +72,7 @@ Application Load Balancer, aka ALB, is an Elastic Load Balancer or ELB on AWS. I
 
 ## How to Create ALB
 
+1. Sign into AWS Management Console:
 
 
 
