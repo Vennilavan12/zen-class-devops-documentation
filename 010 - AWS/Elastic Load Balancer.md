@@ -70,7 +70,7 @@ Application Load Balancer, aka ALB, is an Elastic Load Balancer or ELB on AWS. I
 + You can send routing requests to numerous applications on a single EC2 server.
 + An instance or IP address can be registered with numerous target groups on a separate port.
 
-
+## How to Create ALB
 
 
 
