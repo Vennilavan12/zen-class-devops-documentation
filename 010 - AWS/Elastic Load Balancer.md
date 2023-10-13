@@ -76,25 +76,25 @@ cross-zone load balancing is always enabled at the load balancer level. At the t
 
 ## How to Create ALB
 
-1. Sign into AWS Management Console:
+**1.** Sign into AWS Management Console:
 <img src="https://github.com/Gitscooby/Images/blob/main/Ec2%20image%204.png">
 
-2. Select your preferred Region. Select a region from the drop-down, the selection of the region can be done on the basis of the criteria discussed earlier in the blog.
+**2.** Select your preferred Region. Select a region from the drop-down, the selection of the region can be done on the basis of the criteria discussed earlier in the blog.
 <img src="https://github.com/Gitscooby/Images/blob/main/Ec2%20image%205.png">
 
-3. Select ELB Service in Management console
+**3.** Select ELB Service in Management console
    
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/ELB_service.png">
 
-4. Click Create LoadBalancer buttton
+**4.** Click Create LoadBalancer buttton
    
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/CreateELB.png">
 
-5. Choose ELB type and click create
+**5.** Choose ELB type and click create
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/ChooseELB.png">
   
-6. Make Basic Configuration Name, Schema and IP Address Type
+**6.** Make Basic Configuration Name, Schema and IP Address Type
 
 ## Scheme
 Scheme is the type of load balancer.
@@ -112,7 +112,7 @@ Scheme is the type of load balancer.
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/Basic_conf.png">
 
-7. Configure Network mapping section - Choose VPC and Availability Zones
+**7.** Configure Network mapping section - Choose VPC and Availability Zones
    
 ## Mapping
 + Enable two or more Availability Zones, to increase the fault tolerance of your application.
@@ -120,15 +120,15 @@ Scheme is the type of load balancer.
   
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/nwmapp.png">
 
-8. Add Security Groups for Loadbalancer
+**8.** Add Security Groups for Loadbalancer
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/sg.png">
 
-9. Add Listeners and Routing info - Add a Target Group
+**9.** Add Listeners and Routing info - Add a Target Group
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/listener_routing.png">
 
-10. Create Target Group and adding our servers
+**10.** Create Target Group and adding our servers
 
    Click create target group button to start specifying group details
 
@@ -160,7 +160,7 @@ Adding Health check path to store logs
 
 Once target group was created continue with **Step 9** and choose our new target group.
 
-11. Review our configuration and create it.
+**11.** Review our configuration and create it.
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/Final.png">
 
