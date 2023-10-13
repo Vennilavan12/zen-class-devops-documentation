@@ -223,18 +223,39 @@ Gateway Load Balancer helps you easily deploy, scale, and manage your third-part
 
 + Complete steps and click create loadbalancer. 
 
+## Classic Load Balancer
 
++ Classic Load Balancer provides basic load balancing across multiple Amazon EC2 instances and operates at both the request level and connection level. Classic Load Balancer is intended for applications that are built within the EC2-Classic network.
++ CLB operates at Layer 4 and 7 of the OSI model. This means routes traffic between clients and backend servers based on IP address and TCP port.
 
+## Benefits
 
+Using a Classic Load Balancer instead of an Application Load Balancer has the following benefits:
 
+    * Support for TCP and SSL listeners.
 
+## How Classic Load Balancer Works
++ To ensure that your registered instances are able to handle the request load in each Availability Zone, it is important to keep approximately the same number of instances in each Availability Zone registered with the load balancer. 
 
+For example, if you have ten instances in Availability Zone us-west-2a and two instances in us-west-2b, the requests are distributed evenly between the two Availability Zones. As a result, the two instances in us-west-2b serve the same amount of traffic as the ten instances in us-west-2a. Instead, you should have six instances in each Availability Zone.
 
++ By default, the load balancer distributes traffic evenly across the Availability Zones that you enable for your load balancer. To distribute traffic evenly across all registered instances in all enabled Availability Zones, enable cross-zone load balancing on your load balancer.
+  
++ However, we still recommend that you maintain approximately equivalent numbers of instances in each Availability Zone for better fault tolerance.
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/C_load_balancer.png">
 
+## How to create Classic Load Balancer
 
+Classic Load Balancer creation also same as Application Load Balancer changes are showed below
 
++ Select Listener and instance protocol.
+  
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/clb1.png">
 
++ Add Instances to create our Load Balancer.
+
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/clb2.png">
 
 
 
