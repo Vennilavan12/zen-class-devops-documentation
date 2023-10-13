@@ -33,7 +33,10 @@ Availability Zones are multiple, isolated locations within each Region.
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/networking-load_balancing.png">
 
 ## Components of ELB
- * listeners, load balancer, and the target group
+
+ * listeners
+ * load balancer
+ * target group
 
 ## Listeners
 A listener is a process that checks for connection requests. It is configured with a protocol and port number for       connections from clients to the load balancer.You configure your load balancer to accept incoming traffic by specifying one or more listeners.
