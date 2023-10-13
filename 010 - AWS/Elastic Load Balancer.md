@@ -218,7 +218,7 @@ Gateway Load Balancer helps you easily deploy, scale, and manage your third-part
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/gwlb1.png">
 
-Complete steps and click create loadbalancer. 
++ Complete steps and click create loadbalancer. 
 
 
 
