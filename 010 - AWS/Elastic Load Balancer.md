@@ -127,7 +127,7 @@ Scheme is the type of load balancer.
 
 10. Create Target Group and adding our servers
 
-Click create target group button to start specifying group details
+   Click create target group button to start specifying group details
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/TGcreate.png">
 
@@ -145,12 +145,22 @@ Click create target group button to start specifying group details
 By default, Application Load Balancers send requests to targets using HTTP/1.1. You can use the protocol version to send requests to targets using HTTP/2 or gRPC(HTTP-Hyper Text Transfer Protocol and gRPC-High Performance Remote Procedure calls) .
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/TG3.png">
+Adding Health check path to store logs
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/TG4.png">
++ Register our intsances as targets only running instance are shown in the Page.
++ Select and include below option to add our instance.
+
++ Finally review our targets and create targets group.
+  
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/TG5.png">
 
+Once target group was created continue with **Step 9**
+
+11. Review our configuration and create it.
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/Final.png">
-11.  
+
 
 
 
