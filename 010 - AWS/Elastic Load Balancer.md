@@ -104,11 +104,47 @@ Scheme is the type of load balancer.
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/Basic_conf.png">
 
 7. Configure Network mapping section - Choose VPC and Availability Zones
-
+## Mapping
++ Enable two or more Availability Zones, to increase the fault tolerance of your application.
++ Select one subnet per zone. If you enabled dual-stack mode for the load balancer, select subnets with associated IPv6 CIDR blocks.
+  
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/nwmapp.png">
 
-8. 
-9. 
+8. Add Security Groups for Loadbalancer
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/sg.png">
+
+9. Add Listeners and Routing info - Add a Target Group
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/listener_routing.png">
+
+10. Create Target Group and adding our servers
+Click create target group button to start specifying group details
++ Choose target Type - Instances, Ip Address, Lambda, ALB
++ Add Target Group Name
++ Add Protocol and ports
++ Choose IP address type
++ Select Our VPC and Protocol Version
++ 
++ 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/TGcreate.png">
+
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/TG1.png">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/TG2.png">
+
+## Protocol version
+By default, Application Load Balancers send requests to targets using HTTP/1.1. You can use the protocol version to send requests to targets using HTTP/2 or gRPC.
+
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/TG3.png">
+
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/TG4.png">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/TG5.png">
+
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/Final.png">
+11.  
+
+
+
+12. 
+13. 
 
 
 
