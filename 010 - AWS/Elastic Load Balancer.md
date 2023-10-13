@@ -32,6 +32,9 @@ Availability Zones are multiple, isolated locations within each Region.
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/networking-load_balancing.png">
 
+## Components of ELB
+ * listeners, load balancer, and the target group
+
 ## Listeners
 A listener is a process that checks for connection requests. It is configured with a protocol and port number for       connections from clients to the load balancer.You configure your load balancer to accept incoming traffic by specifying one or more listeners.
 
@@ -57,6 +60,15 @@ If cross-zone load balancing is disabled:
 cross-zone load balancing is always enabled at the load balancer level. At the target group level, cross-zone load balancing can be disabled.
 
 ## Application Load Balancer
+Application Load Balancers intelligently provide scalability, performance, and availability. They also guarantee that your servers are not overworked and are prepared to handle traffic spikes.
+Application Load Balancer, aka ALB, is an Elastic Load Balancer or ELB on AWS. It operates at the application layer (the seventh layer) of the Open Systems Interconnection (OSI) model.
+
+## Benefits of ALB
++ **Support for Path conditions:** You can configure your listener with rules that forward requests based on the URL in the request. This allows you to break down your application into smaller services (microservices) and route requests to the appropriate service based on the URL’s content.
++ **Support for Host conditions:** You can configure your listener with rules that forward requests based on the host field in the HTTP header. This allows you to route requests to many domains using a single load balancer.
++ Routing is supported based on request information such as HTTP header conditions and methods, query parameters, and source IP addresses.
++ You can send routing requests to numerous applications on a single EC2 server.
++ An instance or IP address can be registered with numerous target groups on a separate port.
 
 
 
