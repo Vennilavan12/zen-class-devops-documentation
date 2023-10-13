@@ -253,7 +253,7 @@ Classic Load Balancer creation also same as Application Load Balancer changes ar
   
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/clb1.png">
 
-+ Add Instances to create our Load Balancer.
++ Add Instances to create our Classic Load Balancer.
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/clb2.png">
 
