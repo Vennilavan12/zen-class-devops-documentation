@@ -60,8 +60,9 @@ If cross-zone load balancing is disabled:
 cross-zone load balancing is always enabled at the load balancer level. At the target group level, cross-zone load balancing can be disabled.
 
 ## Application Load Balancer
-Application Load Balancers intelligently provide scalability, performance, and availability. They also guarantee that your servers are not overworked and are prepared to handle traffic spikes.
-Application Load Balancer, aka ALB, is an Elastic Load Balancer or ELB on AWS. It operates at the application layer (the seventh layer) of the Open Systems Interconnection (OSI) model.
++ Application Load Balancers intelligently provide scalability, performance, and availability. They also guarantee that your servers are not overworked and are prepared to handle traffic spikes.
++ Application Load Balancer, aka ALB, is an Elastic Load Balancer or ELB on AWS. It operates at the application layer (the seventh layer) of the Open Systems Interconnection (OSI) model.
++ The Application Load Balancer distributes incoming HTTP and HTTPS traffic across multiple targets.
 
 ## Benefits of ALB
 + **Support for Path conditions:** You can configure your listener with rules that forward requests based on the URL in the request. This allows you to break down your application into smaller services (microservices) and route requests to the appropriate service based on the URL’s content.
@@ -73,17 +74,41 @@ Application Load Balancer, aka ALB, is an Elastic Load Balancer or ELB on AWS. I
 ## How to Create ALB
 
 1. Sign into AWS Management Console:
+<img src="https://github.com/Gitscooby/Images/blob/main/Ec2%20image%204.png">
 
+2. Select your preferred Region. Select a region from the drop-down, the selection of the region can be done on the basis of the criteria discussed earlier in the blog.
+<img src="https://github.com/Gitscooby/Images/blob/main/Ec2%20image%205.png">
 
+3. Select ELB Service in Management console
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/ELB_service.png">
+4. Click Create LoadBalancer buttton
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/CreateELB.png">
+5. Choose ELB type and click create
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/ChooseELB.png">   
+6. Make Basic Configuration Name, Schema and IP Address Type
 
+## Scheme
+Scheme is the type of load balancer.
+1. Internet-facing
+2. Internal
++ If Scheme is internet-facing , the load balancer has a public DNS name that resolves to a public IP address.
++ If Scheme is internal , the load balancer has a public DNS name that resolves to a private IP address.
++ Both internet-facing and internal load balancers route requests to your targets using private IP addresses. Therefore, your targets don't need public IP addresses to receive requests from an internal or an internet-facing load balancer.
 
+## IP Address Type
+1. IPV4
+2. Dual Stack
++ IPv4 if your clients use IPv4 addresses to communicate with the load balancer, or choose Dualstack if your clients use both IPv4 and IPv6 addresses to communicate with the load balancer.
++ If the load balancer is an internal load balancer, you must choose IPv4.
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/Basic_conf.png">
 
+7. Configure Network mapping section - Choose VPC and Availability Zones
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/nwmapp.png">
 
-
-
-
+8. 
+9. 
 
 
 
