@@ -164,11 +164,38 @@ The host manager is responsible for the following:
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/sqsbean.jpg">
 
+# Design Consideration
 
+Because applications deployed using AWS Elastic Beanstalk run on AWS Cloud resources, you should keep several configuration factors in mind to optimize your applications: 
 
+1. Scalability
 
+2. Security
 
+3. Persistent storage
 
+4. Fault tolerance
+
+5. Content delivery
+
+6. Software updates and patching
+
+7. Connectivity.
+
+https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.concepts.design.html >> Use this link to know more about design consideration.
+
+## Permissions
+
+When you create an environment, AWS Elastic Beanstalk prompts you to provide the following AWS Identity and Access Management (IAM) roles:
+
+* Servicerole
+      Elastic Beanstalk assumes a service role to use other AWS services on your behalf.
+  
+* Instance profile
+      Elastic Beanstalk applies instances profile to the instances in your environment.An instance profile is a container for an IAM role that you can use to pass role information to an EC2 instance when the instance starts.
+
+* User policies
+      Applying user policies allows the users to create and manage Elastic Beanstalk applications and environments. Elastic Beanstalk also provides managed policies for full access and read-only access.
 
 
 
