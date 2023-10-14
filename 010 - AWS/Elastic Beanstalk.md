@@ -1,4 +1,4 @@
-<img width="487" alt="image" src="https://github.com/Vennilavan12/zen-class-devops-documentation/assets/77039703/ddc6dd51-2b3b-4edc-b6ae-1c5b1bd506dc"># AWS Elastic Beanstalk
+# AWS Elastic Beanstalk
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/1.png">
 
