@@ -1,4 +1,4 @@
-# AWS Elastic Beanstalk
+<img width="487" alt="image" src="https://github.com/Vennilavan12/zen-class-devops-documentation/assets/77039703/ddc6dd51-2b3b-4edc-b6ae-1c5b1bd506dc"># AWS Elastic Beanstalk
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/1.png">
 
@@ -238,12 +238,23 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 ## How to create Elastic Beanstalk
 
+**Step 1:** Logon to the AWS management console
 
+**Step 2:** Click on the Elastic Beanstalk service under the services dropdown
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/bs4.png">
 
+**Step 3:** Click on Get Started on the opening page and then create a Web Application by providing the required details.
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/Createbean.png">
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/create1.png">
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c2.png">
+
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c3a.png">
+
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c4.png">
 
 
 
