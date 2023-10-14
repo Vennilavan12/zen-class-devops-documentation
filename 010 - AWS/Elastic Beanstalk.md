@@ -24,9 +24,6 @@ Elastic Beanstalk, you can quickly deploy and manage applications in the AWS Clo
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/2.png">
 
-## Pricing
-
-There is no additional charge for Elastic Beanstalk. You pay only for the underlying AWS resources that your application consumes.
 
 ## Elastic Beanstalk Concepts
 
@@ -289,51 +286,69 @@ Key details you provide here:
 
 **Step 4:** In this step we need to provide service role, key pair, instance profile details and click next 
 
-<img src="">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c5.png">
 
 ### Set up networking, database, and tags 
 
-**Step 5:**
+**Step 5:** This steps are optional when we create application. values for this fields are  assigned automatically.
 
-<img src="">
++ Select our VPC
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c6.png">
 
++ Add public IP and Instance subnetes
 
-<img src="">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c7.png">
 
++ when we need to integrate our database to our application provide all information. 
 
-<img src="">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c8.png">
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c9.png">
 
++ Use tags to group and filter resources.
 
-<img src="">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c10.png">
 
+### Configure instance traffic and scaling
 
+**Step 6:** This steps are optional when we create application. values for this fields are  assigned automatically.
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c11.png">
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c12.png">
 
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c13.png">
 
 
+### Configure updates, monitoring, and logging
 
+**Step 7:** This steps are optional when we create application. Values for this fields are  assigned automatically.
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c14.png">
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c15.png">
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c16.png">
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c17.png">
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c18.png">
 
+### Review
 
+**Step 8:** Review our Configuration and Submit to create our application using beanstalk
+
+## Pricing
+
+There is no additional charge for Elastic Beanstalk. You pay only for the underlying AWS resources that your application consumes.
+
+## Tutorials and samples
+
+Language and framework specific tutorials are spread throughout the AWS Elastic Beanstalk Developer Guide.
+
+Use this link to know more about beanstalk deployment samples in all platforms
+    + https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/tutorials.html
 
 
 
