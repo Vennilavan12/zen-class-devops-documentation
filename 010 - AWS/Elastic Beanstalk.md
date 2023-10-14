@@ -22,7 +22,7 @@ Elastic Beanstalk, you can quickly deploy and manage applications in the AWS Clo
   
 +  Elastic Beanstalk automatically launches an environment and creates and configures the AWS resources needed to run your code. After your environment is launched, you can then manage your environment and deploy new application versions.
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/2.png">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/Bs2.png">
 
 
 ## Elastic Beanstalk Concepts
