@@ -136,6 +136,16 @@ The host manager is responsible for the following:
 
     7. Rotating your application's log files and publishing them to Amazon S3
 
+## Presets
+
++ Each preset includes recommend values for several configuration options.
+
++ The Single instance presets are primarily recommended for development use cases and will save costs.
+
++ The High availability presets are recommended for production environments. They include a load balancer and scale with multiple instances in response to load.
+
++ If Custom configurations is selected, Elastic Beanstalk will provide the standard default values. Choose this option if you are deploying a source bundle with configuration files.
+
 ## Elastic Beanstalk architecture for a Worker environment tier
 
 + AWS resources created for a worker environment tier include an Auto Scaling group, one or more Amazon EC2 instances, and an IAM role.
@@ -246,34 +256,57 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 **Step 3:** Click on Get Started on the opening page and then create a Web Application by providing the required details.
 
+### Configure Environment
+
++ In Environment tier we can choose beanstalk environment and give name for your application
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/Createbean.png">
+
+Key details you provide here:
+
+    + Environment name
+
+    + Domain – A subdomain for accessing your web application.
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/create1.png">
 
++ Choose platform type and choose platform, branch and version  (example: python, docker, go, etc...)
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c2.png">
+
++ In Application code choose upload your code.
+
++ we can choose local code Zip file or provide s3 URL.  
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c3a.png">
 
++ Select a preset configuration that matches your use case. Each preset includes recommend values for several configuration options.
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c4.png">
 
+### Configure service access
+
+**Step 4:** In this step we need to provide service role, key pair, instance profile details and click next 
+
+<img src="">
+
+### Set up networking, database, and tags 
+
+**Step 5:**
+
+<img src="">
 
 
 
+<img src="">
+
+
+<img src="">
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="">
 
 
 
