@@ -348,7 +348,7 @@ There is no additional charge for Elastic Beanstalk. You pay only for the underl
 Language and framework specific tutorials are spread throughout the AWS Elastic Beanstalk Developer Guide.
 
 Use this link to know more about beanstalk deployment samples in all platforms
-    + https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/tutorials.html
+     https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/tutorials.html
 
 
 
