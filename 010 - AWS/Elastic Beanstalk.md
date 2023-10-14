@@ -188,17 +188,55 @@ https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.concepts.design.
 
 When you create an environment, AWS Elastic Beanstalk prompts you to provide the following AWS Identity and Access Management (IAM) roles:
 
-* Servicerole
-      Elastic Beanstalk assumes a service role to use other AWS services on your behalf.
-  
-* Instance profile
-      Elastic Beanstalk applies instances profile to the instances in your environment.An instance profile is a container for an IAM role that you can use to pass role information to an EC2 instance when the instance starts.
+**Servicerole**
+      
+Elastic Beanstalk assumes a service role to use other AWS services on your behalf.
 
-* User policies
-      Applying user policies allows the users to create and manage Elastic Beanstalk applications and environments. Elastic Beanstalk also provides managed policies for full access and read-only access.
+Example : example, Elastic Beanstalk uses a service role when it calls Amazon Elastic Compute Cloud (Amazon EC2), Elastic Load Balancing, and Amazon EC2 Auto Scaling APIs to gather information. The service role that Elastic Beanstalk uses is the one that you specified when you create the Elastic Beanstalk environment.
 
+**Instance profile**
 
++ Elastic Beanstalk applies instances profile to the instances in your environment.An instance profile is a container for an IAM role that you can use to pass role information to an EC2 instance when the instance starts.
 
++ If your web application requires access to other additional AWS services, add statements or managed policies to the instance profile that allow access to those services.
+
+**User policies**  
+
++ Applying user policies allows the users to create and manage Elastic Beanstalk applications and environments. Elastic Beanstalk also provides managed policies for full access and read-only access.
+
++ Elastic Beanstalk requires permissions not only for its own API actions, but also for several other AWS services. Elastic Beanstalk uses user permissions to launch resources in an environment. 
+
++ These resources include EC2 instances, an Elastic Load Balancing load balancer, and an Auto Scaling group.
+
+## Platforms
+
++ AWS Elastic Beanstalk provides a variety of platforms on which you can build your applications. You design your web application to one of these platforms, and Elastic Beanstalk deploys your code to the platform version you selected to create an active application environment.
+
++ Elastic Beanstalk provides platforms for different programming languages, application servers, and Docker containers. Some platforms have multiple concurrently-supported versions.
+
+AWS Elastic Beanstalk provides a variety of platforms on which you can build your applications.
+
+1. Linux
+
+2. Docker
+
+3. Go
+
+4. Java
+
+5. .NET and .NET core
+
+6. Node.js
+
+7. PHP
+
+8. Python
+
+9. Ruby
+
+Use this link to know more about platforms >> https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts-all-platforms.html
+
+## How to create Elastic Beanstalk
 
 
 
