@@ -114,13 +114,35 @@ In CodeCommit, you can:
 
 + In CodeCommit, you can change the default branch for your repository. You can also create and delete branches and view details about a branch.
 
+## How to create Codecommit
+
+**Step 1:** Login into AWS management console
+
+**Step 2:** In AWS management console search for codecommit service
+
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc3.png">
+
+**Step 3:** Click create repository
+
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc5.png">
+
++ Give repository name and click create 
+
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc6.png">
+
++ Once the repository created we use any one of the methods to store the repo locally.
+
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc7.png">
+
++ You can also create files using CodecommitUI.
+
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc8.png">
 
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc.png">
 
 
-
-
-
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc.png">
 
 
 
