@@ -156,6 +156,16 @@ In CodeCommit, you can:
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc13.png">
 
+## Security in AWS Codecommit
+
++ Cloud security at AWS is the highest priority. As an AWS customer, you benefit from a data center and network architecture that are built to meet the requirements of the most security-sensitive organizations.
+
++ **Security of the cloud** – AWS is responsible for protecting the infrastructure that runs AWS services in the AWS Cloud. AWS also provides you with services that you can use securely.
+
++ **Security in the cloud** – Your responsibility is determined by the AWS service that you use. You are also responsible for other factors including the sensitivity of your data, your company’s requirements, and applicable laws and regulations. 
+
++ AWS Identity and Access Management (IAM) is an AWS service that helps an administrator securely control access to AWS resources. IAM administrators control who can be authenticated (signed in) and authorized (have permissions) to use CodeCommit resources.
+
 ## Pricing
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc10.png">
@@ -222,6 +232,10 @@ In CodeCommit, you can:
 | `git diff [source branch] [target branch]` | Preview changes before merging |
 
 
+## Reference
+
+If you want Know more about Codecommit use this reference link
++  https://docs.aws.amazon.com/codecommit/latest/userguide/welcome.html
 
 
 
