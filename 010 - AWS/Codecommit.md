@@ -162,14 +162,14 @@ In CodeCommit, you can:
 
 # Git Commands
 
-### Getting & Creating Projects
+### Initialize and Create
 
 | Command | Description |
 | ------- | ----------- |
 | `git init` | Initialize a local Git repository |
 | `git clone ssh://git@github.com/[username]/[repository-name].git` | Create a local copy of a remote repository |
 
-### Basic Snapshotting
+### Basic workflow 
 
 | Command | Description |
 | ------- | ----------- |
@@ -199,7 +199,7 @@ In CodeCommit, you can:
 | `git stash` | Stash changes in a dirty working directory |
 | `git stash clear` | Remove all stashed entries |
 
-### Sharing & Updating Projects
+### Send and Receive
 
 | Command | Description |
 | ------- | ----------- |
