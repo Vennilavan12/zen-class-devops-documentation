@@ -219,8 +219,107 @@ To define a rule condition and assertions, use rule-specific intrinsic functions
 
 ## Conditions
 
++ The optional Conditions section contains statements that define the circumstances under which entities are created or configured. 
+
++ For example, you can create a condition and then associate it with a resource or output so that AWS CloudFormation only creates the resource or output if the condition is true.
+
+## JSON
+
+    "Conditions" : {
+      "Logical ID" : {Intrinsic function}
+    }
+
+## YAML
+
+    Conditions:
+      Logical ID:
+        Intrinsic function
+
+
 ## Transform
+
++ The optional Transform section specifies one or more macros that AWS CloudFormation uses to process your template. The Transform section builds on the simple, declarative language of AWS CloudFormation with a powerful macro system.
+
++ You can declare one or more macros within a template. AWS CloudFormation executes macros in the order that they're specified. 
+
++ When you create a change set, AWS CloudFormation generates a change set that includes the processed template content. You can then review the changes and execute the change set.
+
+    Transform:
+      - MyMacro
+      - 'AWS::Serverless'
 
 ## Resources
 
+The required Resources section declares the AWS resources that you want to include in the stack, such as an Amazon EC2 
+instance or an Amazon S3 bucket.
+
+## JSON
+
+    "Resources" : {
+        "Logical ID" : {
+            "Type" : "Resource type",
+            "Properties" : {
+                Set of properties
+            }
+        }
+    }
+
+## YAML
+
+    Resources:
+      Logical ID:
+        Type: Resource type
+        Properties:
+          Set of properties
+
 ## Output
+
+The optional Outputs section declares output values that you can import into other stacks (to create cross-stack references), return in response (to describe stack calls), or view on the AWS CloudFormation console. 
+
+## JSON
+
+    "Outputs" : {
+      "Logical ID" : {
+        "Description" : "Information about the value",
+        "Value" : "Value to return",
+        "Export" : {
+          "Name" : "Name of resource to export"
+        }
+      }
+    }
+
+## YAML
+
+    Outputs:
+      Logical ID:
+        Description: Information about the value
+        Value: Value to return
+        Export:
+          Name: Name of resource to export
+
+## AWS Cloudformation Designer
+
++ AWS CloudFormation Designer (Designer) is a graphic tool for creating, viewing, and modifying AWS CloudFormation templates.
+
++ With Designer, you can diagram your template resources using a drag-and-drop interface, and then edit their details using the integrated JSON and YAML editor.
+
++ Whether you are a new or an experienced AWS CloudFormation user, AWS CloudFormation Designer can help you quickly see the interrelationship between a template's resources and easily modify templates.
+
+## Benefits
+
+1. Visualize template resources
+
+2. Simplify template authoring
+
+3. Simplify editing with the integrated JSON and YAML editor
+
+## Desginer Overview
+
+<img src="">
+
+
+
+
+
+
+
