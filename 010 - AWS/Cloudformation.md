@@ -90,26 +90,58 @@ When you use AWS CloudFormation, you work with templates and stacks. You create 
 
 ## Template Anatomy
 
+A template is a JSON- or YAML-formatted text file that describes your AWS infrastructure.
 
+<img src="">
 
+## Format Version
 
+The AWSTemplateFormatVersion section (optional) identifies the capabilities of the template. The latest template format version is 2010-09-09 and is currently the only valid value.
 
+### JSON
 
+    "AWSTemplateFormatVersion" : "2010-09-09"
 
+### YAML 
 
+    AWSTemplateFormatVersion: "2010-09-09"
 
+## Description
 
++ The Description section (optional) enables you to include comments about your template.
 
++ The value for the description declaration must be a literal string that is between 0 and 1024 bytes in length
 
+### JSON
 
+    "Description" : "Here are some details about the template."
 
+### YAML 
+    
+    Description: > Here are some details about the template.
 
+## Parameters
 
+Use the optional Parameters section to customize your templates. Parameters enable you to input custom values to your template each time you create or update a stack.
 
+### Example 
 
+declare a parameter named InstanceTypeParameter. This parameter lets you specify the Amazon EC2 instance type for the stack to use when you create or update the stack. Note that InstanceTypeParameter has a default value of t2.micro.
 
+### JSON
 
+    "Parameters" : {
+      "ParameterLogicalID" : {
+        "Type" : "DataType",
+        "ParameterProperty" : "value"
+      }
+    }
+  
+### YAML 
 
-
+    Parameters:
+      ParameterLogicalID:
+        Type: DataType
+        ParameterProperty: value
 
 
