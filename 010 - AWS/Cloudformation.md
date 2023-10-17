@@ -211,16 +211,11 @@ To define a rule condition and assertions, use rule-specific intrinsic functions
 
 ## JSON 
 
-  "Mappings" : {
-    "Mapping01" : {
-      "Key01" : {
-        "Name" : "Value01"
-        },
-      "Key02" : {
-        "Name" : "Value02"
-       },
-      }
-    }  
+<img src="">
+
+## YAML
+
+<img src="">
 
 ## Conditions
 
