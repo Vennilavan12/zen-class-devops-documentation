@@ -42,6 +42,8 @@ When you use AWS CloudFormation, you work with templates and stacks. You create 
 
 + Whenever you create a stack, you also specify a template that CloudFormation uses to create whatever you described in the template.
 
+## Example Template format
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf3.png">
 
 # Stacks
@@ -141,11 +143,11 @@ You can use the optional Metadata section to include arbitrary JSON or YAML obje
 
 ### Meta keys
 
-  AWS::CloudFormation::Init
+    AWS::CloudFormation::Init
 
-  AWS::CloudFormation::Interface
+    AWS::CloudFormation::Interface
 
-  AWS::CloudFormation::Designer
+    AWS::CloudFormation::Designer
 
 ## Parameters
 
@@ -181,27 +183,27 @@ declare a parameter named InstanceTypeParameter. This parameter lets you specify
 
 To define a rule condition and assertions, use rule-specific intrinsic functions, which are functions that can only be used in the Rules section of a template. You can nest functions, but the final result of a rule condition or assertion must be either true or false.
 
-  Fn::And
+      Fn::And
 
-  Fn::Contains
+      Fn::Contains
 
-  Fn::EachMemberEquals
+      Fn::EachMemberEquals
 
-  Fn::EachMemberIn
+      Fn::EachMemberIn
 
-  Fn::Equals
+      Fn::Equals
 
-  Fn::If
+      Fn::If
 
-  Fn::Not
+      Fn::Not
 
-  Fn::Or
+      Fn::Or
 
-  Fn::RefAll
+      Fn::RefAll
 
-  Fn::ValueOf
+      Fn::ValueOf
 
-  Fn::ValueOfAll 
+      Fn::ValueOfAll 
 
 ## Mappings
 
@@ -211,11 +213,30 @@ To define a rule condition and assertions, use rule-specific intrinsic functions
 
 ## JSON 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf5.png">
+    "Mappings" : {
+      "Mapping01" : {
+        "Key01" : {
+          "Name" : "Value01"
+        },
+        "Key02" : {
+          "Name" : "Value02"
+        },
+        "Key03" : {
+          "Name" : "Value03"
+        }
+      }
+    }
 
 ## YAML
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf6.png">
+    Mappings: 
+      Mapping01: 
+        Key01: 
+          Name: Value01
+        Key02: 
+          Name: Value02
+        Key03: 
+          Name: Value03
 
 ## Conditions
 
@@ -247,6 +268,7 @@ To define a rule condition and assertions, use rule-specific intrinsic functions
     Transform:
       - MyMacro
       - 'AWS::Serverless'
+
 
 ## Resources
 
@@ -321,24 +343,46 @@ The optional Outputs section declares output values that you can import into oth
 
 step 1: Login into AWS management console and serach cloudformation service
 
-<img src="">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf7.png">
 
-step 2: 
-<img src="">
++ Click create stack and give all details select template type
 
-<img src="">
++ choose our JSON or YAML file otherwise also create template using designer
 
-<img src="">
++ Give source details is S3 url or Local file and click next
 
-<img src="">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf8.png">
 
-<img src="">
+Step 2: In this step we can give stack name and check all our configuration and click next
 
-<img src="">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf9.png">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf10.png">
 
-<img src="">
+Step 3: Specify stack details 
 
-<img src="">
++ This step attach a IAM role and leave other options by default.
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf11.png">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf12.png">
 
+Step 4: Review our configuration and click create.
 
++ All of our resources are created as a stack we can change and delete using the stack.
+  
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf13.png">
+
+## Pricing
+
++ There is no additional charge for using AWS CloudFormation with resource providers in the following namespaces: AWS::*, Alexa::*, and Custom::*. In these cases, you pay for AWS resources such as Amazon Elastic Compute Cloud (EC2) instances, Elastic Load Balancing load balancers, etc.
+
++ created using AWS CloudFormation the same as if you had created them manually.
+
++ You only pay for what you use, with no minimum fees and no required upfront commitments.
+
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf14.png">
+
+## Reference
+
++ Use this link to explore more about cloudformation 
+
+      https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html    
