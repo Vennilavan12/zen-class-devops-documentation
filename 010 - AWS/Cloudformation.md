@@ -143,8 +143,9 @@ You can use the optional Metadata section to include arbitrary JSON or YAML obje
 
   AWS::CloudFormation::Init
 
-  
+  AWS::CloudFormation::Interface
 
+  AWS::CloudFormation::Designer
 
 ## Parameters
 
@@ -172,12 +173,54 @@ declare a parameter named InstanceTypeParameter. This parameter lets you specify
 
 ## Rules
 
-The optional Rules section validates a parameter or a combination of parameters passed to a template during a stack creation or stack update. To use template rules, explicitly declare Rules in your template followed by an assertion. 
++ The optional Rules section validates a parameter or a combination of parameters passed to a template during a stack creation or stack update. To use template rules, explicitly declare Rules in your template followed by an assertion. 
 
-A rule can include a RuleCondition property and must include an Assertions property.
++ A rule can include a RuleCondition property and must include an Assertions property.
 
+### Rule specific intrinsic functions
+
+To define a rule condition and assertions, use rule-specific intrinsic functions, which are functions that can only be used in the Rules section of a template. You can nest functions, but the final result of a rule condition or assertion must be either true or false.
+
+  Fn::And
+
+  Fn::Contains
+
+  Fn::EachMemberEquals
+
+  Fn::EachMemberIn
+
+  Fn::Equals
+
+  Fn::If
+
+  Fn::Not
+
+  Fn::Or
+
+  Fn::RefAll
+
+  Fn::ValueOf
+
+  Fn::ValueOfAll 
 
 ## Mappings
+
++ The optional Mappings section matches a key to a corresponding set of named values. 
+
++ For example, if you want to set values based on a region, you can create a mapping that uses the region name as a key and contains the values you want to specify for each specific region. You use the Fn::FindInMap intrinsic function to retrieve values in a map.
+
+## JSON 
+
+  "Mappings" : {
+    "Mapping01" : {
+      "Key01" : {
+        "Name" : "Value01"
+        },
+      "Key02" : {
+        "Name" : "Value02"
+       },
+      }
+    }  
 
 ## Conditions
 
