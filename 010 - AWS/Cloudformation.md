@@ -317,9 +317,28 @@ The optional Outputs section declares output values that you can import into oth
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/designer-overview.png">
 
+## How to create Cloudformation
 
+step 1: Login into AWS management console and serach cloudformation service
 
+<img src="">
 
+step 2: 
+<img src="">
+
+<img src="">
+
+<img src="">
+
+<img src="">
+
+<img src="">
+
+<img src="">
+
+<img src="">
+
+<img src="">
 
 
 
