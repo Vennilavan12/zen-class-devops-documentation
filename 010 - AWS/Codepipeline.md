@@ -187,17 +187,57 @@ There are two ways to stop a pipeline execution:
 
       Failed 
 
-##
+## Action executions
 
++ An action execution is the process of completing a configured action that operates on designated artifacts. These can be input artifacts, output artifacts, or both.
 
+Valid statuses for actions are 
 
+    InProgress
+    
+    Abandoned
+    
+    Succeeded
+    
+    Failed
 
+### Action types
 
++ Action types are preconfigured actions that are available for selection in CodePipeline.
 
++ The action type is defined by its owner, provider, version, and category.
 
++ The action type provides customized parameters that are used to complete the action tasks in a pipeline.
 
+## Transitions
 
++ A transition is the point where a pipeline execution moves to the next stage in the pipeline.
 
++ You can disable a stage's inbound transition to prevent executions from entering that stage, and then you can enable the transition to allow executions to continue.
+
++ When more than one execution arrives at a disabled transition, only the latest execution continues to the next stage when the transition is enabled.
+
++ This means that newer executions continue to supersede waiting executions while the transition is disabled, and then after the transition is enabled, the execution that continues is the superseding execution.
+
+## Artifacts
+
++ Artifacts refers to the collection of data, such as application source code, built applications, dependencies, definitions files, templates, and so on, that is worked on by pipeline actions.
+
++ Artifacts are produced by some actions and consumed by others.
+
++ In a pipeline, artifacts can be the set of files worked on by an action (input artifacts) or the updated output of a completed action (output artifacts).
+
++ Actions pass output to another action for further processing using the pipeline artifact bucket
+
+## Source revisions
+
++ When you make a source code change, a new version is created.
+
++ A source revision is the version of a source change that triggers a pipeline execution.
+
++ An execution processes that source revision only.
+
++ For GitHub and CodeCommit repositories, this is the commit. For S3 buckets or actions, this is the object version.
 
 
 
