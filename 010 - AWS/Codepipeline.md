@@ -239,28 +239,94 @@ Valid statuses for actions are
 
 + For GitHub and CodeCommit repositories, this is the commit. For S3 buckets or actions, this is the object version.
 
+## Product and Service Integrations
+
+ AWS CodePipeline is integrated with a number of AWS services and partner products and services.
+
+      Source action integrations
+      
+      Build action integrations
+      
+      Test action integrations
+      
+      Deploy action integrations
+      
+      Approval action integration with Amazon Simple Notification Service
+      
+      Invoke action integrations
+
+## Source action integrations
+
+      Amazon ECR source actions
+      
+      Amazon S3 source actions
+      
+      Connections to Bitbucket Cloud, GitHub (version 2), GitHub Enterprise Server, and GitLab
+      
+      CodeCommit source actions
+      
+      GitHub (version 1) source actions
+
+## Build action integrations
+
+      CodeBuild build actions
+      
+      CloudBees build actions
+      
+      Jenkins build actions
+      
+      TeamCity build actions
+
+## Test action integrations
+
+      CodeBuild test actions
+    
+      AWS Device Farm test actions
+      
+      Ghost Inspector test actions
+      
+      Micro Focus StormRunner Load test actions
 
 
+## Deploy action integrations
 
+      Amazon S3 deploy actions
+    
+      AWS AppConfig deploy actions
+    
+      AWS CloudFormation deploy actions
+      
+      AWS CloudFormation StackSets deploy actions
+      
+      Amazon ECS deploy actions
+      
+      Elastic Beanstalk deploy actions
+      
+      AWS OpsWorks deploy actions
+      
+      Service Catalog deploy actions
+      
+      Amazon Alexa deploy actions
+      
+      CodeDeploy deploy actions
+      
+      XebiaLabs deploy actions
 
+## Approval action integration with Amazon Simple Notification Service
 
++ Amazon SNS is a fast, flexible, fully managed push notification service that lets you send individual messages or to fan out messages to large numbers of recipients.
 
++ Amazon SNS makes it simple and cost effective to send push notifications to mobile device users, email recipients or even send messages to other distributed services.
 
++ When you create a manual approval request in CodePipeline, you can optionally publish to a topic in Amazon SNS so that all IAM users subscribed to it are notified that the approval action is ready to be reviewed.
 
+## Invoke action integrations
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+      Lambda invoke actions
+    
+      Snyk invoke actions
+    
+      Step Functions invoke actions
 
 
 
