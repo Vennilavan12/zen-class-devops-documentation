@@ -384,9 +384,9 @@ Valid statuses for actions are
 
 ### AWS Free Tier
 
-As part of the AWS Free Tier, AWS CodePipeline offers new and existing customers one free active pipeline each month.
++ As part of the AWS Free Tier, AWS CodePipeline offers new and existing customers one free active pipeline each month.
 
-Your free usage is calculated each month across all regions and automatically applied to your bill - free usage does not accumulate.
++ Your free usage is calculated each month across all regions and automatically applied to your bill - free usage does not accumulate.
 
 ### Additional charges
 
