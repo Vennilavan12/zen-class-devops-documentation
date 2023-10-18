@@ -1,4 +1,4 @@
-# AWS CodePipeline
+# AWS Codepipeline
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/CP1.png">
 
@@ -330,26 +330,45 @@ Valid statuses for actions are
 
 ## How to create codepipeline
 
++ Sign into AWS Management console and search codepipeline service
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp4.png">
 
++ Click create pipeline
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp5.png">
 
+**Step 1:** Choose pipeline settings give name and service role for accessing resources
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp6.png">
 
+**Step 2:** Add source stage
 
++ In this stage we can give our source details(codecommit, S3, Github, etc...)
 
++ Give details of repository, branch name and artifact format
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp7.png">
 
++ The image shows Codecommit source stage
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp8.png">
 
++ The image shows S3 as a source stage
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp9.png">
 
++ The image shows Github as a source stage
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp10.png">
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp11.png">
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp12.png">
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp13.png">
 
-
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp14.png">
 
 
 
