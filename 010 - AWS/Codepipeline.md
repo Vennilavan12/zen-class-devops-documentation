@@ -16,7 +16,7 @@ AWS CodePipeline is a continuous delivery service you can use to model, visualiz
 
 ## Features
 
-1. Continuous Delivery
+**1. Continuous Delivery**
 
 + a software development methodology where the release process is automated. Every software change is automatically built, tested, and deployed to production.
 
@@ -26,7 +26,7 @@ AWS CodePipeline is a continuous delivery service you can use to model, visualiz
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp3.png">
 
-2. Continuous Integration
+**2. Continuous Integration**
 
 + a software development practice where members of a team use a version control system and frequently integrate their work to the same location, such as a main branch. 
 
@@ -362,13 +362,39 @@ Valid statuses for actions are
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp10.png">
 
+**Step 3:** Add build stage this is optional but we use for build our code using codebuild or jenkins
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp11.png">
+
+**Step 4:** Add our Deploy stage for our deployment method
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp12.png">
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp13.png">
+**Step 5:** Review and create your pipeline
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp14.png">
+## Pricing
 
++ With AWS CodePipeline, there are no upfront fees or commitments.
 
++ You pay only for what you use. AWS CodePipeline costs $1.00 per active pipeline* per month. To encourage experimentation, pipelines are free for the first 30 days after creation.
+
++ An active pipeline is a pipeline that has existed for more than 30 days and has at least one code change that runs through it during the month.
+
++ There is no charge for pipelines that have no new code changes running through them during the month. An active pipeline is not prorated for partial months.
+
+### AWS Free Tier
+
+As part of the AWS Free Tier, AWS CodePipeline offers new and existing customers one free active pipeline each month.
+
+Your free usage is calculated each month across all regions and automatically applied to your bill - free usage does not accumulate.
+
+### Additional charges
+
+You may incur additional charges for storing and accessing your pipeline artifacts in Amazon S3 and for triggering actions from other AWS and third-party services that you connect to your pipeline.
+
+## Reference
+
++ Use this link to learn more about AWS Codepipeline
+
+        https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html
 
