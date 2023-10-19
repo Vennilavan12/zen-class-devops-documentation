@@ -217,15 +217,37 @@ The behavior of your deployment depends on which compute platform you use:
 
         + Working with On-Premises Instances
 
+## CodeDeploy Agent
 
++ The AWS CodeDeploy agent is a software package that, when installed and configured on an instance, makes it possible for that instance to be used in CodeDeploy deployments.
 
++ A configuration file is placed on the instance when the agent is installed. 
 
++ This file is used to specify how the agent works.
 
++ This configuration file specifies directory paths and other settings for AWS CodeDeploy to use as it interacts with the instance.
 
++  The CodeDeploy agent communicates outbound using HTTPS over port 443.
 
+## CodeDeploy Instances
 
++ CodeDeploy supports deployments to instances running Amazon Linux, Ubuntu Server, Red Hat Enterprise Linux (RHEL), and Windows Server.
 
++ You can use CodeDeploy to deploy to both Amazon EC2 instances and on-premises instances.
 
++ An on-premises instance is any physical device that is not an Amazon EC2 instance that can run the CodeDeploy agent and connect to public AWS service endpoints.
+
++ You can use CodeDeploy to simultaneously deploy an application to Amazon EC2 instances in the cloud and to desktop PCs in your office or servers in your own data center. 
+
+## CodeDeploy Monitoring
+
++ Monitoring is an important part of maintaining the reliability, availability, and performance of CodeDeploy and your AWS solutions.
+
++ You should collect monitoring data from all of the parts of your AWS solution so that you can more easily debug a multi-point failure if one occurs.
+
+         1. Cloud watch
+
+         2. Cloud Trail 
 
 
 
