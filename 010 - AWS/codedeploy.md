@@ -296,17 +296,17 @@ The behavior of your deployment depends on which compute platform you use:
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd12.png">
 
-**Step 6** Next create deployment 
+**Step 6:** Next create deployment 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd13.png">
 
 + choose deployment group and revision type
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c14.png">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd14.png">
 
 + Give description and other options set to default and click create deployment
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c15.png">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd15.png">
 
 + All the configuration done our codedeploy is ready to use.
 
@@ -321,7 +321,8 @@ You pay for any other AWS resources (e.g. S3 buckets) you may use in conjunction
 ## Reference
 
 Use this link to learn more about codedeploy:
-                https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html
+               
+        https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html
 
 
 
