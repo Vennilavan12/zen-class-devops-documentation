@@ -52,6 +52,11 @@ CodeDeploy makes it easier for you to:
     
     7. Concurrent deployments
 
+## CodeDeploy workflow
+
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd2.png">
+
+
 ## CodeDeploy Compute Platforms
 
 CodeDeploy is able to deploy applications to three compute platforms:
@@ -252,6 +257,8 @@ The behavior of your deployment depends on which compute platform you use:
          1. Cloud watch
 
          2. Cloud Trail 
+
+## How to create CodeDeploy
 
 
 
