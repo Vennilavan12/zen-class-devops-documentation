@@ -161,24 +161,53 @@ The behavior of your deployment depends on which compute platform you use:
 
 + There are two deployment types:
 
-    1. In-place deployment  
+        1. In-place deployment  
 
-    2. Blue/green deployment
+        2. Blue/green deployment
 
+## IAM instance profile
 
++ An IAM instance profile is an IAM role that you attach to your Amazon EC2 instances.
 
++ This profile includes the permissions required to access the Amazon S3 buckets or GitHub repositories where the applications are stored.
 
+## Revision
 
++ A revision is a version of your application.
 
++ An AWS Lambda deployment revision is a YAML- or JSON-formatted file that specifies information about the Lambda function to deploy.
 
++ An EC2/On-Premises deployment revision is an archive file that contains source content (source code, webpages, executable files, and deployment scripts) and an application specification file (AppSpec file).
 
++ AWS Lambda revisions can be stored in Amazon S3 buckets. 
 
++ EC2/On-Premises revisions are stored in Amazon S3 buckets or GitHub repositories
 
+## Service role 
 
++ A service role is an IAM role that grants permissions to an AWS service so it can access AWS resources.
 
++ The policies you attach to the service role determine which AWS resources the service can access and the actions it can perform with those resources.
 
+## Target revision
 
++ A target revision is the most recent version of the application revision that you have uploaded to your repository and want to deploy to the instances in a deployment group.
 
++ In other words, the application revision currently targeted for deployment. This is also the revision that is pulled for automatic deployments.
+
+## Other components
+
+        + Choose a CodeDeploy repository type
+
+        + Deployments
+
+        + Application Specification Files
+
+        + Instance Health
+
+        + Working with the CodeDeploy agent
+
+        + Working with On-Premises Instances
 
 
 
