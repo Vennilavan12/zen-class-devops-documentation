@@ -87,33 +87,83 @@ The behavior of your deployment depends on which compute platform you use:
 
 + Traffic is shifted from your current resources to your updated resources as part of an AWS CloudFormation stack update. Currently, only ECS blue/green deployments are supported
 
+## CodeDeploy Primary Components
 
+        + Application
+        
+        + Compute platform
+        
+        + Deployment configuration
+        
+        + Deployment group
+        
+        + Deployment type
+        
+        + IAM instance profile
+        
+        + Revision
+        
+        + Service role
+        
+        + Target revision
+        
+        + Other components
 
+## Application
 
++ An application is name that uniquely identifies the application you want to deploy.
 
++ CodeDeploy uses this name, which functions as a container, to ensure the correct combination of revision, deployment configuration, and deployment group are referenced during a deployment.
 
+## Compute platform
 
++ A compute platform is a platform on which CodeDeploy deploys an application.
 
++ There are three compute platforms:
 
+      1. EC2/On-Premises
+    
+      2. AWS Lambda
+    
+      3. Amazon ECS 
 
+## Deployment configuration
 
++ A deployment configuration is set of deployment rules and deployment success and failure conditions used by CodeDeploy during a deployment. 
 
++ The following deployment configurations specify how traffic is routed during a deployment that uses the Lambda or the ECS compute platform:
 
+        1. Canary
 
++ Traffic is shifted in two increments.
 
++ You can choose from predefined canary options that specify the percentage of traffic shifted to your updated Lambda function or ECS task set in the first increment and the interval, in minutes, before the remaining traffic is shifted in the second increment.
 
+        2. Linear
 
++ Traffic is shifted in equal increments with an equal number of minutes between each increment.
 
++ You can choose from predefined linear options that specify the percentage of traffic shifted in each increment and the number of minutes between each increment.
 
+        3. All-at-once
 
++ All traffic is shifted from the original Lambda function or ECS task set to the updated function or task set all at once.
 
+## Deployment group
 
++ A deployment group is a set of individual instances.
 
++ A deployment group contains individually tagged instances, Amazon EC2 instances in Amazon EC2 Auto Scaling groups, or both.
 
+## Deployment type
 
++ A deployment type is a method used to make the latest application revision available on instances in a deployment group.
 
++ There are two deployment types:
 
+    1. In-place deployment  
 
+    2. Blue/green deployment
 
 
 
