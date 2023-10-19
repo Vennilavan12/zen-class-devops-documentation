@@ -1,6 +1,6 @@
 # AWS CodeDeploy
 
-<img src="">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd1.png">
 
 CodeDeploy is a deployment service that automates application deployments to Amazon EC2 instances, on-premises instances, serverless Lambda functions, or Amazon ECS services.
 
@@ -73,6 +73,8 @@ The application on each instance in the deployment group is stopped, the latest 
 
      2. Blue/green deployment
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd3.png">
+
 The behavior of your deployment depends on which compute platform you use:
 
       i. **Blue/green on an EC2/On-Premises compute platform**
@@ -132,6 +134,8 @@ The behavior of your deployment depends on which compute platform you use:
 + A deployment configuration is set of deployment rules and deployment success and failure conditions used by CodeDeploy during a deployment. 
 
 + The following deployment configurations specify how traffic is routed during a deployment that uses the Lambda or the ECS compute platform:
+
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd4.png">
 
         1. Canary
 
