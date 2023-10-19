@@ -135,19 +135,27 @@ The behavior of your deployment depends on which compute platform you use:
 
         1. Canary
 
-+ Traffic is shifted in two increments.
++ You update your application code in a canary deployment and point a tiny fraction of production traffic to it.
 
-+ You can choose from predefined canary options that specify the percentage of traffic shifted to your updated Lambda function or ECS task set in the first increment and the interval, in minutes, before the remaining traffic is shifted in the second increment.
++ It checks if the code is valid.
+
++ You redirect all traffic to it after ensuring that the new version is secure and free of faults.
 
         2. Linear
 
-+ Traffic is shifted in equal increments with an equal number of minutes between each increment.
++ Linear strategy is similar to Canary strategy.
 
-+ You can choose from predefined linear options that specify the percentage of traffic shifted in each increment and the number of minutes between each increment.
++ Initially, you route a good amount of traffic to your updated code version.
+
++ A certain amount of traffic is sent to the new version until it reaches 100% of production traffic.
 
         3. All-at-once
 
-+ All traffic is shifted from the original Lambda function or ECS task set to the updated function or task set all at once.
++ All-at-once deployments instantaneously switch traffic from the old to the new Lambda function.
+
++ When speed is important, all-at-once deployments can help.
+
++ Using this method, you may quickly update your code and make it available to all users.
 
 ## Deployment group
 
