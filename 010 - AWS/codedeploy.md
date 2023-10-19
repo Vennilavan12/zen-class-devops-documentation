@@ -82,15 +82,15 @@ The application on each instance in the deployment group is stopped, the latest 
 
 The behavior of your deployment depends on which compute platform you use:
 
-      i. **Blue/green on an EC2/On-Premises compute platform**
+      i. Blue/green on an EC2/On-Premises compute platform
 
 + The instances in a deployment group (the original environment) are replaced by a different set of instances (the replacement environment).
 
-      ii. **Blue/green on an AWS Lambda or Amazon ECS compute platform**
+      ii. Blue/green on an AWS Lambda or Amazon ECS compute platform
 
 + Traffic is shifted in increments according to a canary, linear, or all-at-once deployment configuration.
 
-      iii. **Blue/green deployments through AWS CloudFormation**
+      iii. Blue/green deployments through AWS CloudFormation
 
 + Traffic is shifted from your current resources to your updated resources as part of an AWS CloudFormation stack update. Currently, only ECS blue/green deployments are supported
 
