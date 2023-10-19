@@ -182,6 +182,14 @@ The behavior of your deployment depends on which compute platform you use:
 
         2. Blue/green deployment
 
+### Deployment configuration
+
++ Choose from a list of default and custom deployment configurations.
+
++ A deployment configuration is a set of rules that determines how fast an application is deployed and the success or failure conditions for a deployment.
+ 
+<img src="">
+
 ## IAM instance profile
 
 + An IAM instance profile is an IAM role that you attach to your Amazon EC2 instances.
@@ -260,28 +268,28 @@ The behavior of your deployment depends on which compute platform you use:
 
 ## How to create CodeDeploy
 
+<img src="">
+
+<img src="">
+
+<img src="">
 
 
+<img src="">
 
+<img src="">
 
+<img src="">
 
+<img src="">
 
+<img src="">
 
+<img src="">
 
+<img src="">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="">
 
 
 
