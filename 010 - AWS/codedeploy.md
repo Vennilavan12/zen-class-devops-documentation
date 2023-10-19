@@ -140,7 +140,7 @@ The behavior of your deployment depends on which compute platform you use:
 
 + The following deployment configurations specify how traffic is routed during a deployment that uses the Lambda or the ECS compute platform:
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd4.png">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd5.png">
 
         1. Canary
 
@@ -188,7 +188,7 @@ The behavior of your deployment depends on which compute platform you use:
 
 + A deployment configuration is a set of rules that determines how fast an application is deployed and the success or failure conditions for a deployment.
  
-<img src="">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/speed.png">
 
 ## IAM instance profile
 
@@ -268,28 +268,60 @@ The behavior of your deployment depends on which compute platform you use:
 
 ## How to create CodeDeploy
 
-<img src="">
+**Step 1:** Login to aws management console and search CodeDeploy service
 
-<img src="">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd6.png">
 
-<img src="">
+**Step 2:** Click create application to create or CodeDeploy 
 
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd7.png">
 
-<img src="">
+**Step 3:** Give Application name and choose compute platform and click create application
 
-<img src="">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd8.png">
 
-<img src="">
+**Step 4:** Next create a deployment group
 
-<img src="">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd9.png">
 
-<img src="">
+**Step 5:** Choose deployment groupname and service role with CodeDeploy full access permission
 
-<img src="">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd10.png">
 
-<img src="">
++ Choose deployment type and environment for our application
 
-<img src="">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd11.png">
+
++ Choose Deployment settings and loadbalancer then click create deployment group
+
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd12.png">
+
+**Step 6** Next create deployment 
+
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd13.png">
+
++ choose deployment group and revision type
+
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c14.png">
+
++ Give description and other options set to default and click create deployment
+
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c15.png">
+
++ All the configuration done our codedeploy is ready to use.
+
+## Pricing
+
+**For CodeDeploy on EC2, Lambda, ECS:** There is no additional charge for code deployments to Amazon EC2, AWS Lambda or Amazon ECS through AWS CodeDeploy.
+
+**For CodeDeploy On-Premises:** You pay $0.02 per on-premises instance update using AWS CodeDeploy. There are no minimum fees and no upfront commitments. For example, a deployment to three instances equals three instance updates. You will only be charged if CodeDeploy performs an update to an instance. You will not be charged for any instances skipped during the deployment.
+
+You pay for any other AWS resources (e.g. S3 buckets) you may use in conjunction with CodeDeploy to store and run your application. You only pay for what you use, as you use it; there are no minimum fees and no upfront commitments.
+
+## Reference
+
+Use this link to learn more about codedeploy:
+            https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html
 
 
 
