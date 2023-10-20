@@ -351,8 +351,34 @@ Optional sequence. Represents information about where CodeBuild can prepare the 
 
 <img src="">
 
-**Step 3:** 
+**Step 3:** Give project name and description
 
+<img src="">
 
++ Choose our Source (Codecommit, Github, etc..)
+
+<img src="">
+
++ choose our Environment image and servicerole with codebuild full access permission
+
+<img src="">
+
++ Give buildspec file or build commands for project build
+
+<img src="">
+
++ choose Artifact type and logging using cloudwatch and click create build project
+
+<img src="">
+
+**Step 4:**  click Create Report group
+
+<img src="">
+
++ Give details of report group name, type and export option and click create report group
+
+<img src="">
+
+## Pricing
 
 
