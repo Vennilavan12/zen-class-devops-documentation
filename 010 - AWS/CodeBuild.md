@@ -64,31 +64,139 @@
 
 + If you use AWS CodePipeline to run builds, you can get limited build information from CodePipeline.
 
+## Plan a build in Codebuild
 
+**1. Where is the source code stored?** 
 
++ CodeBuild currently supports building from the following source code repository providers.
 
++ The source code must contain a build specification (buildspec) file. 
 
+      1. CodeCommit
 
+      2. Amazon S3
 
+      3. GitHub
 
+      4. Bitbucket
 
+**2. Which build commands do you need to run and in what order?**
 
++ CodeBuild downloads the build input from the provider you specify and uploads the build output to the bucket you specify.
 
++ You use the buildspec to instruct how to turn the downloaded build input into the expected build output. 
 
+**3. Which runtimes and tools do you need to run the build?**
 
++ you building for Java, Ruby, Python, or Node.js? Does the build need Maven or Ant or a compiler for Java, Ruby, or Python? Does the build need Git, the AWS CLI, or other tools?
 
+**4. Do you need AWS resources that aren't provided automatically by CodeBuild? If so, which security policies do those resources need?**
 
++ you might need to modify the CodeBuild service role to allow CodeBuild to work with those resources.
 
+**5. Do you want CodeBuild to work with your VPC?**
 
++ you need the VPC ID, the subnet IDs, and security group IDs for your VPC configuration.
 
+## BuildSpec Syntax 
 
++ Buildspec files must be expressed in YAML format.
 
++ If a command contains a character, or a string of characters, that is not supported by YAML, you must enclose the command in quotation marks ("").
 
+      version: 0.2
 
+      run-as: Linux-user-name
 
+      env:
+        shell: shell-tag
+        variables:
+          key: "value"
+        parameter-store:
+          key: "value"
+        exported-variables:
+          - variable
+        secrets-manager:
+          key: secret-id:json-key:version-stage:version-id
+        git-credential-helper: no | yes
 
+      proxy:
+        upload-artifacts: no | yes
+        logs: no | yes
 
-
+      batch:
+        fast-fail: false | true
+        # build-list:
+        # build-matrix:
+        # build-graph:
+        
+      phases:
+        install:
+          run-as: Linux-user-name
+          on-failure: ABORT | CONTINUE
+          runtime-versions:
+            runtime: version
+          commands:
+            - command
+          finally:
+            - command
+          # steps:
+        pre_build:
+          run-as: Linux-user-name
+          on-failure: ABORT | CONTINUE
+          commands:
+            - command
+          finally:
+            - command
+        # steps:
+        build:
+          run-as: Linux-user-name
+          on-failure: ABORT | CONTINUE
+          commands:
+            - command
+          finally:
+            - command
+        # steps:
+        post_build:
+          run-as: Linux-user-name
+          on-failure: ABORT | CONTINUE
+          commands:
+            - command
+          finally:
+            - command
+          # steps:
+      reports:
+        report-group-name-or-arn:
+          files:
+            - location
+          base-directory: location
+          discard-paths: no | yes
+          file-format: report-format
+      artifacts:
+        files:
+          - location
+        name: artifact-name
+        discard-paths: no | yes
+        base-directory: location
+        exclude-paths: excluded paths
+        enable-symlinks: no | yes
+        s3-prefix: prefix
+        secondary-artifacts:
+          artifactIdentifier:
+            files:
+              - location
+            name: secondary-artifact-name
+            discard-paths: no | yes
+            base-directory: location
+          artifactIdentifier:
+            files:
+              - location
+            discard-paths: no | yes
+            base-directory: location
+      cache:
+        paths:
+          - path
+          
 
 
 
