@@ -1,6 +1,6 @@
 # AWS CodeBuild
 
-<img src="">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb1.png">
 
 + AWS CodeBuild is a fully managed build service in the cloud.
 
@@ -22,7 +22,7 @@
 
 ## CodeBuild Workflow
 
-<img src="">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb2.png">
 
 + You can use the AWS CodeBuild or AWS CodePipeline console to run CodeBuild.
 
@@ -34,11 +34,13 @@
 
 + This includes building your code. A pipeline is a workflow construct that describes how code changes go through a release process.
 
-<img src="">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb3.png">
 
 ## How CodeBuild works
 
 + As input, you must provide CodeBuild with a build project.
+
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb4.png">
 
 ### Build Project
 
@@ -345,40 +347,73 @@ Optional sequence. Represents information about where CodeBuild can prepare the 
 
 **Step 1:** Login into AWS Management console and search codebuild service
 
-<img src="">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb5.png">
 
 **Step 2:** Click Create build project
 
-<img src="">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb6.png">
 
 **Step 3:** Give project name and description
 
-<img src="">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb7.png">
 
 + Choose our Source (Codecommit, Github, etc..)
 
-<img src="">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb8.png">
 
 + choose our Environment image and servicerole with codebuild full access permission
 
-<img src="">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb10.png">
 
 + Give buildspec file or build commands for project build
 
-<img src="">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb11.png">
 
 + choose Artifact type and logging using cloudwatch and click create build project
 
-<img src="">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb12.png">
 
 **Step 4:**  click Create Report group
 
-<img src="">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb13.png">
 
 + Give details of report group name, type and export option and click create report group
 
-<img src="">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb14.png">
 
 ## Pricing
 
++ AWS CodeBuild uses simple pay-as-you-go pricing.
+  
++ There are no upfront costs or minimum fees.
+
++ You pay only for the resources you use.
+
++ You are charged for compute resources based on the duration it takes for your build to execute. The per-minute rate depends on the selected compute type.
+
+### Build duration
+
+Build Duration is calculated in minutes, from the time you submit your build until your build is terminated, rounded up to the nearest minute.
+
+
+### Free Tier
+
++ The AWS CodeBuild free tier includes 100 total build minutes per month with the general1.small or arm1.small instance types. The CodeBuild free tier does not expire automatically at the end of your 12-month AWS Free Tier term.
+
++ It is available to new and existing AWS customers.
+
+
+### Additional charges
+
++ You may incur additional charges if your builds transfer data or use other AWS services.
+
++ For example, you may incur charges from Amazon CloudWatch Logs for build log streams, Amazon S3 for build artifact storage, and AWS Key Management Service for encryption.
+
++ You may also incur additional charges if you use AWS CodeBuild with AWS CodePipeline.
+
+# Reference
+
++ use this link to learn more about Codebuild
+
+                    https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html
 
