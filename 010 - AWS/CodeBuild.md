@@ -197,7 +197,7 @@
         paths:
           - path
 
-  ### version      
+### version      
 
  + Represents the buildspec version. We recommend that you use 0.2.
 
@@ -291,19 +291,53 @@ Optional sequence. Represents information about where CodeBuild can prepare the 
 
             + cache/paths
 
+## VPC Support
 
++ AWS CodeBuild cannot access resources in a VPC.
 
++ To enable access, you must provide additional VPC-specific configuration information in your CodeBuild project configuration.
 
++ This includes the VPC ID, the VPC subnet IDs, and the VPC security group IDs.
 
++ VPC-enabled builds can then access resources inside your VPC.
 
+## Test Reporting in CodeBuild
 
++ You can create reports in CodeBuild that contain details about tests that are run during builds.
 
++ You can create tests such as unit tests, configuration tests, and functional tests.
 
++ The following test report file formats are supported:
 
+                + Cucumber JSON (.json)
 
+                + JUnit XML (.xml)
 
+                + NUnit XML (.xml)
 
+                + NUnit3 XML (.xml)
 
+                + TestNG XML (.xml)
+
+                + Visual Studio TRX (.trx)
+
++ Create your test cases with any test framework that can create report files in one of these formats (for example, Surefire JUnit plugin, TestNG, or Cucumber).
+
++ A report expires 30 days after it was created. You cannot view an expired test report. 
+
+## Logging and Monitoring in CodeBuild
+
++ Monitoring is an important part of maintaining the reliability, availability, and performance of AWS CodeBuild and your AWS solutions.
+
++ You should collect monitoring data from all of the parts of your AWS solution so that you can more easily debug a multi-point failure, if one occurs.
+
++ AWS provides the following tools for monitoring your CodeBuild resources and builds and for responding to potential incidents. 
+
+                  + CloudTrail
+
++ AWS CodeBuild is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in CodeBuild.
+
++ CloudTrail captures all API calls for CodeBuild as events, including calls from the CodeBuild console and from code calls to the CodeBuild APIs.
 
 
 
