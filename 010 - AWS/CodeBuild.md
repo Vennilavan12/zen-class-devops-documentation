@@ -196,7 +196,108 @@
       cache:
         paths:
           - path
-          
+
+  ### version      
+
+ + Represents the buildspec version. We recommend that you use 0.2.
+
+### run-as
+
++ Optional sequence. Available to Linux users only.
+
++ Specifies a Linux user that runs commands in this buildspec file.
+
++ run-as grants the specified user read and run permissions.
+
++ When you specify run-as at the top of the buildspec file, it applies globally to all commands.
+
+### env
+
+Optional sequence. Represents information for one or more custom environment variables.
+
+            + env/shell
+
+            + env/variables
+
+            + env/parameter-store
+
+            + env/secrets-manager
+
+            + env/exported-variables
+
+            + env/git-credential-helper
+
+### proxy
+
+Optional sequence. Used to represent settings if you run your build in an explicit proxy server.
+
+           + proxy/upload-artifacts
+
+           + proxy/logs
+ 
+### phases
+
+Required sequence. Represents the commands CodeBuild runs during each phase of the build. 
+
+            + phases/*/run-as
+
+            + phases/*/on-failure
+
+            + phases/*/finally
+
+            + phases/install
+
+            + phases/pre_build
+
+            + phases/build
+
+            + phases/post_build
+
+### reports
+
++ Optional sequence. Specifies the report group that the reports are sent to.
+
++ A project can have a maximum of five report groups.
+
++ Specify the ARN of an existing report group, or the name of a new report group.
+
++ If you specify a name, CodeBuild creates a report group using your project name and the name you specify in the format **<project-name>-<report-group-name>**.
+
+### artifacts
+
++ Optional sequence. Represents information about where CodeBuild can find the build output and how CodeBuild prepares it for uploading to the S3 output bucket. 
+
+            + artifacts/files
+
+            + artifacts/name
+
+            + artifacts/discard-paths
+
+            + artifacts/base-directory
+
+            + artifacts/exclude-paths
+
+            + artifacts/enable-symlinks
+
+            + artifacts/enable-symlinks
+
+            + artifacts/s3-prefix
+
+            + artifacts/secondary-artifacts
+
+### cache
+
+Optional sequence. Represents information about where CodeBuild can prepare the files for uploading cache to an S3 cache bucket. This sequence is not required if the cache type of the project is No Cache.
+
+            + cache/paths
+
+
+
+
+
+
+
+
 
 
 
