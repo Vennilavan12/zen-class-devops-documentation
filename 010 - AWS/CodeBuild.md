@@ -341,9 +341,17 @@ Optional sequence. Represents information about where CodeBuild can prepare the 
 
 + CloudTrail captures all API calls for CodeBuild as events, including calls from the CodeBuild console and from code calls to the CodeBuild APIs.
 
+## How Create CodeBuild
 
+**Step 1:** Login into AWS Management console and search codebuild service
 
+<img src="">
 
+**Step 2:** Click Create build project
+
+<img src="">
+
+**Step 3:** 
 
 
 
