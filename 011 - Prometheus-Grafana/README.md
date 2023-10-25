@@ -50,12 +50,17 @@ Extract the downloaded archive
 tar -xf node_exporter-0.15.2.linux-amd64.tar.gz
 Move the node_exporter binary to /usr/local/bin:
 
+
 sudo mv node_exporter-0.15.2.linux-amd64/node_exporter /usr/local/bin
 Remove the residual files with:
 
 rm -r node_exporter-0.15.2.linux-amd64*
 
 ```
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/011%20-%20Prometheus-Grafana/img/pg1.png">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/011%20-%20Prometheus-Grafana/img/pg2.png">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/011%20-%20Prometheus-Grafana/img/pg3.png">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/011%20-%20Prometheus-Grafana/img/pg4.png">
 
 ### Create users and service files for node_exporter.
 
