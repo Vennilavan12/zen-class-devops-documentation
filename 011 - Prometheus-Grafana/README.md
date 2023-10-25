@@ -178,6 +178,7 @@ ExecStart=/usr/local/bin/prometheus \
 WantedBy=multi-user.target
 ```
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/011%20-%20Prometheus-Grafana/img/pg10.png">
+
 Finally, we will reload systemd:
 ```
 sudo systemctl daemon-reload
