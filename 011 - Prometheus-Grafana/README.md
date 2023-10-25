@@ -67,6 +67,7 @@ For security reasons, it is always recommended to run any services/daemons in se
 sudo useradd -rs /bin/false node_exporter
 ```
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/011%20-%20Prometheus-Grafana/img/pg3.png">
+
 ### Create a systemd unit file so that node_exporter can be started at boot. 
 ```
 sudo nano /etc/systemd/system/node_exporter.service
@@ -100,11 +101,13 @@ The next step is to download and install Prometheus only on the Prometheus Serve
 ```
 wget https://github.com/prometheus/prometheus/releases/download/v2.1.0/prometheus-2.1.0.linux-amd64.tar.gz
 ```
-
 ### Extract the Prometheus archive :
 ```
 tar -xf prometheus-2.1.0.linux-amd64.tar.gz
 ```
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/011%20-%20Prometheus-Grafana/img/pg6.png">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/011%20-%20Prometheus-Grafana/img/pg7.png">
+
 ### Move the binaries to /usr/local/bin:
 ```
 sudo mv prometheus-2.1.0.linux-amd64/prometheus prometheus-2.1.0.linux-amd64/promtool /usr/local/bin
@@ -129,6 +132,9 @@ Go to /etc/hosts and add the following lines, replace x.x.x.x with the machineâ€
 
 x.x.x.x prometheus-target-1
 x.x.x.x prometheus-target-2
+
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/011%20-%20Prometheus-Grafana/img/pg8.png">
+
 We will use /etc/prometheus/prometheus.yml as our configuration file
 ```
 global:
@@ -145,7 +151,7 @@ scrape_configs:
       - targets: ['localhost:9100','prometheus-target-1:9100','prometheus-target-2:9100']
 ```
 
-
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/011%20-%20Prometheus-Grafana/img/pg9.png">
 
 Finally, we will also change the ownership of files that Prometheus will use:
 ```
@@ -171,6 +177,7 @@ ExecStart=/usr/local/bin/prometheus \
 [Install]
 WantedBy=multi-user.target
 ```
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/011%20-%20Prometheus-Grafana/img/pg10.png">
 Finally, we will reload systemd:
 ```
 sudo systemctl daemon-reload
