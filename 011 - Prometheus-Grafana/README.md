@@ -59,8 +59,6 @@ rm -r node_exporter-0.15.2.linux-amd64*
 ```
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/011%20-%20Prometheus-Grafana/img/pg1.png">
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/011%20-%20Prometheus-Grafana/img/pg2.png">
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/011%20-%20Prometheus-Grafana/img/pg3.png">
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/011%20-%20Prometheus-Grafana/img/pg4.png">
 
 ### Create users and service files for node_exporter.
 
@@ -68,7 +66,7 @@ For security reasons, it is always recommended to run any services/daemons in se
 ```
 sudo useradd -rs /bin/false node_exporter
 ```
-
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/011%20-%20Prometheus-Grafana/img/pg3.png">
 ### Create a systemd unit file so that node_exporter can be started at boot. 
 ```
 sudo nano /etc/systemd/system/node_exporter.service
@@ -87,12 +85,15 @@ ExecStart=/usr/local/bin/node_exporter
 [Install]
 WantedBy=multi-user.target
 ```
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/011%20-%20Prometheus-Grafana/img/pg4.png">
+
 Since we have created a new unit file, we must reload the systemd daemon, set the service to always run at boot and start it :
 ```
 sudo systemctl daemon-reload
 sudo systemctl enable node_exporter
 sudo systemctl start node_exporter
 ```
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/011%20-%20Prometheus-Grafana/img/pg5.png">
 
 ### Installing Prometheus
 The next step is to download and install Prometheus only on the Prometheus Server.
