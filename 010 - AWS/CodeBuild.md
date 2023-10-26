@@ -34,13 +34,17 @@
 
 + This includes building your code. A pipeline is a workflow construct that describes how code changes go through a release process.
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb3.png">
+
 
 ## How CodeBuild works
 
 + As input, you must provide CodeBuild with a build project.
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb4.png">
+
 
 ### Build Project
 
@@ -74,13 +78,13 @@
 
 + The source code must contain a build specification (buildspec) file. 
 
-      1. CodeCommit
+1. CodeCommit
 
-      2. Amazon S3
+2. Amazon S3
 
-      3. GitHub
+3. GitHub
 
-      4. Bitbucket
+4. Bitbucket
 
 **2. Which build commands do you need to run and in what order?**
 
@@ -217,43 +221,43 @@
 
 Optional sequence. Represents information for one or more custom environment variables.
 
-            + env/shell
++ env/shell
 
-            + env/variables
++ env/variables
 
-            + env/parameter-store
++ env/parameter-store
 
-            + env/secrets-manager
++ env/secrets-manager
 
-            + env/exported-variables
++ env/exported-variables
 
-            + env/git-credential-helper
++ env/git-credential-helper
 
 ### proxy
 
 Optional sequence. Used to represent settings if you run your build in an explicit proxy server.
 
-           + proxy/upload-artifacts
++ proxy/upload-artifacts
 
-           + proxy/logs
++ proxy/logs
  
 ### phases
 
 Required sequence. Represents the commands CodeBuild runs during each phase of the build. 
 
-            + phases/*/run-as
++ phases/*/run-as
 
-            + phases/*/on-failure
++ phases/*/on-failure
 
-            + phases/*/finally
++ phases/*/finally
 
-            + phases/install
++ phases/install
 
-            + phases/pre_build
++ phases/pre_build
 
-            + phases/build
++ phases/build
 
-            + phases/post_build
++ phases/post_build
 
 ### reports
 
@@ -269,29 +273,29 @@ Required sequence. Represents the commands CodeBuild runs during each phase of t
 
 + Optional sequence. Represents information about where CodeBuild can find the build output and how CodeBuild prepares it for uploading to the S3 output bucket. 
 
-            + artifacts/files
++ artifacts/files
 
-            + artifacts/name
++ artifacts/name
 
-            + artifacts/discard-paths
++ artifacts/discard-paths
 
-            + artifacts/base-directory
++ artifacts/base-directory
 
-            + artifacts/exclude-paths
++ artifacts/exclude-paths
 
-            + artifacts/enable-symlinks
++ artifacts/enable-symlinks
 
-            + artifacts/enable-symlinks
++ artifacts/enable-symlinks
 
-            + artifacts/s3-prefix
++ artifacts/s3-prefix
 
-            + artifacts/secondary-artifacts
++ artifacts/secondary-artifacts
 
 ### cache
 
 Optional sequence. Represents information about where CodeBuild can prepare the files for uploading cache to an S3 cache bucket. This sequence is not required if the cache type of the project is No Cache.
 
-            + cache/paths
++ cache/paths
 
 ## VPC Support
 
@@ -311,17 +315,17 @@ Optional sequence. Represents information about where CodeBuild can prepare the 
 
 + The following test report file formats are supported:
 
-                + Cucumber JSON (.json)
++ Cucumber JSON (.json)
 
-                + JUnit XML (.xml)
++ JUnit XML (.xml)
 
-                + NUnit XML (.xml)
++ NUnit XML (.xml)
 
-                + NUnit3 XML (.xml)
++ NUnit3 XML (.xml)
 
-                + TestNG XML (.xml)
++ TestNG XML (.xml)
 
-                + Visual Studio TRX (.trx)
++ Visual Studio TRX (.trx)
 
 + Create your test cases with any test framework that can create report files in one of these formats (for example, Surefire JUnit plugin, TestNG, or Cucumber).
 
@@ -335,9 +339,9 @@ Optional sequence. Represents information about where CodeBuild can prepare the 
 
 + AWS provides the following tools for monitoring your CodeBuild resources and builds and for responding to potential incidents. 
 
-                  + CloudTrail
++ CloudTrail
 
-                  + CloudWatch
++ CloudWatch
 
 + AWS CodeBuild is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in CodeBuild.
 
@@ -345,41 +349,59 @@ Optional sequence. Represents information about where CodeBuild can prepare the 
 
 ## How Create CodeBuild
 
-**Step 1:** Login into AWS Management console and search codebuild service
+**Step 1: Login into AWS Management console and search codebuild service.**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb5.png">
 
-**Step 2:** Click Create build project
+
+**Step 2: Click Create build project**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb6.png">
 
-**Step 3:** Give project name and description
+
+**Step 3: Give project name and description**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb7.png">
 
-+ Choose our Source (Codecommit, Github, etc..)
+
+**+ Choose our Source (Codecommit, Github, etc..)**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb8.png">
 
-+ choose our Environment image and servicerole with codebuild full access permission
+
+**+ choose our Environment image and servicerole with codebuild full access permission**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb10.png">
 
-+ Give buildspec file or build commands for project build
+
+**+ Give buildspec file or build commands for project build**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb11.png">
 
-+ choose Artifact type and logging using cloudwatch and click create build project
+
+**+ choose Artifact type and logging using cloudwatch and click create build project**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb12.png">
 
-**Step 4:**  click Create Report group
+
+**Step 4: click Create Report group**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb13.png">
 
-+ Give details of report group name, type and export option and click create report group
+
+**+ Give details of report group name, type and export option and click create report group**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb14.png">
+
 
 ## Pricing
 
