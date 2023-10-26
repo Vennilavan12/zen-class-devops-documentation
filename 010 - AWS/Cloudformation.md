@@ -143,11 +143,11 @@ You can use the optional Metadata section to include arbitrary JSON or YAML obje
 
 ### Meta keys
 
-    AWS::CloudFormation::Init
+AWS::CloudFormation::Init
 
-    AWS::CloudFormation::Interface
+AWS::CloudFormation::Interface
 
-    AWS::CloudFormation::Designer
+AWS::CloudFormation::Designer
 
 ## Parameters
 
@@ -183,27 +183,27 @@ declare a parameter named InstanceTypeParameter. This parameter lets you specify
 
 To define a rule condition and assertions, use rule-specific intrinsic functions, which are functions that can only be used in the Rules section of a template. You can nest functions, but the final result of a rule condition or assertion must be either true or false.
 
-      Fn::And
+Fn::And
 
-      Fn::Contains
+Fn::Contains
 
-      Fn::EachMemberEquals
+Fn::EachMemberEquals
 
-      Fn::EachMemberIn
+Fn::EachMemberIn
 
-      Fn::Equals
+Fn::Equals
 
-      Fn::If
+Fn::If
 
-      Fn::Not
+Fn::Not
 
-      Fn::Or
+Fn::Or
 
-      Fn::RefAll
+Fn::RefAll
 
-      Fn::ValueOf
+Fn::ValueOf
 
-      Fn::ValueOfAll 
+Fn::ValueOfAll 
 
 ## Mappings
 
@@ -341,33 +341,34 @@ The optional Outputs section declares output values that you can import into oth
 
 ## How to create Cloudformation
 
-step 1: Login into AWS management console and serach cloudformation service
+### step 1: Login into AWS management console and serach cloudformation service
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf7.png">
 
-+ Click create stack and give all details select template type
+### + Click create stack and give all details select template type
 
-+ choose our JSON or YAML file otherwise also create template using designer
+### + choose our JSON or YAML file otherwise also create template using designer
 
-+ Give source details is S3 url or Local file and click next
+### + Give source details is S3 url or Local file and click next
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf8.png">
 
-Step 2: In this step we can give stack name and check all our configuration and click next
+### Step 2: In this step we can give stack name and check all our configuration and click next
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf9.png">
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf10.png">
 
-Step 3: Specify stack details 
+### Step 3: Specify stack details 
 
-+ This step attach a IAM role and leave other options by default.
+### + This step attach a IAM role and leave other options by default.
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf11.png">
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf12.png">
 
-Step 4: Review our configuration and click create.
+### Step 4: Review our configuration and click create.
 
-+ All of our resources are created as a stack we can change and delete using the stack.
+### + All of our resources are created as a stack we can change and delete using the stack.
   
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf13.png">
 
