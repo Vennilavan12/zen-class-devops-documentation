@@ -130,25 +130,25 @@ In CodeCommit, you can:
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc5.png">
 
 
-**+ Give repository name and click create** 
+**Give repository name and click create** 
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc6.png">
 
 
-**+ Once the repository created we use any one of the methods to store the repo locally.**
+**Once the repository created we use any one of the methods to store the repo locally.**
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc7.png">
 
 
-**+ You can also create files using CodecommitUI.**
+**You can also create files using CodecommitUI.**
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc8.png">
 
 
-**+ Delete our repository using click delete repo option**
+**Delete our repository using click delete repo option**
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc9.png">
@@ -156,19 +156,19 @@ In CodeCommit, you can:
 
 ## How to Create Credential for Codecommit
 
-**+ Open IAM service go to users** 
+**Open IAM service go to users** 
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc11.png">
 
 
-**+ Inside user scrool down to reach security Credentials tab**
+**Inside user scrool down to reach security Credentials tab**
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc12.png">
 
 
-**+ Click Generate credentials to create HTTPS Keys in a excel format also upload our SSH keys for ssh authentication**
+**Click Generate credentials to create HTTPS Keys in a excel format also upload our SSH keys for ssh authentication**
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc13.png">
