@@ -22,6 +22,7 @@ Elastic Beanstalk, you can quickly deploy and manage applications in the AWS Clo
   
 +  Elastic Beanstalk automatically launches an environment and creates and configures the AWS resources needed to run your code. After your environment is launched, you can then manage your environment and deploy new application versions.
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/Bs2.png">
 
 
@@ -91,7 +92,9 @@ AWS Elastic Beanstalk enables you to manage all of the resources that run your a
 
 + AWS resources created for an environment include one elastic load balancer (ELB in the diagram), an Auto Scaling group, and one or more Amazon Elastic Compute Cloud (Amazon EC2) instances.
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/aeb-architecture2.png">
+
 
 + The load balancer sits in front of the Amazon EC2 instances, which are part of an Auto Scaling group. 
 
@@ -119,19 +122,19 @@ a software component called the host manager (HM) runs on each Amazon EC2 instan
 
 The host manager is responsible for the following:
 
-    1. Deploying the application
+1. Deploying the application
 
-    2. Aggregating events and metrics for retrieval via the console, the API, or the command line
+2. Aggregating events and metrics for retrieval via the console, the API, or the command line
 
-    3. Generating instance-level events
+3. Generating instance-level events
 
-    4. Monitoring the application log files for critical errors
+4. Monitoring the application log files for critical errors
 
-    5. Monitoring the application server
+5. Monitoring the application server
 
-    6. Patching instance components
+6. Patching instance components
 
-    7. Rotating your application's log files and publishing them to Amazon S3
+7. Rotating your application's log files and publishing them to Amazon S3
 
 ## Presets
 
@@ -169,8 +172,6 @@ The host manager is responsible for the following:
   
 + It provides a generic web services API that you can access using any programming language that the AWS SDK supports.
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/sqsbean.jpg">
-
 # Design Consideration
 
 Because applications deployed using AWS Elastic Beanstalk run on AWS Cloud resources, you should keep several configuration factors in mind to optimize your applications: 
@@ -197,7 +198,7 @@ When you create an environment, AWS Elastic Beanstalk prompts you to provide the
 
 **Servicerole**
       
-Elastic Beanstalk assumes a service role to use other AWS services on your behalf.
++ Elastic Beanstalk assumes a service role to use other AWS services on your behalf.
 
 Example : example, Elastic Beanstalk uses a service role when it calls Amazon Elastic Compute Cloud (Amazon EC2), Elastic Load Balancing, and Amazon EC2 Auto Scaling APIs to gather information. The service role that Elastic Beanstalk uses is the one that you specified when you create the Elastic Beanstalk environment.
 
@@ -245,99 +246,134 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 ## How to create Elastic Beanstalk
 
-**Step 1:** Logon to the AWS management console
 
-**Step 2:** Click on the Elastic Beanstalk service under the services dropdown
+**Step 1: Logon to the AWS management console**
+
+
+**Step 2: Click on the Elastic Beanstalk service under the services dropdown**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/bs4.png">
 
-**Step 3:** Click on Get Started on the opening page and then create a Web Application by providing the required details.
+
+**Step 3: Click on Get Started on the opening page and then create a Web Application by providing the required details.**
+
 
 ### Configure Environment
 
-+ In Environment tier we can choose beanstalk environment and give name for your application
+**In Environment tier we can choose beanstalk environment and give name for your application**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/Createbean.png">
 
-Key details you provide here:
 
-    + Environment name
+**Key details you provide here:**
 
-    + Domain – A subdomain for accessing your web application.
++ Environment name
+
++ Domain – A subdomain for accessing your web application.
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/create1.png">
 
-+ Choose platform type and choose platform, branch and version  (example: python, docker, go, etc...)
+
+**Choose platform type and choose platform, branch and version  (example: python, docker, go, etc...)**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c2.png">
 
-+ In Application code choose upload your code.
 
-+ we can choose local code Zip file or provide s3 URL.  
+**In Application code choose upload your code. we can choose local code Zip file or provide s3 URL.**  
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c3a.png">
 
-+ Select a preset configuration that matches your use case. Each preset includes recommend values for several configuration options.
+
+**Select a preset configuration that matches your use case. Each preset includes recommend values for several configuration options.**
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c4.png">
 
+
 ### Configure service access
 
-**Step 4:** In this step we need to provide service role, key pair, instance profile details and click next 
+
+**Step 4: In this step we need to provide service role, key pair, instance profile details and click next** 
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c5.png">
 
+
 ### Set up networking, database, and tags 
 
-**Step 5:** This steps are optional when we create application. values for this fields are  assigned automatically.
 
-+ Select our VPC
+**Step 5:This steps are optional when we create application. values for this fields are  assigned automatically.**
+
+**Select our VPC**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c6.png">
 
-+ Add public IP and Instance subnetes
+
+**Add public IP and Instance subnetes**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c7.png">
 
-+ when we need to integrate our database to our application provide all information. 
+
+**when we need to integrate our database to our application provide all information.** 
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c8.png">
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c9.png">
 
-+ Use tags to group and filter resources.
+
+**Use tags to group and filter resources.**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c10.png">
 
+
 ### Configure instance traffic and scaling
 
-**Step 6:** This steps are optional when we create application. values for this fields are  assigned automatically.
+
+**Step 6: This steps are optional when we create application. values for this fields are  assigned automatically.**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c11.png">
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c12.png">
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c13.png">
 
 
 ### Configure updates, monitoring, and logging
 
-**Step 7:** This steps are optional when we create application. Values for this fields are  assigned automatically.
+
+**Step 7: This steps are optional when we create application. Values for this fields are  assigned automatically.**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c14.png">
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c15.png">
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c16.png">
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c17.png">
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c18.png">
 
+
 ### Review
 
-**Step 8:** Review our Configuration and Submit to create our application using beanstalk
+**Step 8: Review our Configuration and Submit to create our application using beanstalk**
 
 ## Pricing
 
