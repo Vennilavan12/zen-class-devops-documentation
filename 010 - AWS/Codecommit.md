@@ -116,45 +116,63 @@ In CodeCommit, you can:
 
 ## How to create Codecommit
 
-**Step 1:** Login into AWS management console
+**Step 1: Login into AWS management console**
 
-**Step 2:** In AWS management console search for codecommit service
+**Step 2: In AWS management console search for codecommit service**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc3.png">
 
-**Step 3:** Click create repository
+
+**Step 3: Click create repository**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc5.png">
 
-+ Give repository name and click create 
+
+**+ Give repository name and click create** 
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc6.png">
 
-+ Once the repository created we use any one of the methods to store the repo locally.
+
+**+ Once the repository created we use any one of the methods to store the repo locally.**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc7.png">
 
-+ You can also create files using CodecommitUI.
+
+**+ You can also create files using CodecommitUI.**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc8.png">
 
-+ Delete our repository using click delete repo option
+
+**+ Delete our repository using click delete repo option**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc9.png">
 
+
 ## How to Create Credential for Codecommit
 
-+ Open IAM service go to users 
+**+ Open IAM service go to users** 
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc11.png">
 
-+ Inside user scrool down to reach security Credentials tab
+
+**+ Inside user scrool down to reach security Credentials tab**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc12.png">
 
-+ Click Generate credentials to create HTTPS Keys in a excel format also upload our SSH keys for ssh authentication
+
+**+ Click Generate credentials to create HTTPS Keys in a excel format also upload our SSH keys for ssh authentication**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc13.png">
+
 
 ## Security in AWS Codecommit
 
@@ -168,7 +186,9 @@ In CodeCommit, you can:
 
 ## Pricing
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc10.png">
+
 
 # Git Commands
 
@@ -235,7 +255,7 @@ In CodeCommit, you can:
 ## Reference
 
 If you want Know more about Codecommit use this reference link
-+  https://docs.aws.amazon.com/codecommit/latest/userguide/welcome.html
+          +  https://docs.aws.amazon.com/codecommit/latest/userguide/welcome.html
 
 
 
