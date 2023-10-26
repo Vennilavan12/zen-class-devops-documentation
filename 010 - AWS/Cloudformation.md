@@ -265,9 +265,9 @@ To define a rule condition and assertions, use rule-specific intrinsic functions
 
 + When you create a change set, AWS CloudFormation generates a change set that includes the processed template content. You can then review the changes and execute the change set.
 
-    Transform:
-      - MyMacro
-      - 'AWS::Serverless'
+      Transform:
+        - MyMacro
+        - 'AWS::Serverless'
 
 
 ## Resources
