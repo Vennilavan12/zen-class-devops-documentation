@@ -183,27 +183,27 @@ declare a parameter named InstanceTypeParameter. This parameter lets you specify
 
 To define a rule condition and assertions, use rule-specific intrinsic functions, which are functions that can only be used in the Rules section of a template. You can nest functions, but the final result of a rule condition or assertion must be either true or false.
 
-Fn::And
++ Fn::And
 
-Fn::Contains
++ Fn::Contains
 
-Fn::EachMemberEquals
++ Fn::EachMemberEquals
 
-Fn::EachMemberIn
++ Fn::EachMemberIn
 
-Fn::Equals
++ Fn::Equals
 
-Fn::If
++ Fn::If
 
-Fn::Not
++ Fn::Not
 
-Fn::Or
++ Fn::Or
 
-Fn::RefAll
++ Fn::RefAll
 
-Fn::ValueOf
++ Fn::ValueOf
 
-Fn::ValueOfAll 
++ Fn::ValueOfAll 
 
 ## Mappings
 
