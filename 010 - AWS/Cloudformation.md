@@ -143,11 +143,11 @@ You can use the optional Metadata section to include arbitrary JSON or YAML obje
 
 ### Meta keys
 
-AWS::CloudFormation::Init
++ AWS::CloudFormation::Init
 
-AWS::CloudFormation::Interface
++ AWS::CloudFormation::Interface
 
-AWS::CloudFormation::Designer
++ AWS::CloudFormation::Designer
 
 ## Parameters
 
