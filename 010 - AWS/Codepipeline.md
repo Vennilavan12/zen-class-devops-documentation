@@ -24,7 +24,9 @@ AWS CodePipeline is a continuous delivery service you can use to model, visualiz
 
 + Although every successful software change can be immediately released to production with continuous delivery, not all changes need to be released right away.
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp3.png">
+
 
 **2. Continuous Integration**
 
@@ -34,7 +36,9 @@ AWS CodePipeline is a continuous delivery service you can use to model, visualiz
   
 + Continuous integration is focused on automatically building and testing code, as compared to continuous delivery, which automates the entire software release process up to production.
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp2.png">
+
 
 ## Workflow of Codepipeline
 
@@ -52,29 +56,29 @@ Modeling and configuring your automated release process is easier if you underst
 
 ### Pipeline Terms
 
-        Pipelines
+Pipelines
 
-            + Stages
+  * Stages
 
-            + Actions
+  * Actions
 
-        Pipeline executions
+Pipeline executions
 
-            + Stopped executions
+   * Stopped executions
 
-            + Failed executions
+   * Failed executions
 
-            + Superseded executions
+   * Superseded executions
 
-        Stage executions
+   * Stage executions
 
-        Action executions
+   * Action executions
 
-        Transitions
+Transitions
 
-        Artifacts
+Artifacts
 
-        Source revisions
+Source revisions
 
 ## Pipelines
 
@@ -100,17 +104,17 @@ A pipeline is a workflow construct that describes how software changes go throug
 
 + Valid CodePipeline action types are
 
-        source
+1. source
 
-        build
+2. build
 
-        test
+3. test
 
-        deploy
+4. deploy
 
-        approval
+5. approval
 
-        invoke
+6. invoke
 
 ## Pipeline executions
 
@@ -128,17 +132,17 @@ A pipeline is a workflow construct that describes how software changes go throug
 
 + Valid statuses for pipelines are 
 
-     InProgress
+1. InProgress
 
-      Stopping
+2. Stopping
 
-      Stopped
+3. Stopped
 
-      Succeeded
+4. Succeeded
 
-      Superseded
+5. Superseded
 
-      Failed
+6. Failed
 
 ### Stopped executions
 
@@ -148,9 +152,9 @@ A pipeline is a workflow construct that describes how software changes go throug
 
 There are two ways to stop a pipeline execution:
 
-      + Stop and wait
+1. Stop and wait
 
-      + Stop and abandon
+2. Stop and abandon
 
 ### Failed executions
 
@@ -177,15 +181,15 @@ There are two ways to stop a pipeline execution:
 
   Valid statuses for stages are
 
-      InProgress
+1. InProgress
 
-      Stopping
+2. Stopping
 
-      Stopped
+3. Stopped
 
-      Succeeded
+4. Succeeded
 
-      Failed 
+5. Failed 
 
 ## Action executions
 
@@ -193,13 +197,13 @@ There are two ways to stop a pipeline execution:
 
 Valid statuses for actions are 
 
-    InProgress
+1. InProgress
     
-    Abandoned
+2. Abandoned
     
-    Succeeded
+3. Succeeded
     
-    Failed
+4. Failed
 
 ### Action types
 
@@ -243,74 +247,74 @@ Valid statuses for actions are
 
  AWS CodePipeline is integrated with a number of AWS services and partner products and services.
 
-      Source action integrations
++ Source action integrations
       
-      Build action integrations
++ Build action integrations
       
-      Test action integrations
++ Test action integrations
       
-      Deploy action integrations
++ Deploy action integrations
       
-      Approval action integration with Amazon Simple Notification Service
++ Approval action integration with Amazon Simple Notification Service
       
-      Invoke action integrations
++ Invoke action integrations
 
 ## Source action integrations
 
-      Amazon ECR source actions
++ Amazon ECR source actions
       
-      Amazon S3 source actions
++ Amazon S3 source actions
       
-      Connections to Bitbucket Cloud, GitHub (version 2), GitHub Enterprise Server, and GitLab
++ Connections to Bitbucket Cloud, GitHub (version 2), GitHub Enterprise Server, and GitLab
       
-      CodeCommit source actions
++ CodeCommit source actions
       
-      GitHub (version 1) source actions
++ GitHub (version 1) source actions
 
 ## Build action integrations
 
-      CodeBuild build actions
++ CodeBuild build actions
       
-      CloudBees build actions
++ CloudBees build actions
       
-      Jenkins build actions
++ Jenkins build actions
       
-      TeamCity build actions
++ TeamCity build actions
 
 ## Test action integrations
 
-      CodeBuild test actions
++ CodeBuild test actions
     
-      AWS Device Farm test actions
++ AWS Device Farm test actions
       
-      Ghost Inspector test actions
++ Ghost Inspector test actions
       
-      Micro Focus StormRunner Load test actions
++ Micro Focus StormRunner Load test actions
 
 
 ## Deploy action integrations
 
-      Amazon S3 deploy actions
++ Amazon S3 deploy actions
     
-      AWS AppConfig deploy actions
++ AWS AppConfig deploy actions
     
-      AWS CloudFormation deploy actions
++ AWS CloudFormation deploy actions
       
-      AWS CloudFormation StackSets deploy actions
++ AWS CloudFormation StackSets deploy actions
       
-      Amazon ECS deploy actions
++ Amazon ECS deploy actions
       
-      Elastic Beanstalk deploy actions
++ Elastic Beanstalk deploy actions
       
-      AWS OpsWorks deploy actions
++ AWS OpsWorks deploy actions
       
-      Service Catalog deploy actions
++ Service Catalog deploy actions
       
-      Amazon Alexa deploy actions
++ Amazon Alexa deploy actions
       
-      CodeDeploy deploy actions
++ CodeDeploy deploy actions
       
-      XebiaLabs deploy actions
++ XebiaLabs deploy actions
 
 ## Approval action integration with Amazon Simple Notification Service
 
@@ -322,55 +326,74 @@ Valid statuses for actions are
 
 ## Invoke action integrations
 
-      Lambda invoke actions
++ Lambda invoke actions
     
-      Snyk invoke actions
++ Snyk invoke actions
     
-      Step Functions invoke actions
++ Step Functions invoke actions
 
 ## How to create codepipeline
 
-+ Sign into AWS Management console and search codepipeline service
+**Sign into AWS Management console and search codepipeline service**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp4.png">
 
-+ Click create pipeline
+
+**Click create pipeline**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp5.png">
 
-**Step 1:** Choose pipeline settings give name and service role for accessing resources
+
+**Step 1: Choose pipeline settings give name and service role for accessing resources**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp6.png">
 
-**Step 2:** Add source stage
 
-+ In this stage we can give our source details(codecommit, S3, Github, etc...)
+**Step 2: Add source stage**
 
-+ Give details of repository, branch name and artifact format
+**In this stage we can give our source details(codecommit, S3, Github, etc...)**
+
+
+**Give details of repository, branch name and artifact format**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp7.png">
 
-+ The image shows Codecommit source stage
+
+**The image shows Codecommit source stage**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp8.png">
 
-+ The image shows S3 as a source stage
+
+**The image shows S3 as a source stage**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp9.png">
 
-+ The image shows Github as a source stage
+
+**The image shows Github as a source stage**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp10.png">
 
-**Step 3:** Add build stage this is optional but we use for build our code using codebuild or jenkins
+
+**Step 3:Add build stage this is optional but we use for build our code using codebuild or jenkins**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp11.png">
 
-**Step 4:** Add our Deploy stage for our deployment method
+
+**Step 4: Add our Deploy stage for our deployment method**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp12.png">
 
-**Step 5:** Review and create your pipeline
+
+**Step 5: Review and create your pipeline**
 
 ## Pricing
 
