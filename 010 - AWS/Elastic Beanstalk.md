@@ -261,13 +261,13 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 ### Configure Environment
 
-**1. In Environment tier we can choose beanstalk environment and give name for your application**
++ **In Environment tier we can choose beanstalk environment and give name for your application**
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/Createbean.png">
 
 
-**2. Key details you provide here:**
++ **Key details you provide here:**
 
 + Environment name
 
@@ -277,19 +277,19 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/create1.png">
 
 
-**3. Choose platform type and choose platform, branch and version  (example: python, docker, go, etc...)**
++ **Choose platform type and choose platform, branch and version  (example: python, docker, go, etc...)**
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c2.png">
 
 
-**4. In Application code choose upload your code. we can choose local code Zip file or provide s3 URL.**  
++ **In Application code choose upload your code. we can choose local code Zip file or provide s3 URL.**  
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c3a.png">
 
 
-**5. Select a preset configuration that matches your use case. Each preset includes recommend values for several configuration options.**
++ **Select a preset configuration that matches your use case. Each preset includes recommend values for several configuration options.**
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c4.png">
 
@@ -308,19 +308,19 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 **Step 5:This steps are optional when we create application. values for this fields are  assigned automatically.**
 
-**6. Select our VPC**
++ **Select our VPC**
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c6.png">
 
 
-**7. Add public IP and Instance subnetes**
++ **Add public IP and Instance subnetes**
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c7.png">
 
 
-**8. when we need to integrate our database to our application provide all information.** 
++ **when we need to integrate our database to our application provide all information.** 
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c8.png">
@@ -329,7 +329,7 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c9.png">
 
 
-**9. Use tags to group and filter resources.**
++ **Use tags to group and filter resources.**
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c10.png">
