@@ -1,24 +1,26 @@
 # AWS CodeDeploy
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd1.png">
+
 
 CodeDeploy is a deployment service that automates application deployments to Amazon EC2 instances, on-premises instances, serverless Lambda functions, or Amazon ECS services.
 
 You can deploy a nearly unlimited variety of application content, including:
 
-    + Code
++ Code
 
-    + Serverless AWS Lambda functions
++ Serverless AWS Lambda functions
 
-    + Web and configuration files
++ Web and configuration files
 
-    + Executables
++ Executables
 
-    + Packages
++ Packages
 
-    + Scripts
++ Scripts
 
-    + Multimedia files
++ Multimedia files
 
 + CodeDeploy can deploy application content that runs on a server and is stored in Amazon S3 buckets, GitHub repositories, or Bitbucket repositories. 
 
@@ -26,95 +28,99 @@ You can deploy a nearly unlimited variety of application content, including:
 
 CodeDeploy makes it easier for you to:
 
-    + Rapidly release new features.
++ Rapidly release new features.
 
-    + Update AWS Lambda function versions.
++ Update AWS Lambda function versions.
 
-    + Avoid downtime during application deployment.
++ Avoid downtime during application deployment.
 
-    + Handle the complexity of updating your applications, without many of the risks associated with error-prone manual deployments.
++ Handle the complexity of updating your applications, without many of the risks associated with error-prone manual deployments.
 
 + CodeDeploy works with various systems for configuration management, source control, continuous integration, continuous delivery, and continuous deployment.
 
 ## Benefits of CodeDeploy
 
-    1. Server, serverless, and container applications
+1. Server, serverless, and container applications
     
-    2. Automated deployments
+2. Automated deployments
     
-    3. Minimize downtime
+3. Minimize downtime
     
-    4. Stop and roll back
+4. Stop and roll back
     
-    5. Centralized control
+5. Centralized control
     
-    6. Easy to adopt
+6. Easy to adopt
     
-    7. Concurrent deployments
+7. Concurrent deployments
 
 ## CodeDeploy workflow
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd2.png">
+
 
 
 ## CodeDeploy Compute Platforms
 
 CodeDeploy is able to deploy applications to three compute platforms:
 
-      1. EC2/On-Premises
+1. EC2/On-Premises
     
-      2. AWS Lambda
+2. AWS Lambda
     
-      3. Amazon ECS 
+3. Amazon ECS 
 
 
 ## CodeDeploy Deployment Types
 
 CodeDeploy provides two deployment type options:
 
-    1. In-place deployment
+1. In-place deployment
 
 The application on each instance in the deployment group is stopped, the latest application revision is installed, and  the new version of the application is started and validated.
 
-     2. Blue/green deployment
+2. Blue/green deployment
 
+   
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd3.png">
+
 
 The behavior of your deployment depends on which compute platform you use:
 
-      i. Blue/green on an EC2/On-Premises compute platform
+i. Blue/green on an EC2/On-Premises compute platform
 
 + The instances in a deployment group (the original environment) are replaced by a different set of instances (the replacement environment).
 
-      ii. Blue/green on an AWS Lambda or Amazon ECS compute platform
+ii. Blue/green on an AWS Lambda or Amazon ECS compute platform
 
 + Traffic is shifted in increments according to a canary, linear, or all-at-once deployment configuration.
 
-      iii. Blue/green deployments through AWS CloudFormation
+iii. Blue/green deployments through AWS CloudFormation
 
 + Traffic is shifted from your current resources to your updated resources as part of an AWS CloudFormation stack update. Currently, only ECS blue/green deployments are supported
 
 ## CodeDeploy Primary Components
 
-        + Application
++ Application
         
-        + Compute platform
++ Compute platform
         
-        + Deployment configuration
++ Deployment configuration
         
-        + Deployment group
++ Deployment group
         
-        + Deployment type
++ Deployment type
         
-        + IAM instance profile
++ IAM instance profile
         
-        + Revision
++ Revision
         
-        + Service role
++ Service role
         
-        + Target revision
++ Target revision
         
-        + Other components
++ Other components
 
 ## Application
 
@@ -128,11 +134,11 @@ The behavior of your deployment depends on which compute platform you use:
 
 + There are three compute platforms:
 
-      1. EC2/On-Premises
+1. EC2/On-Premises
     
-      2. AWS Lambda
+2. AWS Lambda
     
-      3. Amazon ECS 
+3. Amazon ECS 
 
 ## Deployment configuration
 
@@ -140,9 +146,11 @@ The behavior of your deployment depends on which compute platform you use:
 
 + The following deployment configurations specify how traffic is routed during a deployment that uses the Lambda or the ECS compute platform:
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd5.png">
 
-        1. Canary
+
+1. Canary
 
 + You update your application code in a canary deployment and point a tiny fraction of production traffic to it.
 
@@ -150,7 +158,7 @@ The behavior of your deployment depends on which compute platform you use:
 
 + You redirect all traffic to it after ensuring that the new version is secure and free of faults.
 
-        2. Linear
+2. Linear
 
 + Linear strategy is similar to Canary strategy.
 
@@ -158,7 +166,7 @@ The behavior of your deployment depends on which compute platform you use:
 
 + A certain amount of traffic is sent to the new version until it reaches 100% of production traffic.
 
-        3. All-at-once
+3. All-at-once
 
 + All-at-once deployments instantaneously switch traffic from the old to the new Lambda function.
 
@@ -178,17 +186,19 @@ The behavior of your deployment depends on which compute platform you use:
 
 + There are two deployment types:
 
-        1. In-place deployment  
+1. In-place deployment  
 
-        2. Blue/green deployment
+2. Blue/green deployment
 
 ### Deployment configuration
 
 + Choose from a list of default and custom deployment configurations.
 
 + A deployment configuration is a set of rules that determines how fast an application is deployed and the success or failure conditions for a deployment.
+
  
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/speed.png">
+
 
 ## IAM instance profile
 
@@ -222,17 +232,17 @@ The behavior of your deployment depends on which compute platform you use:
 
 ## Other components
 
-        + Choose a CodeDeploy repository type
++ Choose a CodeDeploy repository type
 
-        + Deployments
++ Deployments
 
-        + Application Specification Files
++ Application Specification Files
 
-        + Instance Health
++ Instance Health
 
-        + Working with the CodeDeploy agent
++ Working with the CodeDeploy agent
 
-        + Working with On-Premises Instances
++ Working with On-Premises Instances
 
 ## CodeDeploy Agent
 
@@ -262,55 +272,77 @@ The behavior of your deployment depends on which compute platform you use:
 
 + You should collect monitoring data from all of the parts of your AWS solution so that you can more easily debug a multi-point failure if one occurs.
 
-         1. Cloud watch
+1. Cloud watch
 
-         2. Cloud Trail 
+2. Cloud Trail 
 
 ## How to create CodeDeploy
 
-**Step 1:** Login to aws management console and search CodeDeploy service
+**Step 1: Login to aws management console and search CodeDeploy service**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd6.png">
 
-**Step 2:** Click create application to create or CodeDeploy 
+
+**Step 2: Click create application to create or CodeDeploy** 
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd7.png">
 
-**Step 3:** Give Application name and choose compute platform and click create application
+
+**Step 3: Give Application name and choose compute platform and click create application**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd8.png">
 
-**Step 4:** Next create a deployment group
+
+**Step 4: Next create a deployment group**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd9.png">
 
-**Step 5:** Choose deployment groupname and service role with CodeDeploy full access permission
+
+**Step 5: Choose deployment groupname and service role with CodeDeploy full access permission**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd10.png">
 
-+ Choose deployment type and environment for our application
+
++ **Choose deployment type and environment for our application**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd11.png">
 
-+ Choose Deployment settings and loadbalancer then click create deployment group
+
++ **Choose Deployment settings and loadbalancer then click create deployment group**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd12.png">
 
-**Step 6:** Next create deployment 
+
+**Step 6: Next create deployment** 
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd13.png">
 
-+ choose deployment group and revision type
+
++ **choose deployment group and revision type**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd14.png">
 
-+ Give description and other options set to default and click create deployment
+
++ **Give description and other options set to default and click create deployment**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd15.png">
 
-+ All the configuration done our codedeploy is ready to use.
+
++ **All the configuration done our codedeploy is ready to use.**
+
 
 ## Pricing
+
 
 **For CodeDeploy on EC2, Lambda, ECS:** There is no additional charge for code deployments to Amazon EC2, AWS Lambda or Amazon ECS through AWS CodeDeploy.
 
