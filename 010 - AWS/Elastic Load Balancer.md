@@ -1,6 +1,6 @@
 # AWS ELB
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/elb_instances_1.png">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/ELB.png">
 
 Elastic Load Balancing automatically distributes your incoming traffic across multiple targets, such as EC2 instances, containers, and IP addresses, in one or more Availability Zones. 
 
@@ -95,27 +95,25 @@ cross-zone load balancing is always enabled at the load balancer level. At the t
 
 ## How to Create ALB
 
-**1.** Sign into AWS Management Console:
+**1. Sign into AWS Management Console**
 
-<img src="https://github.com/Gitscooby/Images/blob/main/Ec2%20image%204.png">
-
-**2.** Select your preferred Region. Select a region from the drop-down, the selection of the region can be done on the basis of the criteria discussed earlier in the blog.
+**2. Select your preferred Region. Select a region from the drop-down, the selection of the region can be done on the basis of the criteria discussed earlier in the blog.**
 
 <img src="https://github.com/Gitscooby/Images/blob/main/Ec2%20image%205.png">
 
-**3.** Select ELB Service in Management console
+**3. Select ELB Service in Management console**
    
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/ELB_service.png">
 
-**4.** Click Create LoadBalancer buttton
+**4. Click Create LoadBalancer buttton**
    
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/CreateELB.png">
 
-**5.** Choose ELB type and click create
+**5. Choose ELB type and click create**
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/ChooseELB.png">
   
-**6.** Make Basic Configuration Name, Schema and IP Address Type
+**6. Make Basic Configuration Name, Schema and IP Address Type**
 
 ## Scheme
 
@@ -138,66 +136,82 @@ Scheme is the type of load balancer.
 
 + If the load balancer is an internal load balancer, you must choose IPv4.
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/Basic_conf.png">
 
-**7.** Configure Network mapping section - Choose VPC and Availability Zones
+
+**7. Configure Network mapping section - Choose VPC and Availability Zones**
    
 ## Mapping
 
 + Enable two or more Availability Zones, to increase the fault tolerance of your application.
 
 + Select one subnet per zone. If you enabled dual-stack mode for the load balancer, select subnets with associated IPv6 CIDR blocks.
+
   
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/nwmapp.png">
 
-**8.** Add Security Groups for Loadbalancer
+
+**8. Add Security Groups for Loadbalancer**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/sg.png">
 
-**9.** Add Listeners and Routing info - Add a Target Group
+
+**9. Add Listeners and Routing info - Add a Target Group**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/listener_routing.png">
 
-**10.** Create Target Group and adding our servers
 
-Click create target group button to start specifying group details
+**10.Create Target Group and adding our servers**
+
+**11. Click create target group button to start specifying group details**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/TGcreate.png">
 
-+ Choose target Type - Instances, Ip Address, Lambda, ALB
 
-+ Add Target Group Name
+**12. Choose target Type - Instances, Ip Address, Lambda, ALB**
 
-+ Add Protocol and ports
+**13. Add Target Group Name,Protocol, Ports, IP address type, VPC and Protocol Version.**
 
-+ Choose IP address type
-
-+ Select Our VPC and Protocol Version
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/TG1.png">
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/TG2.png">
+
 
 ## Protocol version
 
 By default, Application Load Balancers send requests to targets using HTTP/1.1. You can use the protocol version to send requests to targets using HTTP/2 or gRPC(HTTP-Hyper Text Transfer Protocol and gRPC-High Performance Remote Procedure calls) .
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/TG3.png">
 
-+ Adding Health check path to store logs
+
+**14. Adding Health check path to store logs**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/TG4.png">
 
-+ Register our intsances as targets only running instance are shown in the Page.
 
-+ Select and include below option to add our instance.
+**15. Register our intsances as targets only running instance are shown in the Page.**
 
-+ Finally review our targets and create targets group.
+**16. Select and include below option to add our instance.**
+
+**17. Finally review our targets and create targets group.**
+
   
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/TG5.png">
 
-Once target group was created continue with **Step 9** and choose our new target group.
 
-**11.** Review our configuration and create it.
+**18. Once target group was created continue with **Step 9** and choose our new target group.**
+
+**18. Review our configuration and create it.**
+
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/Final.png">
 
@@ -211,8 +225,10 @@ Once target group was created continue with **Step 9** and choose our new target
 + Network Load Balancer is optimized to handle sudden and volatile traffic patterns while using a single static IP address per Availability Zone.
 
 + It is integrated with other popular AWS services such as Auto Scaling, Amazon EC2 Container Service (ECS), Amazon CloudFormation, and AWS Certificate Manager (ACM).
+
   
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/nwlbimg.png">
+
 
 ## Features of Network Load Balancer
 
@@ -236,14 +252,18 @@ Once target group was created continue with **Step 9** and choose our new target
 
 Network Load Balancer creation also same as Application Load Balancer only changes in **Step 9** Protocols
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/nlb.png">
+
 
 
 ## Gateway Load Balancer
 
 Gateway Load Balancer helps you easily deploy, scale, and manage your third-party virtual appliances. It gives you one gateway for distributing traffic across multiple virtual appliances while scaling them up or down, based on demand. This decreases potential points of failure in your network and increases availability.
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/gwlb.png">
+
 
 ## Benefits
 
@@ -265,17 +285,19 @@ Gateway Load Balancer helps you easily deploy, scale, and manage your third-part
 
 5. The load balancer forwards the traffic to its destination.
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/gwlb_sideways_flow.png">
+
 
 ## How to create Gateway Load Balancer
 
-1. Start with ALB creation **Step 6** basic configuration for create GatewayLB.
+**1. Start with ALB creation **Step 6** basic configuration for create GatewayLB.**
 
-2. Next step same as **Step 7** 
+**2. Next step same as Step 7**
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/gwlb1.png">
 
-+ Complete steps and click create loadbalancer. 
+**3. Complete steps and click create loadbalancer.** 
 
 ## Classic Load Balancer
 
@@ -298,19 +320,25 @@ For example, if you have ten instances in Availability Zone us-west-2a and two i
   
 + However, we still recommend that you maintain approximately equivalent numbers of instances in each Availability Zone for better fault tolerance.
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/C_load_balancer.png">
+
 
 ## How to create Classic Load Balancer
 
 Classic Load Balancer creation also same as Application Load Balancer changes are showed below
 
-+ Select Listener and instance protocol.
-  
+**1.Select Listener and instance protocol.**
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/clb1.png">
 
-+ Add Instances to create our Classic Load Balancer.
+
+**2.Add Instances to create our Classic Load Balancer.**
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/clb2.png">
+
 
 ## Security in Elastic Load Balancing
 
