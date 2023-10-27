@@ -1,4 +1,4 @@
-# AWS ELB
+# AWS Elastic Load Balancer
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/ELB.png">
 
