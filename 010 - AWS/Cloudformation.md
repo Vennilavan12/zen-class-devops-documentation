@@ -348,11 +348,11 @@ The optional Outputs section declares output values that you can import into oth
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf7.png">
 
 
-#### 1.Click create stack and give all details select template type
+**1.Click create stack and give all details select template type.**
 
-#### 2.Choose our JSON or YAML file otherwise also create template using designer
+**2.Choose our JSON or YAML file otherwise also create template using designer**
 
-#### 3.Give source details is S3 url or Local file and click next
+**3.Give source details is S3 url or Local file and click next.**
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf8.png">
