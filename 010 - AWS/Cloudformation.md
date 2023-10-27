@@ -348,7 +348,7 @@ The optional Outputs section declares output values that you can import into oth
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf7.png">
 
 
- **+ Click create stack and give all details select template type**
+**+ Click create stack and give all details select template type**
 
 **+ choose our JSON or YAML file otherwise also create template using designer**
 
