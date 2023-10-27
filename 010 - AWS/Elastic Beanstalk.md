@@ -20,7 +20,7 @@ Elastic Beanstalk, you can quickly deploy and manage applications in the AWS Clo
 
 + To use Elastic Beanstalk, you create an application, upload an application version in the form of an application source bundle (for example, a Java .war file) to Elastic Beanstalk, and then provide some information about the application.
   
-+  Elastic Beanstalk automatically launches an environment and creates and configures the AWS resources needed to run your code. After your environment is launched, you can then manage your environment and deploy new application versions.
++ Elastic Beanstalk automatically launches an environment and creates and configures the AWS resources needed to run your code. After your environment is launched, you can then manage your environment and deploy new application versions.
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/Bs2.png">
@@ -247,7 +247,7 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 ## How to create Elastic Beanstalk
 
 
-**Step 1: Logon to the AWS management console**
+**Step 1: Login to the AWS management console**
 
 
 **Step 2: Click on the Elastic Beanstalk service under the services dropdown**
@@ -261,13 +261,13 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 ### Configure Environment
 
-**In Environment tier we can choose beanstalk environment and give name for your application**
+**1. In Environment tier we can choose beanstalk environment and give name for your application**
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/Createbean.png">
 
 
-**Key details you provide here:**
+**2. Key details you provide here:**
 
 + Environment name
 
@@ -277,19 +277,19 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/create1.png">
 
 
-**Choose platform type and choose platform, branch and version  (example: python, docker, go, etc...)**
+**3. Choose platform type and choose platform, branch and version  (example: python, docker, go, etc...)**
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c2.png">
 
 
-**In Application code choose upload your code. we can choose local code Zip file or provide s3 URL.**  
+**4. In Application code choose upload your code. we can choose local code Zip file or provide s3 URL.**  
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c3a.png">
 
 
-**Select a preset configuration that matches your use case. Each preset includes recommend values for several configuration options.**
+**5. Select a preset configuration that matches your use case. Each preset includes recommend values for several configuration options.**
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c4.png">
 
@@ -308,19 +308,19 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 **Step 5:This steps are optional when we create application. values for this fields are  assigned automatically.**
 
-**Select our VPC**
+**6. Select our VPC**
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c6.png">
 
 
-**Add public IP and Instance subnetes**
+**7. Add public IP and Instance subnetes**
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c7.png">
 
 
-**when we need to integrate our database to our application provide all information.** 
+**8. when we need to integrate our database to our application provide all information.** 
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c8.png">
@@ -329,7 +329,7 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c9.png">
 
 
-**Use tags to group and filter resources.**
+**9. Use tags to group and filter resources.**
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c10.png">
