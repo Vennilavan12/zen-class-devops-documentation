@@ -367,25 +367,25 @@ Optional sequence. Represents information about where CodeBuild can prepare the 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb7.png">
 
 
-**+ Choose our Source (Codecommit, Github, etc..)**
+**1.Choose our Source (Codecommit, Github, etc..)**
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb8.png">
 
 
-**+ choose our Environment image and servicerole with codebuild full access permission**
+**2.choose our Environment image and servicerole with codebuild full access permission**
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb10.png">
 
 
-**+ Give buildspec file or build commands for project build**
+**3.Give buildspec file or build commands for project build**
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb11.png">
 
 
-**+ choose Artifact type and logging using cloudwatch and click create build project**
+**4.choose Artifact type and logging using cloudwatch and click create build project**
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb12.png">
@@ -397,7 +397,7 @@ Optional sequence. Represents information about where CodeBuild can prepare the 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb13.png">
 
 
-**+ Give details of report group name, type and export option and click create report group**
+**5.Give details of report group name, type and export option and click create report group**
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb14.png">
