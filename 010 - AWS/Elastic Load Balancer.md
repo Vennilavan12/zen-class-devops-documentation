@@ -2,6 +2,7 @@
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/ELB.png">
 
+
 Elastic Load Balancing automatically distributes your incoming traffic across multiple targets, such as EC2 instances, containers, and IP addresses, in one or more Availability Zones. 
 
 ## Benifits of ELB
@@ -25,7 +26,9 @@ Region is a separate geographic area.
 
 Availability Zones are multiple, isolated locations within each Region.
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/reg%26avail.png">
+
 
 ## How ELB Works
 
@@ -34,7 +37,9 @@ Availability Zones are multiple, isolated locations within each Region.
 + When the load balancer detects an unhealthy target, it stops routing traffic to that target.
 + It then resumes routing traffic to that target when it detects that the target is healthy again.
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/networking-load_balancing.png">
+
 
 ## Components of ELB
 
@@ -62,23 +67,27 @@ Every listener has a default action, also known as the default rule. The default
 + When cross-zone load balancing is enabled, each load balancer node distributes traffic across the registered targets in all enabled Availability Zones.
 
 + When cross-zone load balancing is disabled, each load balancer node distributes traffic only across the registered targets in its Availability Zone.
+
   
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cross_zone_load_balancing_enabled.png">
+
 
 If cross-zone load balancing is enabled, each of the 10 targets receives 10% of the traffic. This is because each load balancer node can route its 50% of the client traffic to all 10 targets.
 
 If cross-zone load balancing is disabled:
    
-   + Each of the two targets in Availability Zone A receives 25% of the traffic.
++ Each of the two targets in Availability Zone A receives 25% of the traffic.
    
-   + Each of the eight targets in Availability Zone B receives 6.25% of the traffic.
++ Each of the eight targets in Availability Zone B receives 6.25% of the traffic.
 
 cross-zone load balancing is always enabled at the load balancer level. At the target group level, cross-zone load balancing can be disabled.
 
 ## Application Load Balancer
 
 + Application Load Balancers intelligently provide scalability, performance, and availability. They also guarantee that your servers are not overworked and are prepared to handle traffic spikes.
+  
 + Application Load Balancer, aka ALB, is an Elastic Load Balancer or ELB on AWS. It operates at the application layer (the seventh layer) of the Open Systems Interconnection (OSI) model.
+  
 + The Application Load Balancer distributes incoming HTTP and HTTPS traffic across multiple targets.
 
 ## Benefits of ALB
@@ -99,7 +108,7 @@ cross-zone load balancing is always enabled at the load balancer level. At the t
 
 **2. Select your preferred Region. Select a region from the drop-down, the selection of the region can be done on the basis of the criteria discussed earlier in the blog.**
 
-<img src="https://github.com/Gitscooby/Images/blob/main/Ec2%20image%205.png">
+<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/Screenshot%202023-10-27%20174417.png">
 
 **3. Select ELB Service in Management console**
    
@@ -118,7 +127,9 @@ cross-zone load balancing is always enabled at the load balancer level. At the t
 ## Scheme
 
 Scheme is the type of load balancer.
+
 1. Internet-facing
+   
 2. Internal
 
 + If Scheme is internet-facing , the load balancer has a public DNS name that resolves to a public IP address.
@@ -130,6 +141,7 @@ Scheme is the type of load balancer.
 ## IP Address Type
 
 1. IPV4
+
 2. Dual Stack
 
 + IPv4 if your clients use IPv4 addresses to communicate with the load balancer, or choose Dualstack if your clients use both IPv4 and IPv6 addresses to communicate with the load balancer.
@@ -209,7 +221,7 @@ By default, Application Load Balancers send requests to targets using HTTP/1.1. 
 
 **18. Once target group was created continue with **Step 9** and choose our new target group.**
 
-**18. Review our configuration and create it.**
+**19. Review our configuration and create it.**
 
 
 
