@@ -1,6 +1,9 @@
 # AWS CodeBuild
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb1.png">
+
+
 
 + AWS CodeBuild is a fully managed build service in the cloud.
 
@@ -22,7 +25,10 @@
 
 ## CodeBuild Workflow
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb2.png">
+
+
 
 + You can use the AWS CodeBuild or AWS CodePipeline console to run CodeBuild.
 
@@ -38,6 +44,7 @@
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb3.png">
 
 
+
 ## How CodeBuild works
 
 + As input, you must provide CodeBuild with a build project.
@@ -46,9 +53,11 @@
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb4.png">
 
 
+
 ### Build Project
 
 + A build project includes information about how to run a build, including where to get the source code, which build environment to use, which build commands to run, and where to store the build output.
+
 
 ## Build Environment
 
@@ -57,6 +66,7 @@
 + CodeBuild uses the build project to create the build environment.
 
 + CodeBuild downloads the source code into the build environment and then uses the build specification (buildspec), as defined in the build project or included directly in the source code.
+
 
 ###  Buildspec
 
@@ -70,9 +80,12 @@
 
 + If you use AWS CodePipeline to run builds, you can get limited build information from CodePipeline.
 
+
 ## Plan a build in Codebuild
 
+
 **1. Where is the source code stored?** 
+
 
 + CodeBuild currently supports building from the following source code repository providers.
 
@@ -86,25 +99,35 @@
 
 4. Bitbucket
 
+
 **2. Which build commands do you need to run and in what order?**
+
 
 + CodeBuild downloads the build input from the provider you specify and uploads the build output to the bucket you specify.
 
 + You use the buildspec to instruct how to turn the downloaded build input into the expected build output. 
 
+
 **3. Which runtimes and tools do you need to run the build?**
+
 
 + you building for Java, Ruby, Python, or Node.js? Does the build need Maven or Ant or a compiler for Java, Ruby, or Python? Does the build need Git, the AWS CLI, or other tools?
 
+
 **4. Do you need AWS resources that aren't provided automatically by CodeBuild? If so, which security policies do those resources need?**
+
 
 + you might need to modify the CodeBuild service role to allow CodeBuild to work with those resources.
 
+
 **5. Do you want CodeBuild to work with your VPC?**
+
 
 + you need the VPC ID, the subnet IDs, and security group IDs for your VPC configuration.
 
+
 ## BuildSpec Syntax 
+
 
 + Buildspec files must be expressed in YAML format.
 
@@ -203,9 +226,11 @@
         paths:
           - path
 
+
 ### version      
 
  + Represents the buildspec version. We recommend that you use 0.2.
+
 
 ### run-as
 
@@ -217,9 +242,11 @@
 
 + When you specify run-as at the top of the buildspec file, it applies globally to all commands.
 
+
 ### env
 
 Optional sequence. Represents information for one or more custom environment variables.
+
 
 + env/shell
 
@@ -233,7 +260,9 @@ Optional sequence. Represents information for one or more custom environment var
 
 + env/git-credential-helper
 
+
 ### proxy
+
 
 Optional sequence. Used to represent settings if you run your build in an explicit proxy server.
 
@@ -241,7 +270,9 @@ Optional sequence. Used to represent settings if you run your build in an explic
 
 + proxy/logs
  
+
 ### phases
+
 
 Required sequence. Represents the commands CodeBuild runs during each phase of the build. 
 
@@ -259,7 +290,9 @@ Required sequence. Represents the commands CodeBuild runs during each phase of t
 
 + phases/post_build
 
+
 ### reports
+
 
 + Optional sequence. Specifies the report group that the reports are sent to.
 
@@ -269,7 +302,9 @@ Required sequence. Represents the commands CodeBuild runs during each phase of t
 
 + If you specify a name, CodeBuild creates a report group using your project name and the name you specify in the format **<project-name>-<report-group-name>**.
 
+
 ### artifacts
+
 
 + Optional sequence. Represents information about where CodeBuild can find the build output and how CodeBuild prepares it for uploading to the S3 output bucket. 
 
@@ -291,13 +326,16 @@ Required sequence. Represents the commands CodeBuild runs during each phase of t
 
 + artifacts/secondary-artifacts
 
+
 ### cache
 
 Optional sequence. Represents information about where CodeBuild can prepare the files for uploading cache to an S3 cache bucket. This sequence is not required if the cache type of the project is No Cache.
 
 + cache/paths
 
+
 ## VPC Support
+
 
 + AWS CodeBuild cannot access resources in a VPC.
 
@@ -307,7 +345,9 @@ Optional sequence. Represents information about where CodeBuild can prepare the 
 
 + VPC-enabled builds can then access resources inside your VPC.
 
+
 ## Test Reporting in CodeBuild
+
 
 + You can create reports in CodeBuild that contain details about tests that are run during builds.
 
@@ -331,7 +371,9 @@ Optional sequence. Represents information about where CodeBuild can prepare the 
 
 + A report expires 30 days after it was created. You cannot view an expired test report. 
 
+
 ## Logging and Monitoring in CodeBuild
+
 
 + Monitoring is an important part of maintaining the reliability, availability, and performance of AWS CodeBuild and your AWS solutions.
 
@@ -347,60 +389,80 @@ Optional sequence. Represents information about where CodeBuild can prepare the 
 
 + CloudTrail captures all API calls for CodeBuild as events, including calls from the CodeBuild console and from code calls to the CodeBuild APIs.
 
+
 ## How Create CodeBuild
 
+
 **Step 1: Login into AWS Management console and search codebuild service.**
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb5.png">
 
 
+
 **Step 2: Click Create build project**
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb6.png">
 
 
+
 **Step 3: Give project name and description**
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb7.png">
 
 
+
 + **Choose our Source (Codecommit, Github, etc..)**
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb8.png">
 
 
+
 + **choose our Environment image and servicerole with codebuild full access permission**
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb10.png">
 
 
+
 + **Give buildspec file or build commands for project build**
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb11.png">
 
 
+
 + **choose Artifact type and logging using cloudwatch and click create build project**
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb12.png">
 
 
+
 **Step 4: click Create Report group**
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb13.png">
 
 
+
 + **Give details of report group name, type and export option and click create report group**
 
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb14.png">
+
 
 
 ## Pricing
@@ -413,9 +475,11 @@ Optional sequence. Represents information about where CodeBuild can prepare the 
 
 + You are charged for compute resources based on the duration it takes for your build to execute. The per-minute rate depends on the selected compute type.
 
+
 ### Build duration
 
 Build Duration is calculated in minutes, from the time you submit your build until your build is terminated, rounded up to the nearest minute.
+
 
 
 ### Free Tier
@@ -432,6 +496,7 @@ Build Duration is calculated in minutes, from the time you submit your build unt
 + For example, you may incur charges from Amazon CloudWatch Logs for build log streams, Amazon S3 for build artifact storage, and AWS Key Management Service for encryption.
 
 + You may also incur additional charges if you use AWS CodeBuild with AWS CodePipeline.
+
 
 # Reference
 
