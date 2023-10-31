@@ -1,8 +1,12 @@
 # AWS Codepipeline
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/CP1.png">
 
+
+
 AWS CodePipeline is a continuous delivery service you can use to model, visualize, and automate the steps required to release your software. You can quickly model and configure the different stages of a software release process. CodePipeline automates the steps required to release your software changes continuously. 
+
 
 ## Benefits
 
@@ -14,7 +18,9 @@ AWS CodePipeline is a continuous delivery service you can use to model, visualiz
 
 4. AWS service integration
 
+
 ## Features
+
 
 **1. Continuous Delivery**
 
@@ -25,7 +31,9 @@ AWS CodePipeline is a continuous delivery service you can use to model, visualiz
 + Although every successful software change can be immediately released to production with continuous delivery, not all changes need to be released right away.
 
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp3.png">
+
 
 
 **2. Continuous Integration**
@@ -37,7 +45,9 @@ AWS CodePipeline is a continuous delivery service you can use to model, visualiz
 + Continuous integration is focused on automatically building and testing code, as compared to continuous delivery, which automates the entire software release process up to production.
 
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp2.png">
+
 
 
 ## Workflow of Codepipeline
@@ -48,11 +58,17 @@ AWS CodePipeline is a continuous delivery service you can use to model, visualiz
 
 + Upon the successful completion of those tests, and after a manual approval action that was added to the pipeline is approved, CodePipeline deploys the tested and approved code to production instance
 
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/PipelineFlow.png">
+
+
 
 ## Codepipeline Concepts
 
 Modeling and configuring your automated release process is easier if you understand the concepts and terms used in AWS CodePipeline.
+
+
 
 ### Pipeline Terms
 
@@ -80,9 +96,11 @@ Artifacts
 
 Source revisions
 
+
 ## Pipelines
 
 A pipeline is a workflow construct that describes how software changes go through a release process. Each pipeline is made up of a series of stages.
+
 
 ## Stages
 
@@ -95,6 +113,7 @@ A pipeline is a workflow construct that describes how software changes go throug
 + A stage might be a build stage, where the source code is built and tests are run. It can also be a deployment stage, where code is deployed to runtime environments.
 
 + Each stage is made up of a series of serial or parallel actions.
+
 
 ## Actions
 
@@ -115,6 +134,7 @@ A pipeline is a workflow construct that describes how software changes go throug
 5. approval
 
 6. invoke
+
 
 ## Pipeline executions
 
@@ -144,6 +164,7 @@ A pipeline is a workflow construct that describes how software changes go throug
 
 6. Failed
 
+
 ### Stopped executions
 
 + The pipeline execution can be stopped manually so that the in-progress pipeline execution does not continue through the pipeline.
@@ -156,6 +177,7 @@ There are two ways to stop a pipeline execution:
 
 2. Stop and abandon
 
+
 ### Failed executions
 
 + If an execution fails, it stops and does not completely traverse the pipeline. Its status is **FAILED** status and the stage is unlocked.
@@ -163,6 +185,8 @@ There are two ways to stop a pipeline execution:
 + A more recent execution can catch up and enter the unlocked stage and lock it.
 
 + You can retry a failed execution unless the failed execution has been superseded or is not retryable.
+
+
 
 ### Superseded executions
 
@@ -173,6 +197,7 @@ There are two ways to stop a pipeline execution:
 + The newer execution now waits for the stage to unlock, and the superseded execution stops with a **SUPERSEDED** status.
 
 + When a pipeline execution is superseded, the execution is stopped and does not completely traverse the pipeline.
+
 
 
 ## Stage executions
@@ -191,6 +216,7 @@ There are two ways to stop a pipeline execution:
 
 5. Failed 
 
+
 ## Action executions
 
 + An action execution is the process of completing a configured action that operates on designated artifacts. These can be input artifacts, output artifacts, or both.
@@ -205,6 +231,7 @@ Valid statuses for actions are
     
 4. Failed
 
+
 ### Action types
 
 + Action types are preconfigured actions that are available for selection in CodePipeline.
@@ -212,6 +239,7 @@ Valid statuses for actions are
 + The action type is defined by its owner, provider, version, and category.
 
 + The action type provides customized parameters that are used to complete the action tasks in a pipeline.
+
 
 ## Transitions
 
@@ -222,6 +250,7 @@ Valid statuses for actions are
 + When more than one execution arrives at a disabled transition, only the latest execution continues to the next stage when the transition is enabled.
 
 + This means that newer executions continue to supersede waiting executions while the transition is disabled, and then after the transition is enabled, the execution that continues is the superseding execution.
+
 
 ## Artifacts
 
@@ -243,6 +272,7 @@ Valid statuses for actions are
 
 + For GitHub and CodeCommit repositories, this is the commit. For S3 buckets or actions, this is the object version.
 
+
 ## Product and Service Integrations
 
  AWS CodePipeline is integrated with a number of AWS services and partner products and services.
@@ -259,6 +289,7 @@ Valid statuses for actions are
       
 + Invoke action integrations
 
+
 ## Source action integrations
 
 + Amazon ECR source actions
@@ -271,6 +302,7 @@ Valid statuses for actions are
       
 + GitHub (version 1) source actions
 
+
 ## Build action integrations
 
 + CodeBuild build actions
@@ -280,6 +312,7 @@ Valid statuses for actions are
 + Jenkins build actions
       
 + TeamCity build actions
+
 
 ## Test action integrations
 
@@ -316,6 +349,7 @@ Valid statuses for actions are
       
 + XebiaLabs deploy actions
 
+
 ## Approval action integration with Amazon Simple Notification Service
 
 + Amazon SNS is a fast, flexible, fully managed push notification service that lets you send individual messages or to fan out messages to large numbers of recipients.
@@ -323,6 +357,7 @@ Valid statuses for actions are
 + Amazon SNS makes it simple and cost effective to send push notifications to mobile device users, email recipients or even send messages to other distributed services.
 
 + When you create a manual approval request in CodePipeline, you can optionally publish to a topic in Amazon SNS so that all IAM users subscribed to it are notified that the approval action is ready to be reviewed.
+
 
 ## Invoke action integrations
 
@@ -332,68 +367,96 @@ Valid statuses for actions are
     
 + Step Functions invoke actions
 
+
 ## How to create codepipeline
 
+
 + **Sign into AWS Management console and search codepipeline service**
+
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp4.png">
 
 
+
+
 + **Click create pipeline**
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp5.png">
 
 
+
 **Step 1: Choose pipeline settings give name and service role for accessing resources**
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp6.png">
 
 
+
 **Step 2: Add source stage**
 
+
+
 + **In this stage we can give our source details(codecommit, S3, Github, etc...)**
+
 
 
 + **Give details of repository, branch name and artifact format**
 
 
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp7.png">
+
+
 
 
 + **The image shows Codecommit source stage**
 
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp8.png">
+
 
 
 + **The image shows S3 as a source stage**
 
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp9.png">
+
 
 
 + **The image shows Github as a source stage**
 
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp10.png">
+
 
 
 **Step 3:Add build stage this is optional but we use for build our code using codebuild or jenkins**
 
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp11.png">
+
 
 
 **Step 4: Add our Deploy stage for our deployment method**
 
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp12.png">
 
 
+
 **Step 5: Review and create your pipeline**
+
 
 ## Pricing
 
@@ -405,15 +468,18 @@ Valid statuses for actions are
 
 + There is no charge for pipelines that have no new code changes running through them during the month. An active pipeline is not prorated for partial months.
 
+
 ### AWS Free Tier
 
 + As part of the AWS Free Tier, AWS CodePipeline offers new and existing customers one free active pipeline each month.
 
 + Your free usage is calculated each month across all regions and automatically applied to your bill - free usage does not accumulate.
 
+
 ### Additional charges
 
 You may incur additional charges for storing and accessing your pipeline artifacts in Amazon S3 and for triggering actions from other AWS and third-party services that you connect to your pipeline.
+
 
 ## Reference
 
