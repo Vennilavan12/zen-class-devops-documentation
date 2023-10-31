@@ -1,7 +1,9 @@
 # AWS CodeDeploy
 
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd1.png">
+
 
 
 CodeDeploy is a deployment service that automates application deployments to Amazon EC2 instances, on-premises instances, serverless Lambda functions, or Amazon ECS services.
@@ -38,6 +40,7 @@ CodeDeploy makes it easier for you to:
 
 + CodeDeploy works with various systems for configuration management, source control, continuous integration, continuous delivery, and continuous deployment.
 
+
 ## Benefits of CodeDeploy
 
 1. Server, serverless, and container applications
@@ -54,10 +57,13 @@ CodeDeploy makes it easier for you to:
     
 7. Concurrent deployments
 
+
 ## CodeDeploy workflow
 
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd2.png">
+
 
 
 
@@ -72,6 +78,7 @@ CodeDeploy is able to deploy applications to three compute platforms:
 3. Amazon ECS 
 
 
+
 ## CodeDeploy Deployment Types
 
 CodeDeploy provides two deployment type options:
@@ -82,8 +89,10 @@ The application on each instance in the deployment group is stopped, the latest 
 
 2. Blue/green deployment
 
+
    
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd3.png">
+
 
 
 The behavior of your deployment depends on which compute platform you use:
@@ -99,6 +108,7 @@ ii. Blue/green on an AWS Lambda or Amazon ECS compute platform
 iii. Blue/green deployments through AWS CloudFormation
 
 + Traffic is shifted from your current resources to your updated resources as part of an AWS CloudFormation stack update. Currently, only ECS blue/green deployments are supported
+
 
 ## CodeDeploy Primary Components
 
@@ -122,11 +132,13 @@ iii. Blue/green deployments through AWS CloudFormation
         
 + Other components
 
+
 ## Application
 
 + An application is name that uniquely identifies the application you want to deploy.
 
 + CodeDeploy uses this name, which functions as a container, to ensure the correct combination of revision, deployment configuration, and deployment group are referenced during a deployment.
+
 
 ## Compute platform
 
@@ -140,6 +152,7 @@ iii. Blue/green deployments through AWS CloudFormation
     
 3. Amazon ECS 
 
+
 ## Deployment configuration
 
 + A deployment configuration is set of deployment rules and deployment success and failure conditions used by CodeDeploy during a deployment. 
@@ -147,7 +160,9 @@ iii. Blue/green deployments through AWS CloudFormation
 + The following deployment configurations specify how traffic is routed during a deployment that uses the Lambda or the ECS compute platform:
 
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd5.png">
+
 
 
 1. Canary
@@ -174,11 +189,13 @@ iii. Blue/green deployments through AWS CloudFormation
 
 + Using this method, you may quickly update your code and make it available to all users.
 
+
 ## Deployment group
 
 + A deployment group is a set of individual instances.
 
 + A deployment group contains individually tagged instances, Amazon EC2 instances in Amazon EC2 Auto Scaling groups, or both.
+
 
 ## Deployment type
 
@@ -190,14 +207,18 @@ iii. Blue/green deployments through AWS CloudFormation
 
 2. Blue/green deployment
 
+
 ### Deployment configuration
 
 + Choose from a list of default and custom deployment configurations.
 
 + A deployment configuration is a set of rules that determines how fast an application is deployed and the success or failure conditions for a deployment.
 
+
  
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/speed.png">
+
+
 
 
 ## IAM instance profile
@@ -205,6 +226,7 @@ iii. Blue/green deployments through AWS CloudFormation
 + An IAM instance profile is an IAM role that you attach to your Amazon EC2 instances.
 
 + This profile includes the permissions required to access the Amazon S3 buckets or GitHub repositories where the applications are stored.
+
 
 ## Revision
 
@@ -218,17 +240,20 @@ iii. Blue/green deployments through AWS CloudFormation
 
 + EC2/On-Premises revisions are stored in Amazon S3 buckets or GitHub repositories
 
+
 ## Service role 
 
 + A service role is an IAM role that grants permissions to an AWS service so it can access AWS resources.
 
 + The policies you attach to the service role determine which AWS resources the service can access and the actions it can perform with those resources.
 
+
 ## Target revision
 
 + A target revision is the most recent version of the application revision that you have uploaded to your repository and want to deploy to the instances in a deployment group.
 
 + In other words, the application revision currently targeted for deployment. This is also the revision that is pulled for automatic deployments.
+
 
 ## Other components
 
@@ -244,6 +269,7 @@ iii. Blue/green deployments through AWS CloudFormation
 
 + Working with On-Premises Instances
 
+
 ## CodeDeploy Agent
 
 + The AWS CodeDeploy agent is a software package that, when installed and configured on an instance, makes it possible for that instance to be used in CodeDeploy deployments.
@@ -256,6 +282,7 @@ iii. Blue/green deployments through AWS CloudFormation
 
 +  The CodeDeploy agent communicates outbound using HTTPS over port 443.
 
+
 ## CodeDeploy Instances
 
 + CodeDeploy supports deployments to instances running Amazon Linux, Ubuntu Server, Red Hat Enterprise Linux (RHEL), and Windows Server.
@@ -265,6 +292,7 @@ iii. Blue/green deployments through AWS CloudFormation
 + An on-premises instance is any physical device that is not an Amazon EC2 instance that can run the CodeDeploy agent and connect to public AWS service endpoints.
 
 + You can use CodeDeploy to simultaneously deploy an application to Amazon EC2 instances in the cloud and to desktop PCs in your office or servers in your own data center. 
+
 
 ## CodeDeploy Monitoring
 
@@ -276,69 +304,109 @@ iii. Blue/green deployments through AWS CloudFormation
 
 2. Cloud Trail 
 
+
 ## How to create CodeDeploy
 
+
+
 **Step 1: Login to aws management console and search CodeDeploy service**
+
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd6.png">
 
 
+
+
 **Step 2: Click create application to create or CodeDeploy** 
+
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd7.png">
 
 
+
+
 **Step 3: Give Application name and choose compute platform and click create application**
+
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd8.png">
 
 
+
+
 **Step 4: Next create a deployment group**
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd9.png">
 
 
+
+
 **Step 5: Choose deployment groupname and service role with CodeDeploy full access permission**
+
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd10.png">
 
 
+
 + **Choose deployment type and environment for our application**
+
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd11.png">
 
 
+
+
 + **Choose Deployment settings and loadbalancer then click create deployment group**
+
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd12.png">
 
 
+
+
 **Step 6: Next create deployment** 
+
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd13.png">
 
 
+
+
 + **choose deployment group and revision type**
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd14.png">
 
 
+
 + **Give description and other options set to default and click create deployment**
+
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd15.png">
 
 
+
+
 + **All the configuration done our codedeploy is ready to use.**
+
 
 
 ## Pricing
