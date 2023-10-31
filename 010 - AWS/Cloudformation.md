@@ -44,7 +44,9 @@ When you use AWS CloudFormation, you work with templates and stacks. You create 
 
 ## Example Template format
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf3.png">
+
 
 # Stacks
 
@@ -88,13 +90,20 @@ When you use AWS CloudFormation, you work with templates and stacks. You create 
 
 + The calls that CloudFormation makes are all declared by your template.
 
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf2.png">
+
+
 
 ## Template Anatomy
 
 A template is a JSON- or YAML-formatted text file that describes your AWS infrastructure.
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf4.png">
+
+
 
 ## Format Version
 
@@ -338,49 +347,79 @@ The optional Outputs section declares output values that you can import into oth
 ## Desginer Overview
 
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/designer-overview.png">
+
 
 
 ## How to create Cloudformation
 
+
 **step 1: Login into AWS management console and serach cloudformation service**
+
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf7.png">
 
 
+
 + **Click create stack and give all details select template type.**
+
 
 + **Choose our JSON or YAML file otherwise also create template using designer**
 
+
 + **Give source details is S3 url or Local file and click next.**
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf8.png">
 
 
+
  **Step 2: In this step we can give stack name and check all our configuration and click next**
+
+
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf9.png">
 
+
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf10.png">
+
+
+
 
 **Step 3: Specify stack details** 
 
+
 + **This step attach a IAM role and leave other options by default.**
+
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf11.png">
 
 
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf12.png">
+
+
 
 
 **Step 4: Review our configuration and click create.**
 
+
 + **All of our resources are created as a stack we can change and delete using the stack.**
   
 
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf13.png">
+
+
 
 
 ## Pricing
