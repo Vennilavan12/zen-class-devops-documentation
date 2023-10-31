@@ -1,8 +1,11 @@
 # AWS Elastic Beanstalk
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/1.png">
 
+
 Elastic Beanstalk, you can quickly deploy and manage applications in the AWS Cloud without having to learn about the infrastructure that runs those applications.
+
 
 ## Features and Benefits
 
@@ -16,6 +19,7 @@ Elastic Beanstalk, you can quickly deploy and manage applications in the AWS Clo
 
 + You can also perform most deployment tasks, such as changing the size of your fleet of Amazon EC2 instances or monitoring your application, directly from the Elastic Beanstalk web interface (console). 
 
+
 ## Beanstalk Work Flow
 
 + To use Elastic Beanstalk, you create an application, upload an application version in the form of an application source bundle (for example, a Java .war file) to Elastic Beanstalk, and then provide some information about the application.
@@ -23,7 +27,9 @@ Elastic Beanstalk, you can quickly deploy and manage applications in the AWS Clo
 + Elastic Beanstalk automatically launches an environment and creates and configures the AWS resources needed to run your code. After your environment is launched, you can then manage your environment and deploy new application versions.
 
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/Bs2.png">
+
 
 
 ## Elastic Beanstalk Concepts
@@ -32,11 +38,13 @@ AWS Elastic Beanstalk enables you to manage all of the resources that run your a
 
 + Here are some key Elastic Beanstalk concepts.
 
+
 ## Application
 
 + An Elastic Beanstalk application is a logical collection of Elastic Beanstalk components, including environments, versions, and environment configurations. 
 
 + In Elastic Beanstalk an application is conceptually similar to a folder.
+
 
 ## Application Version
 
@@ -50,6 +58,7 @@ AWS Elastic Beanstalk enables you to manage all of the resources that run your a
 
 + You might upload multiple application versions to test differences between one version of your web application and another.
 
+
 ## Environment
 
 + An environment is a collection of AWS resources running an application version.
@@ -57,6 +66,7 @@ AWS Elastic Beanstalk enables you to manage all of the resources that run your a
 + Each environment runs only one application version at a time, however, you can run the same application version or different application versions in many environments simultaneously.
 
 + When you create an environment, Elastic Beanstalk provisions the resources needed to run the application version you specified.
+
 
 ## Environment Tier
 
@@ -66,11 +76,13 @@ AWS Elastic Beanstalk enables you to manage all of the resources that run your a
 
 + An application that serves HTTP requests runs in a web server environment tier.
 
+
 ## Environment Configuration
 
 + An environment configuration identifies a collection of parameters and settings that define how an environment and its associated resources behave.
 
 + When you update an environment’s configuration settings, Elastic Beanstalk automatically applies the changes to existing resources or deletes and deploys new resources (depending on the type of change).
+
 
 ## Saved Configuration
 
@@ -78,11 +90,13 @@ AWS Elastic Beanstalk enables you to manage all of the resources that run your a
 
 + You can create and modify saved configurations, and apply them to environments, using the Elastic Beanstalk console, EB CLI, AWS CLI, or API. The API and the AWS CLI refer to saved configurations as configuration templates.
 
+
 ## Platform
 
 + A platform is a combination of an operating system, programming language runtime, web server, application server, and Elastic Beanstalk components. You design and target your web application to a platform.
 
 + Elastic Beanstalk provides a variety of platforms on which you can build your applications.
+
 
 ## Elastic Beanstalk architecture for a web server environment tier
 
@@ -93,7 +107,9 @@ AWS Elastic Beanstalk enables you to manage all of the resources that run your a
 + AWS resources created for an environment include one elastic load balancer (ELB in the diagram), an Auto Scaling group, and one or more Amazon Elastic Compute Cloud (Amazon EC2) instances.
 
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/aeb-architecture2.png">
+
 
 
 + The load balancer sits in front of the Amazon EC2 instances, which are part of an Auto Scaling group. 
@@ -110,11 +126,13 @@ AWS Elastic Beanstalk enables you to manage all of the resources that run your a
 
 + By default, Elastic Beanstalk defines a security group, which allows everyone to connect using port 80 (HTTP). You can define more than one security group.
   
+
 ### Example
 
 + Elastic Beanstalk environment with an Apache Tomcat container uses the Amazon Linux operating system, Apache web server, and Apache Tomcat software.
   
 + Each Amazon EC2 instance that runs your application uses one of these container types.
+
 
 ## Host Manager
 
@@ -136,6 +154,7 @@ The host manager is responsible for the following:
 
 7. Rotating your application's log files and publishing them to Amazon S3
 
+
 ## Presets
 
 + Each preset includes recommend values for several configuration options.
@@ -145,6 +164,7 @@ The host manager is responsible for the following:
 + The High availability presets are recommended for production environments. They include a load balancer and scale with multiple instances in response to load.
 
 + If Custom configurations is selected, Elastic Beanstalk will provide the standard default values. Choose this option if you are deploying a source bundle with configuration files.
+
 
 ## Elastic Beanstalk architecture for a Worker environment tier
 
@@ -162,7 +182,11 @@ The host manager is responsible for the following:
 
 + Amazon CloudWatch is used for alarms and health monitoring
 
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/aeb-architecture_worker.png">
+
+
 
 ## Amazon SQS
 
@@ -171,6 +195,7 @@ The host manager is responsible for the following:
 + It exchanges and stores messages between software components. 
   
 + It provides a generic web services API that you can access using any programming language that the AWS SDK supports.
+
 
 # Design Consideration
 
@@ -192,9 +217,11 @@ Because applications deployed using AWS Elastic Beanstalk run on AWS Cloud resou
 
 https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.concepts.design.html >> Use this link to know more about design consideration.
 
+
 ## Permissions
 
 When you create an environment, AWS Elastic Beanstalk prompts you to provide the following AWS Identity and Access Management (IAM) roles:
+
 
 **Servicerole**
       
@@ -202,11 +229,13 @@ When you create an environment, AWS Elastic Beanstalk prompts you to provide the
 
 Example : example, Elastic Beanstalk uses a service role when it calls Amazon Elastic Compute Cloud (Amazon EC2), Elastic Load Balancing, and Amazon EC2 Auto Scaling APIs to gather information. The service role that Elastic Beanstalk uses is the one that you specified when you create the Elastic Beanstalk environment.
 
+
 **Instance profile**
 
 + Elastic Beanstalk applies instances profile to the instances in your environment.An instance profile is a container for an IAM role that you can use to pass role information to an EC2 instance when the instance starts.
 
 + If your web application requires access to other additional AWS services, add statements or managed policies to the instance profile that allow access to those services.
+
 
 **User policies**  
 
@@ -215,6 +244,7 @@ Example : example, Elastic Beanstalk uses a service role when it calls Amazon El
 + Elastic Beanstalk requires permissions not only for its own API actions, but also for several other AWS services. Elastic Beanstalk uses user permissions to launch resources in an environment. 
 
 + These resources include EC2 instances, an Elastic Load Balancing load balancer, and an Auto Scaling group.
+
 
 ## Platforms
 
@@ -244,140 +274,221 @@ AWS Elastic Beanstalk provides a variety of platforms on which you can build you
 
 Use this link to know more about platforms >> https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts-all-platforms.html
 
+
 ## How to create Elastic Beanstalk
+
 
 
 **Step 1: Login to the AWS management console**
 
 
+
 **Step 2: Click on the Elastic Beanstalk service under the services dropdown**
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/bs4.png">
 
 
+
+
 **Step 3: Click on Get Started on the opening page and then create a Web Application by providing the required details.**
+
 
 
 ### Configure Environment
 
+
+
 + **In Environment tier we can choose beanstalk environment and give name for your application**
+
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/Createbean.png">
 
 
+
+
 + **Key details you provide here:**
+
 
 + Environment name
 
+
 + Domain – A subdomain for accessing your web application.
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/create1.png">
 
 
+
+
 + **Choose platform type and choose platform, branch and version  (example: python, docker, go, etc...)**
+
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c2.png">
 
 
+
+
 + **In Application code choose upload your code. we can choose local code Zip file or provide s3 URL.**  
+
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c3a.png">
 
 
+
+
 + **Select a preset configuration that matches your use case. Each preset includes recommend values for several configuration options.**
 
+
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c4.png">
+
+
 
 
 ### Configure service access
 
 
+
 **Step 4: In this step we need to provide service role, key pair, instance profile details and click next** 
+
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c5.png">
 
 
+
+
 ### Set up networking, database, and tags 
+
 
 
 **Step 5:This steps are optional when we create application. values for this fields are  assigned automatically.**
 
+
 + **Select our VPC**
+
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c6.png">
 
 
+
+
 + **Add public IP and Instance subnetes**
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c7.png">
 
 
+
+
 + **when we need to integrate our database to our application provide all information.** 
+
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c8.png">
 
 
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c9.png">
+
+
 
 
 + **Use tags to group and filter resources.**
 
 
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c10.png">
+
+
 
 
 ### Configure instance traffic and scaling
 
 
+
 **Step 6: This steps are optional when we create application. values for this fields are  assigned automatically.**
+
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c11.png">
 
 
+
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c12.png">
+
+
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c13.png">
 
 
+
+
 ### Configure updates, monitoring, and logging
+
 
 
 **Step 7: This steps are optional when we create application. Values for this fields are  assigned automatically.**
 
 
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c14.png">
+
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c15.png">
 
 
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c16.png">
+
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c17.png">
 
 
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c18.png">
+
 
 
 ### Review
 
+
 **Step 8: Review our Configuration and Submit to create our application using beanstalk**
+
 
 ## Pricing
 
 There is no additional charge for Elastic Beanstalk. You pay only for the underlying AWS resources that your application consumes.
+
 
 ## Tutorials and samples
 
