@@ -1,6 +1,9 @@
 # AWS CodeCommit
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc1.png">
+
+
 
 + AWS CodeCommit is a version control service hosted by Amazon Web Services that you can use to privately store and manage assets (such as documents, source code, and binary files) in the cloud.
 
@@ -9,6 +12,7 @@
 + CodeCommit eliminates the need for you to manage your own source control system or worry about scaling its infrastructure.
 
 + It supports the standard functionality of Git, so it works seamlessly with your existing Git-based tools.
+
 
 ## Benefits
 
@@ -26,6 +30,7 @@
 
 7. Use the Git tools
 
+
 ## What is Git
 
 + Git is a DevOps tool used for source code management. 
@@ -34,7 +39,11 @@
 
 + Git is used to tracking changes in the source code, enabling multiple developers to work together on non-linear development.
 
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc2.png">
+
+
 
 ## How does CodeCommit work?
 
@@ -42,7 +51,11 @@
 
 + CodeCommit provides a console for the easy creation of repositories and the listing of existing repositories and branches.
 
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc4.png">
+
+
 
 ## Repository
 
@@ -54,6 +67,7 @@
 
 + You can create triggers for your repository so that code pushes or other events trigger actions, such as emails or code functions. You can even configure a repository on your local computer (a local repo) to push your changes to more than one repository.
 
+
 ## Files
 
 + In CodeCommit, a file is a version-controlled, self-contained piece of information available to you and other users of the repository and branch where the file is stored.
@@ -64,11 +78,13 @@
 
 + To add or edit a file in a repository, you can use a Git client. You can also use the CodeCommit console, the AWS CLI, or the CodeCommit API.
 
+
 ## Pull Request
 
 + A pull request is the primary way you and other repository users can review, comment on, and merge code changes from one branch to another.
 
 + You can use pull requests to collaboratively review code changes for minor changes or fixes, major feature additions, or new versions of your released software.
+
 
 ## Approval Rule
 
@@ -79,6 +95,7 @@
 + You can define different rules for production and development branches. Those rules are applied every time a pull request that matches the rule conditions is created.
 
 + You can associate an approval rule template with one or more repositories in the AWS Region where they are created.
+
 
 ## Commits
 
@@ -100,6 +117,7 @@ In CodeCommit, you can:
 
   + Add comments to your commits and reply to comments made by others.
 
+
 ## Branches
 
 + In Git, branches are pointers or references to a commit. In development, they're a convenient way to organize your work. You can use branches to separate work on a new or different version of files without affecting work in other branches. 
@@ -114,64 +132,98 @@ In CodeCommit, you can:
 
 + In CodeCommit, you can change the default branch for your repository. You can also create and delete branches and view details about a branch.
 
+
+
 ## How to create Codecommit
+
+
 
 **Step 1: Login into AWS management console**
 
+
+
 **Step 2: In AWS management console search for codecommit service**
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc3.png">
 
 
+
 **Step 3: Click create repository**
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc5.png">
 
 
+
+
 **1. Give repository name and click create** 
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc6.png">
 
 
+
+
 **2. Once the repository created we use any one of the methods to store the repo locally.**
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc7.png">
 
 
+
+
 **3. You can also create files using CodecommitUI.**
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc8.png">
 
 
+
+
 **4. Delete our repository using click delete repo option**
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc9.png">
 
 
+
+
 ## How to Create Credential for Codecommit
 
+
+
 **5. Open IAM service go to users** 
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc11.png">
 
 
+
+
 **6. Inside user scrool down to reach security Credentials tab**
+
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc12.png">
 
 
+
+
 **7. Click Generate credentials to create HTTPS Keys in a excel format also upload our SSH keys for ssh authentication**
 
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc13.png">
+
+
 
 
 ## Security in AWS Codecommit
@@ -187,19 +239,30 @@ In CodeCommit, you can:
 ## Pricing
 
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc10.png">
+
+
 
 
 # Git Commands
 
+
+
 ### Initialize and Create
+
+
 
 | Command | Description |
 | ------- | ----------- |
 | `git init` | Initialize a local Git repository |
 | `git clone ssh://git@github.com/[username]/[repository-name].git` | Create a local copy of a remote repository |
 
+
+
 ### Basic workflow 
+
+
 
 | Command | Description |
 | ------- | ----------- |
@@ -209,7 +272,11 @@ In CodeCommit, you can:
 | `git commit -m "[commit message]"` | Commit changes |
 | `git rm -r [file-name.txt]` | Remove a file (or folder) |
 
+
+
 ### Branching & Merging
+
+
 
 | Command | Description |
 | ------- | ----------- |
@@ -229,7 +296,11 @@ In CodeCommit, you can:
 | `git stash` | Stash changes in a dirty working directory |
 | `git stash clear` | Remove all stashed entries |
 
+
+
 ### Send and Receive
+
+
 
 | Command | Description |
 | ------- | ----------- |
@@ -242,7 +313,11 @@ In CodeCommit, you can:
 | `git remote add origin ssh://git@github.com/[username]/[repository-name].git` | Add a remote repository |
 | `git remote set-url origin ssh://git@github.com/[username]/[repository-name].git` | Set a repository's origin branch to SSH |
 
+
+
 ### Inspection & Comparison
+
+
 
 | Command | Description |
 | ------- | ----------- |
@@ -250,6 +325,7 @@ In CodeCommit, you can:
 | `git log --summary` | View changes (detailed) |
 | `git log --oneline` | View changes (briefly) |
 | `git diff [source branch] [target branch]` | Preview changes before merging |
+
 
 
 ## Reference
