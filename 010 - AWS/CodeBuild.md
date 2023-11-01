@@ -26,6 +26,8 @@
 ## CodeBuild Workflow
 
 
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb2.png">
 
 
@@ -394,7 +396,9 @@ Optional sequence. Represents information about where CodeBuild can prepare the 
 
 
 
-**Step 1: Login into AWS Management console and search codebuild service.**
+### **Step 1: Login into AWS Management console and search codebuild service.**
+
+
 
 
 
@@ -402,7 +406,11 @@ Optional sequence. Represents information about where CodeBuild can prepare the 
 
 
 
-**Step 2: Click Create build project**
+
+
+### **Step 2: Click Create build project**
+
+
 
 
 
@@ -410,7 +418,11 @@ Optional sequence. Represents information about where CodeBuild can prepare the 
 
 
 
-**Step 3: Give project name and description**
+
+
+### **Step 3: Give project name and description**
+
+
 
 
 
@@ -418,7 +430,11 @@ Optional sequence. Represents information about where CodeBuild can prepare the 
 
 
 
-+ **Choose our Source (Codecommit, Github, etc..)**
+
+
++ ###  **Choose our Source (Codecommit, Github, etc..)**
+
+
 
 
 
@@ -426,7 +442,11 @@ Optional sequence. Represents information about where CodeBuild can prepare the 
 
 
 
-+ **choose our Environment image and servicerole with codebuild full access permission**
+
+
++ ### **choose our Environment image and servicerole with codebuild full access permission**
+
+
 
 
 
@@ -434,7 +454,11 @@ Optional sequence. Represents information about where CodeBuild can prepare the 
 
 
 
-+ **Give buildspec file or build commands for project build**
+
+
++ ### **Give buildspec file or build commands for project build**
+
+
 
 
 
@@ -442,7 +466,12 @@ Optional sequence. Represents information about where CodeBuild can prepare the 
 
 
 
-+ **choose Artifact type and logging using cloudwatch and click create build project**
+
+
++ ### **choose Artifact type and logging using cloudwatch and click create build project**
+
+
+
 
 
 
@@ -450,7 +479,12 @@ Optional sequence. Represents information about where CodeBuild can prepare the 
 
 
 
-**Step 4: click Create Report group**
+
+
+
+### **Step 4: click Create Report group**
+
+
 
 
 
@@ -458,11 +492,18 @@ Optional sequence. Represents information about where CodeBuild can prepare the 
 
 
 
-+ **Give details of report group name, type and export option and click create report group**
+
+
++ ### **Give details of report group name, type and export option and click create report group**
+
+
+
 
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb14.png">
+
+
 
 
 
