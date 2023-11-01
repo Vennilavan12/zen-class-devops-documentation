@@ -355,7 +355,11 @@ The optional Outputs section declares output values that you can import into oth
 ## How to create Cloudformation
 
 
-**step 1: Login into AWS management console and serach cloudformation service**
+
+
+### **step 1: Login into AWS management console and serach cloudformation service**
+
+
 
 
 
@@ -363,13 +367,23 @@ The optional Outputs section declares output values that you can import into oth
 
 
 
-+ **Click create stack and give all details select template type.**
 
 
-+ **Choose our JSON or YAML file otherwise also create template using designer**
++ ### **Click create stack and give all details select template type.**
 
 
-+ **Give source details is S3 url or Local file and click next.**
+
+
++ ### **Choose our JSON or YAML file otherwise also create template using designer**
+
+
+
+
+
++ ### **Give source details is S3 url or Local file and click next.**
+
+
+
 
 
 
@@ -377,11 +391,22 @@ The optional Outputs section declares output values that you can import into oth
 
 
 
- **Step 2: In this step we can give stack name and check all our configuration and click next**
+
+
+ ### **Step 2: In this step we can give stack name and check all our configuration and click next**
+
+
+
+
 
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf9.png">
+
+
+
+
+
 
 
 
@@ -391,10 +416,19 @@ The optional Outputs section declares output values that you can import into oth
 
 
 
-**Step 3: Specify stack details** 
 
 
-+ **This step attach a IAM role and leave other options by default.**
+
+
+
+### **Step 3: Specify stack details** 
+
+
+
+
+
++ ### **This step attach a IAM role and leave other options by default.**
+
 
 
 
@@ -404,20 +438,38 @@ The optional Outputs section declares output values that you can import into oth
 
 
 
+
+
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf12.png">
 
 
 
 
-**Step 4: Review our configuration and click create.**
 
 
-+ **All of our resources are created as a stack we can change and delete using the stack.**
+### **Step 4: Review our configuration and click create.**
+
+
+
+
+
+### + **All of our resources are created as a stack we can change and delete using the stack.**
   
 
 
 
+
+
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf13.png">
+
+
+
+
+
 
 
 
