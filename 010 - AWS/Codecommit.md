@@ -57,6 +57,7 @@
 
 
 
+
 ## Repository
 
 + A repository is the fundamental version control object in CodeCommit.
@@ -138,11 +139,17 @@ In CodeCommit, you can:
 
 
 
-**Step 1: Login into AWS management console**
+
+### **Step 1: Login into AWS management console**
 
 
 
-**Step 2: In AWS management console search for codecommit service**
+
+
+### **Step 2: In AWS management console search for codecommit service**
+
+
+
 
 
 
@@ -150,7 +157,12 @@ In CodeCommit, you can:
 
 
 
-**Step 3: Click create repository**
+
+
+### **Step 3: Click create repository**
+
+
+
 
 
 
@@ -159,7 +171,12 @@ In CodeCommit, you can:
 
 
 
-**1. Give repository name and click create** 
+
+
+### **1. Give repository name and click create** 
+
+
+
 
 
 
@@ -168,7 +185,12 @@ In CodeCommit, you can:
 
 
 
-**2. Once the repository created we use any one of the methods to store the repo locally.**
+
+
+### **2. Once the repository created we use any one of the methods to store the repo locally.**
+
+
+
 
 
 
@@ -177,7 +199,13 @@ In CodeCommit, you can:
 
 
 
-**3. You can also create files using CodecommitUI.**
+
+
+### **3. You can also create files using CodecommitUI.**
+
+
+
+
 
 
 
@@ -186,7 +214,12 @@ In CodeCommit, you can:
 
 
 
-**4. Delete our repository using click delete repo option**
+
+
+### **4. Delete our repository using click delete repo option**
+
+
+
 
 
 
@@ -195,11 +228,16 @@ In CodeCommit, you can:
 
 
 
+
+
 ## How to Create Credential for Codecommit
 
 
 
-**5. Open IAM service go to users** 
+### **5. Open IAM service go to users** 
+
+
+
 
 
 
@@ -208,7 +246,13 @@ In CodeCommit, you can:
 
 
 
-**6. Inside user scrool down to reach security Credentials tab**
+
+
+### **6. Inside user scrool down to reach security Credentials tab**
+
+
+
+
 
 
 
@@ -217,11 +261,15 @@ In CodeCommit, you can:
 
 
 
-**7. Click Generate credentials to create HTTPS Keys in a excel format also upload our SSH keys for ssh authentication**
+
+
+### **7. Click Generate credentials to create HTTPS Keys in a excel format also upload our SSH keys for ssh authentication**
+
 
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc13.png">
+
 
 
 
