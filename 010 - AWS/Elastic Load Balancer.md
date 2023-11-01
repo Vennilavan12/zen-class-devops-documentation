@@ -125,13 +125,13 @@ cross-zone load balancing is always enabled at the load balancer level. At the t
 
 
 
-**1. Sign into AWS Management Console**
+### **1. Sign into AWS Management Console**
 
 
 
 
 
-**2. Select your preferred Region. Select a region from the drop-down, the selection of the region can be done on the basis of the criteria discussed earlier in the blog.**
+### **2. Select your preferred Region. Select a region from the drop-down, the selection of the region can be done on the basis of the criteria discussed earlier in the blog.**
 
 
 
@@ -143,7 +143,7 @@ cross-zone load balancing is always enabled at the load balancer level. At the t
 
 
 
-**3. Select ELB Service in Management console**
+### **3. Select ELB Service in Management console**
 
 
 
@@ -153,7 +153,7 @@ cross-zone load balancing is always enabled at the load balancer level. At the t
 
 
 
-**4. Click Create LoadBalancer buttton**
+### **4. Click Create LoadBalancer buttton**
 
 
 
@@ -165,7 +165,7 @@ cross-zone load balancing is always enabled at the load balancer level. At the t
 
 
 
-**5. Choose ELB type and click create**
+### **5. Choose ELB type and click create**
 
 
 
@@ -176,7 +176,7 @@ cross-zone load balancing is always enabled at the load balancer level. At the t
 
   
 
-**6. Make Basic Configuration Name, Schema and IP Address Type**
+### **6. Make Basic Configuration Name, Schema and IP Address Type**
 
 
 
@@ -214,7 +214,9 @@ Scheme is the type of load balancer.
 
 
 
-**7. Configure Network mapping section - Choose VPC and Availability Zones**
+
+
+### **7. Configure Network mapping section - Choose VPC and Availability Zones**
    
 
 
@@ -235,7 +237,7 @@ Scheme is the type of load balancer.
 
 
 
-**8. Add Security Groups for Loadbalancer**
+### **8. Add Security Groups for Loadbalancer**
 
 
 
@@ -248,7 +250,7 @@ Scheme is the type of load balancer.
 
 
 
-**9. Add Listeners and Routing info - Add a Target Group**
+### **9. Add Listeners and Routing info - Add a Target Group**
 
 
 
@@ -260,7 +262,7 @@ Scheme is the type of load balancer.
 
 
 
-**10.Create Target Group and adding our servers**
+### **10.Create Target Group and adding our servers**
 
 
 
@@ -278,12 +280,12 @@ Scheme is the type of load balancer.
 
 
 
-**12. Choose target Type - Instances, Ip Address, Lambda, ALB**
+### **12. Choose target Type - Instances, Ip Address, Lambda, ALB**
 
 
 
 
-**13. Add Target Group Name,Protocol, Ports, IP address type, VPC and Protocol Version.**
+### **13. Add Target Group Name,Protocol, Ports, IP address type, VPC and Protocol Version.**
 
 
 
@@ -296,7 +298,10 @@ Scheme is the type of load balancer.
 
 
 
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/TG2.png">
+
+
 
 
 
@@ -317,7 +322,9 @@ By default, Application Load Balancers send requests to targets using HTTP/1.1. 
 
 
 
-**14. Adding Health check path to store logs**
+
+
+### **14. Adding Health check path to store logs**
 
 
 
@@ -329,17 +336,17 @@ By default, Application Load Balancers send requests to targets using HTTP/1.1. 
 
 
 
-**15. Register our intsances as targets only running instance are shown in the Page.**
+### **15. Register our intsances as targets only running instance are shown in the Page.**
 
 
 
 
-**16. Select and include below option to add our instance.**
+### **16. Select and include below option to add our instance.**
 
 
 
 
-**17. Finally review our targets and create targets group.**
+### **17. Finally review our targets and create targets group.**
 
 
 
@@ -351,12 +358,13 @@ By default, Application Load Balancers send requests to targets using HTTP/1.1. 
 
 
 
-**18. Once target group was created continue with **Step 9** and choose our new target group.**
+
+### **18. Once target group was created continue with **Step 9** and choose our new target group.**
 
 
 
 
-**19. Review our configuration and create it.**
+### **19. Review our configuration and create it.**
 
 
 
@@ -364,6 +372,7 @@ By default, Application Load Balancers send requests to targets using HTTP/1.1. 
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/Final.png">
+
 
 
 
@@ -414,7 +423,7 @@ By default, Application Load Balancers send requests to targets using HTTP/1.1. 
 
 
 
-+ **Network Load Balancer creation also same as Application Load Balancer only changes in **Step 9** Protocols**
++ ###  **Network Load Balancer creation also same as Application Load Balancer only changes in **Step 9** Protocols**
 
 
 
@@ -474,13 +483,13 @@ Gateway Load Balancer helps you easily deploy, scale, and manage your third-part
 
 
 
-**1. Start with ALB creation **Step 6** basic configuration for create GatewayLB.**
+### **1. Start with ALB creation **Step 6** basic configuration for create GatewayLB.**
 
 
 
 
 
-**2. Next step same as Step 7**
+### **2. Next step same as Step 7**
 
 
 
@@ -492,7 +501,8 @@ Gateway Load Balancer helps you easily deploy, scale, and manage your third-part
 
 
 
-**3. Complete steps and click create loadbalancer.** 
+
+### **3. Complete steps and click create loadbalancer.** 
 
 
 
@@ -537,7 +547,7 @@ Classic Load Balancer creation also same as Application Load Balancer changes ar
 
 
 
-**1.Select Listener and instance protocol.**
+### **1.Select Listener and instance protocol.**
 
 
 
@@ -549,7 +559,8 @@ Classic Load Balancer creation also same as Application Load Balancer changes ar
 
 
 
-**2.Add Instances to create our Classic Load Balancer.**
+
+### **2.Add Instances to create our Classic Load Balancer.**
 
 
 
