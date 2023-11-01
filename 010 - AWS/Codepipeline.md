@@ -60,6 +60,8 @@ AWS CodePipeline is a continuous delivery service you can use to model, visualiz
 
 
 
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/PipelineFlow.png">
 
 
@@ -371,7 +373,11 @@ Valid statuses for actions are
 ## How to create codepipeline
 
 
-+ **Sign into AWS Management console and search codepipeline service**
+
+
++ ### **Sign into AWS Management console and search codepipeline service**
+
+
 
 
 
@@ -381,7 +387,10 @@ Valid statuses for actions are
 
 
 
-+ **Click create pipeline**
+
++ ### **Click create pipeline**
+
+
 
 
 
@@ -389,7 +398,11 @@ Valid statuses for actions are
 
 
 
-**Step 1: Choose pipeline settings give name and service role for accessing resources**
+
+
+### **Step 1: Choose pipeline settings give name and service role for accessing resources**
+
+
 
 
 
@@ -397,15 +410,24 @@ Valid statuses for actions are
 
 
 
-**Step 2: Add source stage**
+
+
+### **Step 2: Add source stage**
 
 
 
-+ **In this stage we can give our source details(codecommit, S3, Github, etc...)**
+
+
++ ### **In this stage we can give our source details(codecommit, S3, Github, etc...)**
 
 
 
-+ **Give details of repository, branch name and artifact format**
+
+
++ ### **Give details of repository, branch name and artifact format**
+
+
+
 
 
 
@@ -415,7 +437,13 @@ Valid statuses for actions are
 
 
 
-+ **The image shows Codecommit source stage**
+
+
+
++ ### **The image shows Codecommit source stage**
+
+
+
 
 
 
@@ -423,7 +451,15 @@ Valid statuses for actions are
 
 
 
-+ **The image shows S3 as a source stage**
+
+
+
++ ### **The image shows S3 as a source stage**
+
+
+
+
+
 
 
 
@@ -431,7 +467,13 @@ Valid statuses for actions are
 
 
 
-+ **The image shows Github as a source stage**
+
+
+
++ ### **The image shows Github as a source stage**
+
+
+
 
 
 
@@ -439,7 +481,13 @@ Valid statuses for actions are
 
 
 
-**Step 3:Add build stage this is optional but we use for build our code using codebuild or jenkins**
+
+
+### **Step 3:Add build stage this is optional but we use for build our code using codebuild or jenkins**
+
+
+
+
 
 
 
@@ -447,7 +495,12 @@ Valid statuses for actions are
 
 
 
-**Step 4: Add our Deploy stage for our deployment method**
+
+
+### **Step 4: Add our Deploy stage for our deployment method**
+
+
+
 
 
 
@@ -455,7 +508,14 @@ Valid statuses for actions are
 
 
 
-**Step 5: Review and create your pipeline**
+
+
+
+### **Step 5: Review and create your pipeline**
+
+
+
+
 
 
 ## Pricing
