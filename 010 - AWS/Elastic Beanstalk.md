@@ -279,11 +279,12 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
-**Step 1: Login to the AWS management console**
+
+### **Step 1: Login to the AWS management console**
 
 
 
-**Step 2: Click on the Elastic Beanstalk service under the services dropdown**
+### **Step 2: Click on the Elastic Beanstalk service under the services dropdown**
 
 
 
@@ -292,7 +293,7 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
-**Step 3: Click on Get Started on the opening page and then create a Web Application by providing the required details.**
+### **Step 3: Click on Get Started on the opening page and then create a Web Application by providing the required details.**
 
 
 
@@ -300,7 +301,7 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
-+ **In Environment tier we can choose beanstalk environment and give name for your application**
++ ### **In Environment tier we can choose beanstalk environment and give name for your application**
 
 
 
@@ -310,7 +311,8 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
-+ **Key details you provide here:**
+
++ ### **Key details you provide here:**
 
 
 + Environment name
@@ -325,7 +327,7 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
-+ **Choose platform type and choose platform, branch and version  (example: python, docker, go, etc...)**
++ ### **Choose platform type and choose platform, branch and version  (example: python, docker, go, etc...)**
 
 
 
@@ -335,7 +337,7 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
-+ **In Application code choose upload your code. we can choose local code Zip file or provide s3 URL.**  
++ ### **In Application code choose upload your code. we can choose local code Zip file or provide s3 URL.**  
 
 
 
@@ -345,7 +347,7 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
-+ **Select a preset configuration that matches your use case. Each preset includes recommend values for several configuration options.**
++ ### **Select a preset configuration that matches your use case. Each preset includes recommend values for several configuration options.**
 
 
 
@@ -359,7 +361,8 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
-**Step 4: In this step we need to provide service role, key pair, instance profile details and click next** 
+### **Step 4: In this step we need to provide service role, key pair, instance profile details and click next** 
+
 
 
 
@@ -369,14 +372,15 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
+
 ### Set up networking, database, and tags 
 
 
 
-**Step 5:This steps are optional when we create application. values for this fields are  assigned automatically.**
+### **Step 5:This steps are optional when we create application. values for this fields are  assigned automatically.**
 
 
-+ **Select our VPC**
++ ### **Select our VPC**
 
 
 
@@ -386,7 +390,7 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
-+ **Add public IP and Instance subnetes**
++ ### **Add public IP and Instance subnetes**
 
 
 
@@ -395,12 +399,16 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
-+ **when we need to integrate our database to our application provide all information.** 
++ ### **when we need to integrate our database to our application provide all information.** 
+
+
 
 
 
 
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c8.png">
+
+
 
 
 
@@ -420,11 +428,13 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
+
+
 ### Configure instance traffic and scaling
 
 
 
-**Step 6: This steps are optional when we create application. values for this fields are  assigned automatically.**
+### **Step 6: This steps are optional when we create application. values for this fields are  assigned automatically.**
 
 
 
@@ -450,7 +460,9 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
-**Step 7: This steps are optional when we create application. Values for this fields are  assigned automatically.**
+
+
+### **Step 7: This steps are optional when we create application. Values for this fields are  assigned automatically.**
 
 
 
@@ -460,7 +472,12 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
+
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c15.png">
+
+
 
 
 
@@ -470,12 +487,21 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c17.png">
 
 
 
 
+
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c18.png">
+
+
+
+
 
 
 
