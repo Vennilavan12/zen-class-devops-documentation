@@ -309,7 +309,8 @@ iii. Blue/green deployments through AWS CloudFormation
 
 
 
-**Step 1: Login to aws management console and search CodeDeploy service**
+
+### **Step 1: Login to aws management console and search CodeDeploy service**
 
 
 
@@ -319,7 +320,7 @@ iii. Blue/green deployments through AWS CloudFormation
 
 
 
-**Step 2: Click create application to create or CodeDeploy** 
+### **Step 2: Click create application to create or CodeDeploy** 
 
 
 
@@ -329,7 +330,7 @@ iii. Blue/green deployments through AWS CloudFormation
 
 
 
-**Step 3: Give Application name and choose compute platform and click create application**
+### **Step 3: Give Application name and choose compute platform and click create application**
 
 
 
@@ -339,7 +340,7 @@ iii. Blue/green deployments through AWS CloudFormation
 
 
 
-**Step 4: Next create a deployment group**
+### **Step 4: Next create a deployment group**
 
 
 
@@ -348,7 +349,7 @@ iii. Blue/green deployments through AWS CloudFormation
 
 
 
-**Step 5: Choose deployment groupname and service role with CodeDeploy full access permission**
+### **Step 5: Choose deployment groupname and service role with CodeDeploy full access permission**
 
 
 
@@ -357,7 +358,7 @@ iii. Blue/green deployments through AWS CloudFormation
 
 
 
-+ **Choose deployment type and environment for our application**
++ ### **Choose deployment type and environment for our application**
 
 
 
@@ -367,7 +368,7 @@ iii. Blue/green deployments through AWS CloudFormation
 
 
 
-+ **Choose Deployment settings and loadbalancer then click create deployment group**
++ ### **Choose Deployment settings and loadbalancer then click create deployment group**
 
 
 
@@ -377,7 +378,7 @@ iii. Blue/green deployments through AWS CloudFormation
 
 
 
-**Step 6: Next create deployment** 
+### **Step 6: Next create deployment** 
 
 
 
@@ -387,7 +388,7 @@ iii. Blue/green deployments through AWS CloudFormation
 
 
 
-+ **choose deployment group and revision type**
++ ### **choose deployment group and revision type**
 
 
 
@@ -395,7 +396,7 @@ iii. Blue/green deployments through AWS CloudFormation
 
 
 
-+ **Give description and other options set to default and click create deployment**
++ ### **Give description and other options set to default and click create deployment**
 
 
 
