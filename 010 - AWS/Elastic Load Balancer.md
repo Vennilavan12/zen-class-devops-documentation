@@ -137,7 +137,11 @@ cross-zone load balancing is always enabled at the load balancer level. At the t
 
 
 
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/Screenshot%202023-10-27%20174417.png">
+
+
 
 
 
@@ -147,13 +151,22 @@ cross-zone load balancing is always enabled at the load balancer level. At the t
 
 
 
+
+
+
    
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/ELB_service.png">
 
 
 
 
+
+
+
 ### **4. Click Create LoadBalancer buttton**
+
+
+
 
 
 
@@ -165,7 +178,11 @@ cross-zone load balancing is always enabled at the load balancer level. At the t
 
 
 
+
+
 ### **5. Choose ELB type and click create**
+
+
 
 
 
@@ -175,6 +192,8 @@ cross-zone load balancing is always enabled at the load balancer level. At the t
 
 
   
+
+
 
 ### **6. Make Basic Configuration Name, Schema and IP Address Type**
 
@@ -209,7 +228,11 @@ Scheme is the type of load balancer.
 
 
 
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/Basic_conf.png">
+
+
 
 
 
@@ -229,8 +252,11 @@ Scheme is the type of load balancer.
 
 
 
+
+
   
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/nwmapp.png">
+
 
 
 
@@ -244,7 +270,12 @@ Scheme is the type of load balancer.
 
 
 
+
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/sg.png">
+
+
 
 
 
@@ -256,7 +287,14 @@ Scheme is the type of load balancer.
 
 
 
+
+
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/listener_routing.png">
+
+
+
 
 
 
@@ -274,7 +312,13 @@ Scheme is the type of load balancer.
 
 
 
+
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/TGcreate.png">
+
+
+
 
 
 
@@ -285,7 +329,11 @@ Scheme is the type of load balancer.
 
 
 
+
+
+
 ### **13. Add Target Group Name,Protocol, Ports, IP address type, VPC and Protocol Version.**
+
 
 
 
@@ -299,7 +347,11 @@ Scheme is the type of load balancer.
 
 
 
+
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/TG2.png">
+
 
 
 
@@ -316,7 +368,10 @@ By default, Application Load Balancers send requests to targets using HTTP/1.1. 
 
 
 
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/TG3.png">
+
 
 
 
@@ -330,7 +385,11 @@ By default, Application Load Balancers send requests to targets using HTTP/1.1. 
 
 
 
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/TG4.png">
+
+
 
 
 
@@ -341,7 +400,9 @@ By default, Application Load Balancers send requests to targets using HTTP/1.1. 
 
 
 
+
 ### **16. Select and include below option to add our instance.**
+
 
 
 
@@ -351,8 +412,12 @@ By default, Application Load Balancers send requests to targets using HTTP/1.1. 
 
 
 
+
+
   
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/TG5.png">
+
+
 
 
 
@@ -371,7 +436,12 @@ By default, Application Load Balancers send requests to targets using HTTP/1.1. 
 
 
 
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/Final.png">
+
+
+
 
 
 
@@ -391,8 +461,10 @@ By default, Application Load Balancers send requests to targets using HTTP/1.1. 
 
 
 
+
   
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/nwlbimg.png">
+
 
 
 
@@ -430,7 +502,11 @@ By default, Application Load Balancers send requests to targets using HTTP/1.1. 
 
 
 
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/nlb.png">
+
+
 
 
 
@@ -444,7 +520,13 @@ Gateway Load Balancer helps you easily deploy, scale, and manage your third-part
 
 
 
+
+
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/gwlb.png">
+
+
 
 
 
@@ -473,7 +555,11 @@ Gateway Load Balancer helps you easily deploy, scale, and manage your third-part
 
 
 
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/gwlb_sideways_flow.png">
+
+
 
 
 
@@ -483,7 +569,11 @@ Gateway Load Balancer helps you easily deploy, scale, and manage your third-part
 
 
 
+
+
 ### **1. Start with ALB creation **Step 6** basic configuration for create GatewayLB.**
+
+
 
 
 
@@ -495,7 +585,11 @@ Gateway Load Balancer helps you easily deploy, scale, and manage your third-part
 
 
 
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/gwlb1.png">
+
+
 
 
 
@@ -534,7 +628,13 @@ For example, if you have ten instances in Availability Zone us-west-2a and two i
 
 
 
+
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/C_load_balancer.png">
+
+
+
 
 
 
@@ -553,7 +653,12 @@ Classic Load Balancer creation also same as Application Load Balancer changes ar
 
 
 
+
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/clb1.png">
+
+
 
 
 
@@ -566,7 +671,13 @@ Classic Load Balancer creation also same as Application Load Balancer changes ar
 
 
 
+
+
+
 <img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/clb2.png">
+
+
+
 
 
 
