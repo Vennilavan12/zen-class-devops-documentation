@@ -2,7 +2,7 @@
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd1.png">
+![cd1](https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/1c79423c-4ed3-4eb4-96c9-8169318ef7f7)
 
 
 
@@ -62,7 +62,7 @@ CodeDeploy makes it easier for you to:
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd2.png">
+![cd2](https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/16710c5a-6d02-40aa-88f5-9ddc2a3570b3)
 
 
 
@@ -91,8 +91,7 @@ The application on each instance in the deployment group is stopped, the latest 
 
 
    
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd3.png">
-
+![cd3](https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/2c4b42d2-b48a-4376-aa8b-1667abbe0ce6)
 
 
 The behavior of your deployment depends on which compute platform you use:
@@ -161,8 +160,7 @@ iii. Blue/green deployments through AWS CloudFormation
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd5.png">
-
+![cd5](https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/facb4cb1-bd8f-4f49-a800-08a602df2f05)
 
 
 1. Canary
@@ -216,7 +214,7 @@ iii. Blue/green deployments through AWS CloudFormation
 
 
  
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/speed.png">
+![speed](https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/bcab6a1f-7088-48d2-be8c-4490fee48e52)
 
 
 
@@ -315,7 +313,7 @@ iii. Blue/green deployments through AWS CloudFormation
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd6.png">
+<img width="755" alt="cd6" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/da96fff0-5dec-42e6-bb20-519bc06043ca">
 
 
 
@@ -325,7 +323,7 @@ iii. Blue/green deployments through AWS CloudFormation
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd7.png">
+<img width="913" alt="cd7" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/8d2bab60-d810-4903-afa5-d2fee2a1013c"> 
 
 
 
@@ -335,7 +333,8 @@ iii. Blue/green deployments through AWS CloudFormation
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd8.png">
+
+<img width="534" alt="cd8" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/dbd6a96d-11b7-4dd8-9642-31603ace25f9">
 
 
 
@@ -344,7 +343,7 @@ iii. Blue/green deployments through AWS CloudFormation
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd9.png">
+<img width="923" alt="cd9" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/eddeaa35-e1aa-446c-abd4-b35cfcf1b814">
 
 
 
@@ -354,7 +353,7 @@ iii. Blue/green deployments through AWS CloudFormation
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd10.png">
+<img width="571" alt="cd10" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/9ee1c657-e8e4-45d0-9942-4ffd3290e79b">
 
 
 
@@ -363,7 +362,7 @@ iii. Blue/green deployments through AWS CloudFormation
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd11.png">
+<img width="569" alt="cd11" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/403125cf-99e7-492a-b3f9-9d5613342248">
 
 
 
@@ -373,7 +372,7 @@ iii. Blue/green deployments through AWS CloudFormation
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd12.png">
+<img width="692" alt="cd12" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/4a1867f9-8c2b-4673-9933-14ed0a5fded0">
 
 
 
@@ -383,7 +382,7 @@ iii. Blue/green deployments through AWS CloudFormation
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd13.png">
+<img width="923" alt="cd13" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/d9aab415-5d0c-4d99-aa4a-ee36d52e7da1">
 
 
 
@@ -392,7 +391,7 @@ iii. Blue/green deployments through AWS CloudFormation
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd14.png">
+<img width="573" alt="cd14" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/d82d1d75-ea61-4fe6-a7cf-33e9d6374593">
 
 
 
@@ -401,7 +400,7 @@ iii. Blue/green deployments through AWS CloudFormation
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cd15.png">
+<img width="322" alt="cd15" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/5858a3b3-8424-4314-9fa8-784780c771f2">
 
 
 
