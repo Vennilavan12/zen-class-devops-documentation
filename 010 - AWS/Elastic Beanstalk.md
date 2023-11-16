@@ -448,7 +448,7 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
-
+<img width="317" alt="c12" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/8b75d253-29d3-4bc1-8025-6cd1f1a56595">
 
 
 
