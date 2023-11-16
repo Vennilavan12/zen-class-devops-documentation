@@ -1,7 +1,7 @@
 # AWS Elastic Beanstalk
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/1.png">
+![1](https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/e754ae04-deb2-4c83-8da9-831780f7fcb7)
 
 
 Elastic Beanstalk, you can quickly deploy and manage applications in the AWS Cloud without having to learn about the infrastructure that runs those applications.
@@ -28,7 +28,7 @@ Elastic Beanstalk, you can quickly deploy and manage applications in the AWS Clo
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/Bs2.png">
+![Bs2](https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/061dba03-73b5-4a8d-8466-0bb90c249cd7)
 
 
 
@@ -108,8 +108,7 @@ AWS Elastic Beanstalk enables you to manage all of the resources that run your a
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/aeb-architecture2.png">
-
+![aeb-architecture2](https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/57a5c8e3-7d0a-4e97-b29f-c2b1ffebd799)
 
 
 + The load balancer sits in front of the Amazon EC2 instances, which are part of an Auto Scaling group. 
@@ -184,7 +183,7 @@ The host manager is responsible for the following:
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/aeb-architecture_worker.png">
+![aeb-architecture_worker](https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/d305d359-e8a4-4a0c-974d-6209ac68593e)
 
 
 
@@ -288,7 +287,7 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/bs4.png">
+![bs4](https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/efdf2ff5-8689-4bc1-9e05-d81afb1e818d)
 
 
 
@@ -306,7 +305,7 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/Createbean.png">
+<img width="679" alt="Createbean" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/767a596a-0c73-489c-9d0c-58353627a7c9">
 
 
 
@@ -322,7 +321,7 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/create1.png">
+<img width="485" alt="create1" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/62361acf-bb1e-40f3-b463-cb9eac181408">
 
 
 
@@ -332,7 +331,7 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c2.png">
+<img width="485" alt="c2" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/ba8ee064-f4e9-4f0d-ba74-9921c839f93a">
 
 
 
@@ -342,7 +341,7 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c3a.png">
+<img width="486" alt="c3a" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/a982ef3b-6cdc-419a-bcb3-d45da1297f37">
 
 
 
@@ -352,7 +351,7 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c4.png">
+<img width="487" alt="c4" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/8b8ed996-5160-423e-95b9-98f835d9854e">
 
 
 
@@ -367,7 +366,7 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c5.png">
+<img width="685" alt="c5" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/ff065bb0-ffc2-4906-9896-3a0457c9184e">
 
 
 
@@ -385,7 +384,7 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c6.png">
+<img width="489" alt="c6" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/1ad5e876-78ff-4394-8f1d-e25dffe991b4">
 
 
 
@@ -394,7 +393,7 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c7.png">
+<img width="486" alt="c7" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/903ed621-685a-4e22-96af-a73b8be26a7c">
 
 
 
@@ -406,14 +405,14 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c8.png">
+<img width="493" alt="c8" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/3ae96322-36e6-49c7-b1cb-8f9b7f3c9866">
 
 
 
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c9.png">
+<img width="484" alt="c9" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/dba0fa9a-bc0d-498f-b7b1-9b4f796737c5">
 
 
 
@@ -423,7 +422,7 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c10.png">
+<img width="490" alt="c10" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/6f20087f-2a02-4680-9b00-5a1c6c89336e">
 
 
 
@@ -439,19 +438,19 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c11.png">
+<img width="304" alt="c11" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/b14f59a7-ea6e-4661-898a-cba486c04935">
 
 
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c12.png">
+<img width="317" alt="c12" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/8b75d253-29d3-4bc1-8025-6cd1f1a56595">
 
 
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c13.png">
+<img width="305" alt="c13" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/a329ba07-846d-4060-a9cf-845c7f6c67df">
 
 
 
@@ -467,7 +466,7 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c14.png">
+<img width="410" alt="c14" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/a7824b6a-11af-470e-b590-711ab689d926">
 
 
 
@@ -475,21 +474,21 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c15.png">
+<img width="410" alt="c15" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/6cd9057f-770d-475a-9b4d-b31616ca9f75">
 
 
 
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c16.png">
+<img width="407" alt="c16" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/3e53372a-ace8-4038-b32f-46999327b8e4">
 
 
 
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c17.png">
+<img width="308" alt="c17" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/d26251b5-a08e-41a4-a039-30572eac883d">
 
 
 
@@ -497,7 +496,7 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/c18.png">
+<img width="308" alt="c18" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/2c45ff93-e215-4790-9225-ff6c44e29eb8">
 
 
 
