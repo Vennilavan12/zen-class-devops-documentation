@@ -1,7 +1,6 @@
 # AWS CloudFormation
 
-<img width="482" alt="Screenshot 2023-11-02 175818" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/61829794-23ed-4d6d-ae5e-c69f0ffb89fb">
-
+![cf1](https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/bda44155-c2ea-4bc3-ba17-30cee080a6a9)
 + AWS CloudFormation is a service that helps you model and set up your AWS resources so that you can spend less time managing those resources and more time focusing on your applications that run in AWS.
   
 + You create a template that describes all the AWS resources that you want (like Amazon EC2 instances or Amazon RDS DB instances), and CloudFormation takes care of provisioning and configuring those resources for you.
@@ -43,9 +42,23 @@ When you use AWS CloudFormation, you work with templates and stacks. You create 
 + Whenever you create a stack, you also specify a template that CloudFormation uses to create whatever you described in the template.
 
 ## Example Template format
+    AWSTemplateFormatVersion: 2010-09-09
+    Description: A sample template
+    Resources:
+      MyEC2Instance:
+        Type: 'AWS::EC2::Instance'
+        Properties:
+          ImageId: ami-0ff8a91507f77f867
+          InstanceType: t2.micro
+          KeyName: testkey
+          BlockDeviceMappings:
+            - DeviceName: /dev/sdm
+              Ebs:
+                VolumeType: io1
+                Iops: 200
+                DeleteOnTermination: false
+                VolumeSize: 20
 
-
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf3.png">
 
 
 # Stacks
@@ -92,7 +105,7 @@ When you use AWS CloudFormation, you work with templates and stacks. You create 
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf2.png">
+![cf2](https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/7b967a63-34c7-492c-9e3e-7031ba78f4e1)
 
 
 
@@ -100,8 +113,34 @@ When you use AWS CloudFormation, you work with templates and stacks. You create 
 
 A template is a JSON- or YAML-formatted text file that describes your AWS infrastructure.
 
+    AWSTemplateFormatVersion: "version date"
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf4.png">
+    Description:
+      String
+
+    Metadata:
+      template metadata
+
+    Parameters:
+      set of parameters
+
+    Rules:
+      set of rules
+
+    Mappings:
+      set of mappings
+
+    Conditions:
+      set of conditions
+
+    Transform:
+      set of transforms
+
+    Resources:
+      set of resources
+
+    Outputs:
+      set of outputs
 
 
 
@@ -348,7 +387,7 @@ The optional Outputs section declares output values that you can import into oth
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/designer-overview.png">
+![designer-overview](https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/d2edd322-45ca-44cf-9ebb-8e15d233208a)
 
 
 
@@ -363,7 +402,7 @@ The optional Outputs section declares output values that you can import into oth
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf7.png">
+<img width="665" alt="cf7" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/413d1c93-d846-45ee-924c-aa094b2ced81">
 
 
 
@@ -387,7 +426,7 @@ The optional Outputs section declares output values that you can import into oth
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf8.png">
+<img width="947" alt="cf8" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/8e19f7e3-0c37-43dd-80a9-e542930be2f1">
 
 
 
@@ -401,7 +440,7 @@ The optional Outputs section declares output values that you can import into oth
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf9.png">
+<img width="818" alt="cf9" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/9655ae6e-b5a1-444c-a36e-affcec3658d1">
 
 
 
@@ -411,7 +450,7 @@ The optional Outputs section declares output values that you can import into oth
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf10.png">
+<img width="818" alt="cf10" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/f112e7b9-a7a5-4194-8e36-8692e36bacd8">
 
 
 
@@ -433,7 +472,7 @@ The optional Outputs section declares output values that you can import into oth
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf11.png">
+<img width="820" alt="cf11" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/02388600-7532-4a72-ac13-e50a5b3cc1c3">
 
 
 
@@ -442,7 +481,7 @@ The optional Outputs section declares output values that you can import into oth
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf12.png">
+<img width="818" alt="cf12" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/ca2846a2-616c-4bb9-9dc5-da5cb2b6d4b2">
 
 
 
@@ -464,7 +503,8 @@ The optional Outputs section declares output values that you can import into oth
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf13.png">
+<img width="608" alt="cf13" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/52c4d20c-ca13-4577-89bd-94c4a2cb5787">
+
 
 
 
@@ -483,7 +523,7 @@ The optional Outputs section declares output values that you can import into oth
 + You only pay for what you use, with no minimum fees and no required upfront commitments.
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf14.png">
+<img width="820" alt="cf14" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/797a6177-a183-41c5-8d93-c3bba621f78d">
 
 
 ## Reference
