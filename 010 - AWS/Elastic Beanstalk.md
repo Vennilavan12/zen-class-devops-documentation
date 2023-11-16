@@ -443,7 +443,7 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
-+**security groups and autoscaling group**
++**check security groups and capacity**
 
 
 
@@ -454,7 +454,12 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
++**Select t2.micro instance for our application**
 
+
+
+
+<img width="305" alt="c13" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/a329ba07-846d-4060-a9cf-845c7f6c67df">
 
 
 
