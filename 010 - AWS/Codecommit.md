@@ -1,7 +1,7 @@
 # AWS CodeCommit
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc1.png">
+![cc1](https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/59eadf85-05ee-417d-aa7d-b219d47aa7b3)
 
 
 
@@ -41,7 +41,7 @@
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc2.png">
+![cc2](https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/dbdb3041-c25d-443e-ba31-1c22fcbbc590)
 
 
 
@@ -53,7 +53,7 @@
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/arc-workflow.png">
+![arc-workflow](https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/dae6ff4a-16de-4c52-8860-e2383d3a6e41)
 
 
 
@@ -153,7 +153,7 @@ In CodeCommit, you can:
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc3.png">
+<img width="755" alt="cc3" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/44d5d680-6e96-47b0-994b-11f64df662a3">
 
 
 
@@ -166,7 +166,7 @@ In CodeCommit, you can:
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc5.png">
+<img width="812" alt="cc5" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/e0fd881f-966b-41af-a02c-502abd2d2cae">
 
 
 
@@ -180,7 +180,7 @@ In CodeCommit, you can:
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc6.png">
+<img width="449" alt="cc6" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/72f3510e-5e78-4258-919e-2e9bda86d4c7">
 
 
 
@@ -194,7 +194,7 @@ In CodeCommit, you can:
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc7.png">
+<img width="938" alt="cc7" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/45d4bb3e-cf8e-4e54-a705-bdbecfeec6c9">
 
 
 
@@ -209,7 +209,7 @@ In CodeCommit, you can:
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc8.png">
+<img width="830" alt="cc8" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/7a991951-d987-407a-bab5-6c1a99956ce4">
 
 
 
@@ -223,7 +223,7 @@ In CodeCommit, you can:
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc9.png">
+<img width="839" alt="cc9" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/34449a62-40d4-41a4-bbcf-ab33b77ec079">
 
 
 
@@ -241,7 +241,7 @@ In CodeCommit, you can:
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc11.png">
+<img width="791" alt="cc11" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/e6ef01bb-06f0-4696-a610-0b52a0bb3519">
 
 
 
@@ -256,7 +256,7 @@ In CodeCommit, you can:
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc12.png">
+<img width="910" alt="cc12" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/de60502c-6eeb-4f11-92ac-e6ff99711551">
 
 
 
@@ -268,7 +268,7 @@ In CodeCommit, you can:
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc13.png">
+<img width="916" alt="cc13" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/55e3bfa1-b48c-44db-be9c-d337d677db4d">
 
 
 
@@ -288,8 +288,7 @@ In CodeCommit, you can:
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cc10.png">
-
+<img width="815" alt="cc10" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/f653781c-d611-4570-908b-d297b01fba04">
 
 
 
