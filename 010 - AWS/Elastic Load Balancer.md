@@ -1,8 +1,7 @@
 # AWS Elastic Load Balancer
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/ELB.png">
-
+![ELB](https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/046092af-a6b3-4fd8-9964-ff247ef53740)
 
 
 Elastic Load Balancing automatically distributes your incoming traffic across multiple targets, such as EC2 instances, containers, and IP addresses, in one or more Availability Zones. 
@@ -33,7 +32,7 @@ Availability Zones are multiple, isolated locations within each Region.
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/reg%26avail.png">
+![reg avail](https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/f368ea03-0a3d-4358-9613-0e2deb082dc1)
 
 
 
@@ -46,7 +45,7 @@ Availability Zones are multiple, isolated locations within each Region.
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/networking-load_balancing.png">
+![networking-load_balancing](https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/5d5a4f59-0576-41c4-ad74-3f282b94f16e)
 
 
 
@@ -83,7 +82,7 @@ Every listener has a default action, also known as the default rule. The default
 
 
   
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cross_zone_load_balancing_enabled.png">
+![cross_zone_load_balancing_enabled](https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/f80877a9-1002-4739-8581-b360589dac4f)
 
 
 
@@ -155,7 +154,7 @@ cross-zone load balancing is always enabled at the load balancer level. At the t
 
 
    
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/ELB_service.png">
+<img width="629" alt="ELB_service" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/eaaf2cb5-b5a1-4c9e-b9cd-fdf2d079fc84">
 
 
 
@@ -172,7 +171,7 @@ cross-zone load balancing is always enabled at the load balancer level. At the t
 
 
    
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/CreateELB.png">
+<img width="775" alt="CreateELB" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/3d84195f-2467-45b8-9448-4cf95eca7e20">
 
 
 
@@ -188,7 +187,7 @@ cross-zone load balancing is always enabled at the load balancer level. At the t
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/ChooseELB.png">
+<img width="409" alt="ChooseELB" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/657eeeca-0625-4689-80ea-73d75df97473">
 
 
   
@@ -230,7 +229,7 @@ Scheme is the type of load balancer.
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/Basic_conf.png">
+<img width="654" alt="Basic_conf" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/ebcba2b8-4bfe-4e48-a891-5708c7134054">
 
 
 
@@ -255,7 +254,8 @@ Scheme is the type of load balancer.
 
 
   
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/nwmapp.png">
+<img width="654" alt="nwmapp" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/463cad22-08e0-43d1-a2c7-62ceb9e2b9f6">
+
 
 
 
@@ -273,7 +273,7 @@ Scheme is the type of load balancer.
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/sg.png">
+<img width="657" alt="sg" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/4e5c3130-bd68-4673-b948-da34c85104b3">
 
 
 
@@ -291,7 +291,7 @@ Scheme is the type of load balancer.
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/listener_routing.png">
+<img width="660" alt="listener_routing" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/cf640a3d-dbfc-42cd-b22d-e24530a75977">
 
 
 
@@ -315,7 +315,7 @@ Scheme is the type of load balancer.
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/TGcreate.png">
+<img width="794" alt="TGcreate" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/add924dd-5971-43e2-9a36-09146465ae6f">
 
 
 
@@ -340,7 +340,7 @@ Scheme is the type of load balancer.
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/TG1.png">
+<img width="610" alt="TG1" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/f6809e50-868e-4229-8c5e-566dbf6da145">
 
 
 
@@ -350,7 +350,7 @@ Scheme is the type of load balancer.
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/TG2.png">
+<img width="406" alt="TG2" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/71590b7c-e424-4572-9a6c-d23626c36a6a">
 
 
 
@@ -370,7 +370,7 @@ By default, Application Load Balancers send requests to targets using HTTP/1.1. 
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/TG3.png">
+<img width="410" alt="TG3" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/737b9a36-de0e-4f9e-94b3-ea6685dcd1c3">
 
 
 
@@ -387,7 +387,7 @@ By default, Application Load Balancers send requests to targets using HTTP/1.1. 
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/TG4.png">
+<img width="920" alt="TG4" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/cfe39e03-58da-409a-b3fc-e3e78b88f63d">
 
 
 
@@ -415,7 +415,7 @@ By default, Application Load Balancers send requests to targets using HTTP/1.1. 
 
 
   
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/TG5.png">
+<img width="730" alt="TG5" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/5bbe6fd4-8c77-45b9-9653-a4dd2b90c417">
 
 
 
@@ -438,7 +438,7 @@ By default, Application Load Balancers send requests to targets using HTTP/1.1. 
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/Final.png">
+<img width="657" alt="Final" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/7700e88e-4863-47be-95d8-1f106c1f3d41">
 
 
 
@@ -463,7 +463,7 @@ By default, Application Load Balancers send requests to targets using HTTP/1.1. 
 
 
   
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/nwlbimg.png">
+<img width="216" alt="nwlbimg" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/591027d7-84d1-4338-9e52-b801fd0c2b7e">
 
 
 
@@ -504,7 +504,7 @@ By default, Application Load Balancers send requests to targets using HTTP/1.1. 
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/nlb.png">
+<img width="655" alt="nlb" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/d2a05db5-6e4d-4748-af62-80a9f7a9c96b">
 
 
 
@@ -524,7 +524,7 @@ Gateway Load Balancer helps you easily deploy, scale, and manage your third-part
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/gwlb.png">
+<img width="221" alt="gwlb" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/f8a9ab80-a084-406d-beec-48ace8480308">
 
 
 
@@ -557,7 +557,7 @@ Gateway Load Balancer helps you easily deploy, scale, and manage your third-part
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/gwlb_sideways_flow.png">
+![gwlb_sideways_flow](https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/b393bd2b-a5fe-45ac-a0e2-e93d50a2e06d)
 
 
 
@@ -587,7 +587,7 @@ Gateway Load Balancer helps you easily deploy, scale, and manage your third-part
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/gwlb1.png">
+<img width="658" alt="gwlb1" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/830caf1a-e39a-43a0-acec-ebbe9e9dcebc">
 
 
 
@@ -631,7 +631,7 @@ For example, if you have ten instances in Availability Zone us-west-2a and two i
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/C_load_balancer.png">
+![C_load_balancer](https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/53ab3843-88ef-402c-905c-9023adbd066a)
 
 
 
@@ -656,7 +656,7 @@ Classic Load Balancer creation also same as Application Load Balancer changes ar
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/clb1.png">
+<img width="656" alt="clb1" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/c50bac85-9bac-4aa7-8a77-225d9c745be3">
 
 
 
@@ -674,7 +674,7 @@ Classic Load Balancer creation also same as Application Load Balancer changes ar
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/clb2.png">
+<img width="657" alt="clb2" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/83fee38f-7736-49f8-a0b8-e43a7c49da34">
 
 
 
