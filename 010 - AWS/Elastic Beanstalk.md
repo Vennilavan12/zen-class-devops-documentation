@@ -411,8 +411,16 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
++**use default values for this**
+
+
+
+
 
 <img width="484" alt="c9" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/dba0fa9a-bc0d-498f-b7b1-9b4f796737c5">
+
+
+
 
 
 
