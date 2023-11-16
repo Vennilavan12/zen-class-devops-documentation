@@ -1,7 +1,7 @@
 # AWS CodeBuild
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb1.png">
+![cb1](https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/11438365-b6b8-4592-bd39-b26796bc5320)
 
 
 
@@ -28,7 +28,7 @@
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb2.png">
+![cb2](https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/9f658a9b-b33b-468f-9210-1a2b7418f1d5)
 
 
 
@@ -43,7 +43,7 @@
 + This includes building your code. A pipeline is a workflow construct that describes how code changes go through a release process.
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb3.png">
+![cb3](https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/bf915e74-bc4c-4b72-b255-e9bbb3bfd960)
 
 
 
@@ -52,7 +52,7 @@
 + As input, you must provide CodeBuild with a build project.
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb4.png">
+![cb4](https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/05440b90-12da-4ad1-84d5-f76bc37c802a)
 
 
 
@@ -402,7 +402,7 @@ Optional sequence. Represents information about where CodeBuild can prepare the 
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb5.png">
+<img width="728" alt="cb5" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/de9837bc-144b-49e6-b224-bd6be96f46c9">
 
 
 
@@ -414,7 +414,7 @@ Optional sequence. Represents information about where CodeBuild can prepare the 
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb6.png">
+<img width="914" alt="cb6" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/b6e49249-3dbc-4142-aa16-2a2f709f371c">
 
 
 
@@ -426,7 +426,7 @@ Optional sequence. Represents information about where CodeBuild can prepare the 
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb7.png">
+<img width="532" alt="cb7" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/4f73fb25-b84a-4b13-ba29-16f91afc0588">
 
 
 
@@ -438,7 +438,7 @@ Optional sequence. Represents information about where CodeBuild can prepare the 
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb8.png">
+<img width="515" alt="cb8" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/59c5066b-dbb3-4c0f-87d7-c52c3b3e996b">
 
 
 
@@ -450,7 +450,7 @@ Optional sequence. Represents information about where CodeBuild can prepare the 
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb10.png">
+<img width="509" alt="cb10" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/3e27e204-b563-4c31-88df-c8346dd1f2fc">
 
 
 
@@ -462,7 +462,7 @@ Optional sequence. Represents information about where CodeBuild can prepare the 
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb11.png">
+<img width="510" alt="cb11" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/41f16393-5faf-499c-8196-4dc8517c9158">
 
 
 
@@ -475,7 +475,7 @@ Optional sequence. Represents information about where CodeBuild can prepare the 
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb12.png">
+<img width="428" alt="cb12" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/5653f3c7-3f93-49c6-8f35-8b1b4f7f87b7">
 
 
 
@@ -488,7 +488,7 @@ Optional sequence. Represents information about where CodeBuild can prepare the 
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb13.png">
+<img width="926" alt="cb13" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/26a474b9-3a2b-416f-a8f1-bc5efe98136f">
 
 
 
@@ -501,7 +501,7 @@ Optional sequence. Represents information about where CodeBuild can prepare the 
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cb14.png">
+<img width="935" alt="cb14" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/c41fed69-f5b4-44ef-b7a2-03cd2da4e266">
 
 
 
