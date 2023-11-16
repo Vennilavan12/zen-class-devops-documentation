@@ -31,8 +31,7 @@ AWS CodePipeline is a continuous delivery service you can use to model, visualiz
 + Although every successful software change can be immediately released to production with continuous delivery, not all changes need to be released right away.
 
 
-
-<img ![cp3](https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/43daf14a-eb38-4af3-b864-0cc76e2d7e1d)
+![cp3](https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/43daf14a-eb38-4af3-b864-0cc76e2d7e1d)
 
 
 
