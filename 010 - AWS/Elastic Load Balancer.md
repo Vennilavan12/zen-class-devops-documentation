@@ -138,7 +138,7 @@ cross-zone load balancing is always enabled at the load balancer level. At the t
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/Screenshot%202023-10-27%20174417.png">
+<img width="806" alt="Screenshot 2023-10-27 174417" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/11b62397-fa61-4acd-88fe-0545c71954c8">
 
 
 
@@ -613,7 +613,7 @@ Gateway Load Balancer helps you easily deploy, scale, and manage your third-part
 
 Using a Classic Load Balancer instead of an Application Load Balancer has the following benefits:
 
-    * Support for TCP and SSL listeners.
+1. Support for TCP and SSL listeners.
 
 
 
