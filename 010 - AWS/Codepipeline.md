@@ -1,7 +1,7 @@
 # AWS Codepipeline
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/CP1.png">
+![CP1](https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/8f7a6e11-9723-45e6-8880-6bbe695227bb)
 
 
 
@@ -32,7 +32,7 @@ AWS CodePipeline is a continuous delivery service you can use to model, visualiz
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp3.png">
+<img ![cp3](https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/43daf14a-eb38-4af3-b864-0cc76e2d7e1d)
 
 
 
@@ -46,7 +46,7 @@ AWS CodePipeline is a continuous delivery service you can use to model, visualiz
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp2.png">
+<img width="400" alt="cp2" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/96975b3a-8bb3-44ff-99c7-78b7b000f04b">
 
 
 
@@ -62,7 +62,8 @@ AWS CodePipeline is a continuous delivery service you can use to model, visualiz
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/PipelineFlow.png">
+<img width="469" alt="PipelineFlow" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/09f1ac72-9cc6-41b2-8b1c-b531e880583b">
+
 
 
 
@@ -382,7 +383,7 @@ Valid statuses for actions are
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp4.png">
+<img width="758" alt="cp4" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/2c84f1c9-cda6-4424-be1b-f874b4cf8b55">
 
 
 
@@ -394,8 +395,7 @@ Valid statuses for actions are
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp5.png">
-
+<img width="718" alt="cp5" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/e1a0e252-0581-47c6-b363-22f51b76ec7d">
 
 
 
@@ -406,7 +406,7 @@ Valid statuses for actions are
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp6.png">
+<img width="666" alt="cp6" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/63809681-2286-4abe-9b79-a2ca5ca5e3ba">
 
 
 
@@ -432,7 +432,7 @@ Valid statuses for actions are
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp7.png">
+<img width="665" alt="cp7" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/e69cb8e7-8f97-4fe5-80d0-8a20f4cbbd93">
 
 
 
@@ -447,8 +447,7 @@ Valid statuses for actions are
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp8.png">
-
+<img width="560" alt="cp8" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/e293ecd4-2df8-4295-a2e7-d5d328d8a57c">
 
 
 
@@ -463,7 +462,7 @@ Valid statuses for actions are
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp9.png">
+<img width="550" alt="cp9" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/e1e3e406-cbfd-4e4c-8b89-cb72cb5df85a">
 
 
 
@@ -477,7 +476,7 @@ Valid statuses for actions are
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp10.png">
+<img width="409" alt="cp10" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/f0cbd2d8-3908-4177-9bde-4862f55af6f9">
 
 
 
@@ -491,7 +490,7 @@ Valid statuses for actions are
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp11.png">
+<img width="442" alt="cp11" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/d6453980-6daa-44b1-8a44-8ddc42faaf23">
 
 
 
@@ -504,7 +503,7 @@ Valid statuses for actions are
 
 
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cp12.png">
+<img width="568" alt="cp12" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/1a578075-4a1e-43db-97e1-b2396874a634">
 
 
 
