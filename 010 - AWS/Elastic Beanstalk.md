@@ -479,10 +479,20 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
++**uncheck Managed updates**
+
+
 
 
 
 <img width="410" alt="c15" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/6cd9057f-770d-475a-9b4d-b31616ca9f75">
+
+
+
+
+
+
++**Give Email id if need email notification**
 
 
 
@@ -495,8 +505,21 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
++**Choose updates as fixed or percentage**
+
+
+
+
+
 
 <img width="308" alt="c17" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/d26251b5-a08e-41a4-a039-30572eac883d">
+
+
+
+
+
++**If your project contains env variables you need add in env property**
+
 
 
 
