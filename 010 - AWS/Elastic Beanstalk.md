@@ -443,7 +443,7 @@ Use this link to know more about platforms >> https://docs.aws.amazon.com/elasti
 
 
 
-
++**security groups and autoscaling group**
 
 
 
