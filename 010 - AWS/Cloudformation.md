@@ -1,6 +1,6 @@
 # AWS CloudFormation
 
-<img src="https://github.com/Vennilavan12/zen-class-devops-documentation/blob/main/010%20-%20AWS/img/cf1.png">
+<img width="482" alt="Screenshot 2023-11-02 175818" src="https://github.com/zen-class/zen-class-devops-documentation/assets/77039703/61829794-23ed-4d6d-ae5e-c69f0ffb89fb">
 
 + AWS CloudFormation is a service that helps you model and set up your AWS resources so that you can spend less time managing those resources and more time focusing on your applications that run in AWS.
   
